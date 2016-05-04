@@ -7,6 +7,12 @@
 
 Für die in der Motivation erwähnten Experimente benötigen wir eine Quelle, die ein Target aus Wasserdimeren zur Verfügung stellt. Wir haben uns entschieden, durch adiabatische Überschallexpansion solche Wassercluster zu realisieren. Die entsprechende Düse wurde von uns eigens zu diesem Zweck designt und wird im weiteren Verlauf der Arbeit noch eingehend besprochen[Referenz zum entsprechenden Kapitel].
 
+%Missglückte Einleitung
+%Was regt uns an Cluster zu untersuchen?
+%Cluster sind Ansammlungen von einer bestimmten Anzahl an Atomen	oder Molekülen. Je nach Größe zeigen Sie Eigenschaften von Aggregatszuständen. Das ermöglicht es Übergänge von z.B gasförmig zu flüssig auf elementarer Ebene physikalisch zu Untersuchen.
+% Auch andere Vorgänge wie die Gleichgewichtsreaktion von $\mathrm{H}_2\mathrm{O}+ \mathrm{H}_2\mathrm{O}^+ \rightarrow \mathrm{H}_3\mathrm{O}^+ + \mathrm{H}\mathrm{O}$ können in einem isolierten Rahmen untersucht werden,
+% indem man nur die zwei Wassermoleküle in einem Cluster hat und reagieren lässt.\\
+
 \subsection{Definition}
 Als Cluster bezeichnet man Agglomerate aus Atomen oder Molekülen. Diese können bei kleinen Exemplaren 2 bis mehrere Hundert Teilchen enthalten und bei großen Clustern aus bis zu ca. $\mathrm{10^6}$ Teilchen bestehen. Je nach Größe besitzen Cluster verschiedene Eigenschaften und bilden damit eine Brücke zwischen der Atomphysik, der Molekülphysik und der Festkörperphysik.\\
 Bei kleinen Clustern lassen sich noch alle Eigenschaften anhand der Atom- und Molekülphysik beschreiben. Ähnlich wie beim Atom besitzen kleine Cluster diskrete Energieniveaus.
@@ -29,26 +35,45 @@ Und zum Schluss gibt es noch die Gruppe, mit der wir uns in dieser Arbeit befass
 %Ich denke man brauch dafür keine so ausgefeilte Düse. einfach ein reservoir in dem geheizt wird und eine relativ Gr0ße Öffnung oder?
 Bei den von uns angestrebten Versuchen wollen wir 2 Wassermoleküle isoliert betrachten. Dazu eignen sich Cluster ideal, denn durch die Einphoton-Ionisation, die wir auf das Target anwenden, wählen wir gezielt ein Cluster aus dem Jet-Target aus und beobachten durch das Remi wie die darauffolgende Reaktion abläuft. Was das Remi ist und wie es funktioniert wird im Kapitel [Referenz] kurz zusammengefasst.}
 
-\subsection{Überschallexpansion}
+\subsection{Clusterbildung durch Überschallexpansion}
 
-Die Überschallexpansion ist ein adiabatischer Prozess, bei dem Gas durch eine kleine Öffnung von einem Bereich mit hohem Druck, in einen Bereich mit niedrigem Druck strömt. Da die räumliche Dichte abnimmt, muss die Dichte im Impulsraum zunehmen, was einer Temperaturabnahme entspricht. Diese Temperaturabnahme ist sehr bemerkenswert, da sie es ermöglich van-der-Waals-gebundene Moleküle wie z.B. $\mathrm{^4}\mathrm{He}_2$ zu produzieren und anschließend zu detektieren bzw. zu untersuchen \cite{Liu89}.
+Die Überschallexpansion ist ein adiabatischer Prozess, bei dem Gas durch eine kleine Öffnung von einem Bereich mit hohem Druck, in einen Bereich mit niedrigem Druck strömt. Da die räumliche Dichte abnimmt, muss die Dichte im Impulsraum zunehmen, was einer Temperaturabnahme entspricht. Diese Temperaturabnahme ist sehr bemerkenswert, da sie es ermöglicht van-der-Waals-gebundene Moleküle wie z.B. $\mathrm{^4}\mathrm{He}_2$ zu produzieren und zu detektieren. Das $\mathrm{^4}\mathrm{He}_2$-Molekül ist ein sehr beeindruckendes Beispiel dafür, weil die He-He-Bindung nach quantenmechanischen Berechnungen die schwächste bekannte Bindung ist. Diese Moleküle wurden 1993 erstmals, via Überschallexpansion erzeugt und nachgewiesen \cite{Luo1993}, obwohl die Bindungsenergie  nur 1,176 mK, also etwa $\mathrm{10^{-4}}$ eV entspricht \cite{Lohr2007}. 
+
+In der folgenden Erklärung von den Prozessen und Formeln die bei der Clusterbildung durch Überschallexpansion eine Rolle spielen orientiere ich mich im Wesentlichen am Kapitel 2 des Buches \cite{scoles1988}.
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=1\textwidth]{../expansion.png}%
+\captionof{figure}{Übersicht der "Uberschallexpansion mit störenden Eigenschaften. Das Gas expandiert in Pfeilrichtung. \citep{scoles1988} Noch richtiges Bild machen!}  
+ \label{fig:Machexpansion}
+ 
+ 
+\end{minipage} 
+\end{center} 
+
+Wenn das Gas aus einem Reservoir mit Temperatur $t_0$ und Druck $p_0$ adiabatisch durch eine Düse mit Durchmesser d expandiert, folgt die Druckabnahme der Gesetzmäßigkeit
+
+\begin{equation}
+pV^{\gamma/(1-\gamma)}\ \mbox{mit}\ \gamma=c_p/c_v=(f+2)/f \ \mbox{bei} \ \Delta S=0.
+\end{equation}
+
+Der Exponent $\gamma$ zählt die Anzahl der Freiheitsgrade und kann wie in der Formel angegeben als Quotient aus der isobaren und isochoren Wärmekapazität experimentell bestimmt werden. Reines Wasser, wie es bei uns verwendet wird, hat bei Raumtemperatur 6 Freiheitsgrade [brauch ich hierfür Referenz? oder Fußnote mit Werten für id Gas oder Moleküle anhängen]. 
+Da bei der Expansion ins Vakuum die Dichte und Temperatur des Gases sinken, muss aufgrund der Energieerhaltung, die Geschwindigkeit zunehmen. 
+%Wenn man die Düsenöffnung als klein betrachtet (was bei ca 50$\mu$m berechtigt ist), darf man die Expansion eindimensional behandeln und damit kann man sich anschaulich vorstellen, dass die Beschleunigung in Richtung der Achse des Molekularstrahls erfolgen muss.
+Nimmt man an dass die gesamte thermische Energie in kinetische Energie umgewandelt wird erhält man folgende Formel für die Endgeschwindigkeit.
+
+\begin{equation}
+v_\infty=\sqrt{2\int_{T_0}^{T_\infty \ll T_0} c_{p,mol}dT}= \sqrt{\frac{2R}{W}\left(\frac{\gamma}{\gamma-1}\right)T_0}
+\end{equation}
 
 
-%Missglückte Einleitung
-%Was regt uns an Cluster zu untersuchen?
-%Cluster sind Ansammlungen von einer bestimmten Anzahl an Atomen	oder Molekülen. Je nach Größe zeigen Sie Eigenschaften von Aggregatszuständen. Das ermöglicht es Übergänge von z.B gasförmig zu flüssig auf elementarer Ebene physikalisch zu Untersuchen.
-% Auch andere Vorgänge wie die Gleichgewichtsreaktion von $\mathrm{H}_2\mathrm{O}+ \mathrm{H}_2\mathrm{O}^+ \rightarrow \mathrm{H}_3\mathrm{O}^+ + \mathrm{H}\mathrm{O}$ können in einem isolierten Rahmen untersucht werden,
-% indem man nur die zwei Wassermoleküle in einem Cluster hat und reagieren lässt.\\
 
 
 
 
 
-
-
-%Supersonicexpansion, Machkegel, Die ganzen Formeln dazu
-
-%Vergleichstext 
+\newpage
 
 \section{Jet}
 

@@ -18,7 +18,9 @@
 %\usepackage		[latin1]							{inputenc} 		 %für Umlaute, aber Formatfehler
 \usepackage		[ngerman]							{babel}				%deutsche Bezeichnungen für Kapitel etc
 \usepackage		[autostyle=true,german=quotes]		{csquotes}			%für Anführungszeichen
-\usepackage											{textcomp}			%für Pfeile
+\usepackage											{textcomp}			%für Pfeile im Text
+\usepackage                             			{natbib}			%Science citations
+\usepackage                             			{graphicx}			%Bilder
 
 \begin{document}
 
@@ -84,9 +86,9 @@
   %   \addcontentsline{toc}{chapter}{Literaturverzeichnis}
      \backmatter
      \bibliography{Literaturverzeichnis}{}
-     \citestyle{egu}
-     \bibliographystyle{plainnat}
- %    \include{deposition}
+%     \citestyle{egu}
+     \bibliographystyle{alpha}  %ersten 3 Buchstaben und Jahr
+%     \include{deposition}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
