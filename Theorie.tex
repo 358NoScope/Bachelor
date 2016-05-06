@@ -39,16 +39,14 @@ Bei den von uns angestrebten Versuchen wollen wir 2 Wassermoleküle isoliert bet
 
 Die Überschallexpansion ist ein adiabatischer Prozess, bei dem Gas durch eine kleine Öffnung von einem Bereich mit hohem Druck, in einen Bereich mit niedrigem Druck strömt. Da die räumliche Dichte abnimmt, muss die Dichte im Impulsraum zunehmen, was einer Temperaturabnahme entspricht. Diese Temperaturabnahme ist sehr bemerkenswert, da sie es ermöglicht van-der-Waals-gebundene Moleküle wie z.B. $\mathrm{^4}\mathrm{He}_2$ zu produzieren und zu detektieren. Das $\mathrm{^4}\mathrm{He}_2$-Molekül ist ein sehr beeindruckendes Beispiel dafür, weil die He-He-Bindung nach quantenmechanischen Berechnungen die schwächste bekannte Bindung ist. Diese Moleküle wurden 1993 erstmals, via Überschallexpansion erzeugt und nachgewiesen \cite{Luo1993}, obwohl die Bindungsenergie  nur 1,176 mK, also etwa $\mathrm{10^{-4}}$ eV entspricht \cite{Lohr2007}. 
 
-In der folgenden Erklärung von den Prozessen und Formeln die bei der Clusterbildung durch Überschallexpansion eine Rolle spielen orientiere ich mich im Wesentlichen am Kapitel 2 des Buches \cite{scoles1988}.
+In der folgenden Erklärung von den Prozessen und Formeln die bei der Clusterbildung durch Überschallexpansion eine Rolle spielen orientiere ich mich im Wesentlichen am Kapitel 2 des Buches \enquote{Atomic and Molecular Beam Methods Vol 1}\cite{scoles1988} und der Zusammenfassung darüber in der Dissertation über \enquote{Ultraschnelle Dynamik in dotierten und reinen Wassercluster} von Jan Müller \cite{mul13}.
 
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=1\textwidth]{../expansion.png}%
-\captionof{figure}{Übersicht der "Uberschallexpansion mit störenden Eigenschaften. Das Gas expandiert in Pfeilrichtung. \citep{scoles1988} Noch richtiges Bild machen!}  
+\includegraphics[width=0.7\textwidth]{../expansion.png}%
+\captionof{figure}{Übersicht der Überschallexpansion mit Schockwellenstruktur \citep{scoles1988}}  
  \label{fig:Machexpansion}
- 
- 
 \end{minipage} 
 \end{center} 
 
@@ -67,10 +65,55 @@ Nimmt man an dass die gesamte thermische Energie in kinetische Energie umgewande
 v_\infty=\sqrt{2\int_{T_0}^{T_\infty \ll T_0} c_{p,mol}dT}= \sqrt{\frac{2R}{W}\left(\frac{\gamma}{\gamma-1}\right)T_0}
 \end{equation}
 
+Wobei der Zusammenhang für ideale Gase
+
+\begin{equation}
+c_{p,mol}= \left(\frac{\gamma}{\gamma-1}\right)\left(\frac{R}{W}\right)
+\end{equation}
+
+verwendet wurde. R steht hier f"ur die universelle Gaskonstante, W kennzeichent das Molekulargewicht des verwendeten Gases und $T_0$ steht für die Düsentemperatur.
+Bei Gasgemischen muss man die, nach ihrem atomaren Anteil gewichteteten, Mittelwerte $\bar{c}_{p,mol}$ und $\bar{W}_{mol}$ verwenden.
+Vergleicht man die Endgeschwindigkeit $v_{\infty}$ mit der Schallgeschwindigkeit für ideales Gas
+
+\begin{equation}
+c=\sqrt{\frac{R \gamma}{W}T}
+\end{equation}
+
+sieht man, dass $v_{\infty}$ größer ist als c, weil die Temperatur des expandierten Gases T sehr viel kleiner ist, als die Düsentemperatur $T_0$ und der andere Faktor $\sqrt{(2/\gamma -1)}=2,45$ (mit f=6 bei Wasser) den Unterschied nochmal verstärkt.\\
+Die Machzahl 
+\begin{equation}
+M(\vec{r})= v(\vec{r})/c(p(\vec{r}))
+\end{equation}
+
+ist bei der Überschallexpansion eine wichtige Größe, die skalar in vielen thermodynamischen Rechnungen dazu eine Rolle spielt und vektoriell betrachtet das Strömungsfeld an jedem Ort $\vec{r}$ charakterisiert. 
+
+Nach Austritt aus der Düse hat das Gas eine Machzahl M$>$1, was bedeutet, das Gas breitet sich mit Überschallgeschwindigkeit aus. Das hat zur Folge, das der Gasstrom zunächst unabhängig von jeglichen externen Randbedingungen ist. Dieser Effekt rührt daher, dass sich Information \enquote{nur} mit Schallgeschwindigkeit ausbreitet und das Fluid eben schneller (M$>$1) ist. Doch obwohl der Gasstrom nichts von Randbedingungen weiß, muss er sich an diese anpassen. Das wird nach kurzer Zeit von Schockwellen realisiert, die an begrenzenden Wänden oder ähnlichen \enquote{Randbedingungen} abprallen und auf ihrem Rückweg den Strom regulieren. Wie man an Bild \ref{fig:Machexpansion} erkennen kann gibt es mehrere Instanzen dieser Schockwellen, die nichtisentropische Gebiete sind und sich durch starke Dichte-, Temperatur-, Geschwindigkeits- und Druckgradienten auszeichnen. Durch diese Eigenschaften kann man die Schockwellen mit diversen Lichtstreutechniken sichtbar machen.
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=0.7\textwidth]{../shockwaves.png}%
+\captionof{figure}{Druckverteilung bei einem Argon-Jet mit einer 20 µm breiten schlitzförmigen Düsenöffnung. Die gekennzeichnete Schockwelle in der Mitte begrenzt den isentropen Bereich, also die \enquote{zone of silence} \cite{Mou09} }
+ \label{fig:Machexpansion}
+\end{minipage} 
+\end{center} 
+ 
+Der von diesen Schockwellen eingegrenzte Bereich ist dennoch unbeeinflusst von den Randbedingungen und wird deswegen auch \enquote{zone of silence} genannt. 
+Die Lage der Schockstrukturen hauptsächlich abhängig von dem Verhältnis von Düsendruck $p_0$ zu Hintergrunddruck $p_b$ der Kammer. Eine weitere wichtige Schockstruktur ist die sog. Mach-Scheibe (englisch \enquote{mach disc}), die normal zur Ausbreitungsrichtung des Gases liegt. Da Schockwellen enormen Druck auf die im Strom vorkommenden Cluster ausübt, muss der für Experimente verwendete Molekülstrahl noch vor der Mach-Scheibe entnommen werden. Diese Entnahme wird durch einen Skimmer realisiert, welcher den gewollten Teil des Molekülstrahls durchlässt und den restlichen Anteil von der Strahlachse wegreflektiert, doch auf diesen Teil werde ich im Kapitel [Kapitel über Jet/Skimmer] etwas genauer eingehen. 
+
+Die Position der Mach-Scheibe lässt sich mittels
+
+\begin{equation}
+\frac{x_m}{d}=0.67 \sqrt{\left( \frac{p_0}{p_b}\right)}
+\end{equation}
+
+bestimmen, wobei $x_m$ die besagte Mach-Scheibenposition, ausgehend von der Düse und d die Größe der Düsenöffnung ist.
+Um einen kleinen Vorausgriff zu wagen, habe ich hier schonmal grobe Werte unseres Experimentes eingesetzt. Mit d = 50 µm, $p_0 \approx$ 1000 mbar und $p_b \approx 10^{-3}$  mbar erhält man für\\ $x_m \approx 3,35$ cm. Ein sehr großer Wert, wenn man bedenkt, dass man üblicherweise wenige Millimeter nah an den Skimmer fährt und zudem der Wert in der Realität noch größer ist, weil ich hier für $p_0$ den Dampfdruck im Reservoir bei 100°C gewählt habe (man weiß noch nicht dass verdampft wird!) und nicht den an der Düse der garantiert größer sein wird.
+
+%Jetzt das mit eff Düsenöffnung
 
 
-
-
+%Was ist mit Speedratio für Genauigkeit des Strahls? 
 
 
 \newpage
