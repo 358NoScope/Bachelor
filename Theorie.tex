@@ -31,11 +31,8 @@ Weiterhin gibt es die Van-der-Waals-Cluster, die durch eine Dipol-Wechselwirkung
 
 Und zum Schluss gibt es noch die Gruppe, mit der wir uns in dieser Arbeit befassen werden, und zwar die Gruppe der Cluster mit Wasserstoffbindung. Die Dipol-Dipol-Anziehung hält diese Cluster mit einer mittleren Bindungsenergie von 0,15 - 0,5 eV zusammen. \\
 
-\textit{Doch was ist nun der Grund warum wir Cluster als Target nehmen?
-%Ich denke man brauch dafür keine so ausgefeilte Düse. einfach ein reservoir in dem geheizt wird und eine relativ Gr0ße Öffnung oder?
-Bei den von uns angestrebten Versuchen wollen wir 2 Wassermoleküle isoliert betrachten. Dazu eignen sich Cluster ideal, denn durch die Einphoton-Ionisation, die wir auf das Target anwenden, wählen wir gezielt ein Cluster aus dem Jet-Target aus und beobachten durch das Remi wie die darauffolgende Reaktion abläuft. Was das Remi ist und wie es funktioniert wird im Kapitel [Referenz] kurz zusammengefasst.}
 
-\subsection{Clusterbildung durch Überschallexpansion}
+\subsection{Überschallexpansion}
 
 Die Überschallexpansion ist ein adiabatischer Prozess, bei dem Gas durch eine kleine Öffnung von einem Bereich mit hohem Druck, in einen Bereich mit niedrigem Druck strömt. Da die räumliche Dichte abnimmt, muss die Dichte im Impulsraum zunehmen, was einer Temperaturabnahme entspricht. Diese Temperaturabnahme ist sehr bemerkenswert, da sie es ermöglicht van-der-Waals-gebundene Moleküle wie z.B. $\mathrm{^4}\mathrm{He}_2$ zu produzieren und zu detektieren. Das $\mathrm{^4}\mathrm{He}_2$-Molekül ist ein sehr beeindruckendes Beispiel dafür, weil die He-He-Bindung nach quantenmechanischen Berechnungen die schwächste bekannte Bindung ist. Diese Moleküle wurden 1993 erstmals, via Überschallexpansion erzeugt und nachgewiesen \cite{Luo1993}, obwohl die Bindungsenergie  nur 1,176 mK, also etwa $\mathrm{10^{-4}}$ eV entspricht \cite{Lohr2007}. 
 
@@ -110,10 +107,63 @@ Die Position der Mach-Scheibe lässt sich mittels
 bestimmen, wobei $x_m$ die besagte Mach-Scheibenposition, ausgehend von der Düse und d die Größe der Düsenöffnung ist.
 Um einen kleinen Vorausgriff zu wagen, habe ich hier schonmal grobe Werte unseres Experimentes eingesetzt. Mit d = 50 µm, $p_0 \approx$ 1000 mbar und $p_b \approx 10^{-3}$  mbar erhält man für\\ $x_m \approx 3,35$ cm. Ein sehr großer Wert, wenn man bedenkt, dass man üblicherweise wenige Millimeter nah an den Skimmer fährt und zudem der Wert in der Realität noch größer ist, weil ich hier für $p_0$ den Dampfdruck im Reservoir bei 100°C gewählt habe (man weiß noch nicht dass verdampft wird!) und nicht den an der Düse der garantiert größer sein wird.
 
+ %Um das Strömungsfeld der Überschallexpansion zu charakterisieren muss man nicht nur die erwähnten Schockwelleneffekte betrachten, sondern sich auch die Form der Düse anschauen. Hier gibt es einen effektiven Düsendurchmesser $d_{eff}$ der z.B. bewirkt, dass konische Düsen bei geringerem Gasfluss, gleiche Gasdichten auf der Strahlachse und gleiche Clustergrößen produziert, wie eine zylindrische Düse mit gleichem $d_{eff}$ \cite{HOb72}. Den effektiven Düsendurchmesser
 %Jetzt das mit eff Düsenöffnung
 
+%Was ist mit Speedratio für Genauigkeit des Strahls? Ist durch relativbeweg doch eig schon dabei
 
-%Was ist mit Speedratio für Genauigkeit des Strahls? 
+\subsection{Clusterbildung}
+
+Das zur Clusterproduktion verwendete reine Wasser wird bei Temperaturen um 100 °C und einem entsprechendem Dampfdruck von ca. 1 bar durch eine kurze konische Düse geleitet (Abb. \ref{fig:Duse}).
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=0.8\textwidth]{../duse.pdf}%
+\captionof{figure}{Abmessungen der von uns benutzten Platin-Blenden von Plano als Düse. Als Düsenöffnung d haben wir 30 µm und 50 µm benutzt. D ist der Durchmeser des Plättchens und H die Höhe. Pfeile normal nachen!}
+ \label{fig:Duse}
+\end{minipage} 
+\end{center} 
+
+Nachdem es den engsten Querschnitt durchquert hat, kommt es zu einer starken Expansion und damit einhergehend zu einer starken Abkühlung des Gases (Joule-Thomson-Effekt). Durch das Abkühlen werden die Relativgeschwindigkeiten der Gasmoleküle sehr klein, sodass sich ein gerichteter Teilchenstrom einstellt. Wenn die thermische Energie der Moleküle unter die Bindungsenergie eines Dimers sinkt, kann es durch Dreikörperstöße zur Agglomeration zweier Moleküle kommen. Der dritte Körper ist bei diesem Prozess wichtig zur Bewahrung der Energie und Impulserhaltung. Die enstandenen Dimere dienen nun als Kondensationskeim, an den sich viele weitere Moleküle anlagern können. Allerdings, gibt jeder weiter sich anlagernde Moleküle die Bindungsenergie frei, durch die sich das Cluster aufheizt. Damit wird die Stabilität natürlich eingeschränkt, was dazu führt dass einige Moleküle wieder abdampfen. Wenn ein hoher Gasdruck herrscht, sprich eine große Teilchendichte existiert, gibt es mehr Teilchen die durch Stöße mit dem Cluster die überschüssige Energie abtransportieren können und somit die Clusterbildung unterstützen.
+Die Größe der Cluster die bei einer Überschallexpansion lässt sich durch eine Boltzmannverteilung beschreiben, deren große Breite proportional zur mittleren Clustergröße $\left\langle N \right\rangle$ ist. 
+
+Um auf die Clusterverteilungen in idealen Gasen schließen, benutzt man den empirischen Skalenparameter $\Gamma$ von Hagena \cite{hagena1987}:
+
+\begin{equation}
+\Gamma = n_0\ d^q\ T_0^{\alpha} \quad (0,5 < q \leq 1),\quad \alpha := sp - f/2
+\end{equation}
+
+Für axialsymmetrische Flüsse gilt $s = (f-2)/4$ und q ist ein Parameter der experimentell bestimmt werden muss.
+
+Um $\Gamma$ unabhängig von den Einheiten zu machen wird der reduzierte Skalenparameter
+
+\begin{equation}
+\Gamma^* = \Gamma / (r_{ch}^{q-3}\ T_{ch}^{\alpha})
+\end{equation}
+
+eingeführt mit $\alpha= 1,5- 0,25q$. Dabei sind
+
+\begin{equation}
+r_{ch} = \frac{m_{atom}}{\rho ^{1/3}}\quad \textmd{und}\quad T_{ch}= \frac{ \Delta h_{atom,0}}{k_B}
+\end{equation}
+
+$r_{ch}$ bringt hierbei die Eigenschaften des Gases in die Gleichung ein, wobei m die Atommasse und $\rho$ die Festkörperdichte ist. $T_{ch}$ ist die charakteristische Temperatur mit der Sublimationsenthalpie $\Delta h_{atom,0}$ bei 0 K  und der Boltzmannkonstante $k_B$. Die mittlere Clustergröße ergibt sich nach Hagena als
+
+\begin{equation}
+\left\langle N \right\rangle  = D \left( \frac{\Gamma*}{1000}\right)^a \:,
+\end{equation}
+
+wobei a und D experimentell ermittelt werden müssen.
+
+%Brauch ich jetzt die Verbesserungen von Buck und Krohne?
+
+%Ich könnte hier jetzt mit Buck und Krohne vergleichen oder direkt das Beispiel von Jan Müller bringen
+
+
+
+
+
 
 
 \newpage
