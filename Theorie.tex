@@ -3,16 +3,54 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Experimentelle Realisierung} 
 
+\section{Reaktionsmikroskop}
+
+Wie man weis, führt die Interaktion von starken Lasern mit Atomen oder Molekülen, so wie sie bei den eingangs erwähnten Versuchen stattfinden wird, oft zu Ionisation und dadurch auch zur Entstehung geladener Fragmente. Um die zugrundeliegenden Prozesse der Entstehung der Fragmente zu beleuchten, eignet es sich die Impulse zu untersuchen. Reaktionsmikroskope (kurz: REMI)sind in der Lage hochauflösende 3D-Impulsverteilungen zu messen und das für Elektronen und Ionen in Koinzidenz. Damit ist diese Art von Spektrometer perfekt geeignet für unsere Zwecke. Das folgende Kapitel wird das Funktionsprinzip und die einzelnen Teile des REMIs erklären und sich dabei an den Doktorarbeiten von Schnorr \cite{Schn14} und Fechner \cite{Fech14} orientieren. %Tiefergehende Informationen über das Reaktionsmikroskop können in Ull13 gefunden werden.
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=0.7\textwidth]{../REMI.png}%
+\captionof{figure}{Schematischer Aufbau eines Reaktionsmikroskopes: 1: Fokussierter Laserstrahl. 2: Kalter Überschallgasjet. 3: Spektrometer Ionenseite. 4: Spektrometer Elektronenseite. 5: Ionendetektor. 6: Elektronendetektor. 7 und 8: Helmholtz-Spulenpaar. \cite{Sch11}}  
+ \label{fig:REMI}
+\end{minipage} 
+\end{center} 
+
+\subsection{Spektrometer}
+
+Im Spektrometer wird in der Mitte einer Ultrahochvakuumkammer ($p \approx 10^{-12}$mbar) ein hochfokussierter Laser mit einem kalten Target-Jet gekreuzt. Durch die Interaktion der Targetatome bzw. -moleküle kommt es durch Ionisation oder Dissoziation zur Entstehung von positiv geladenen Ionen und Elektronen. Das homogene elektrische Feld des Spektrometers beschleunigt die Ionen, respektive Elektronen, in entgegengesetzte Richtungen auf einen ortsauflösenden Detektor. Das homogene Feld wird erreicht durch mehrere koaxial angebrachte Metallringe, die jeweils über einen Widerstand elektrisch mit ihren Nachbarn verbunden werden. Dabei muss man darauf achten die Feldstärke richtig zu wählen, denn die genaue Zusammensetzung der Fragmente wird über die Abhängigkeit der Flugzeit vom Masse-zu-Ladungsverhältnis bestimmt. Deswegen ist die Problematik, das Feld nicht zu stark einzustellen, weil dann die Flugzeiten und der Auftreffort von verschiedenen Ionen zu ähnlich werden, aber auch nicht zu schwach, weil dann die Raumwinkelabdeckung des Spektrometers schlechter wird, denn schwere, aber leichtgelandene Ionen werden nichtmehr genug abgelenkt, um auf den Detektor zu treffen.
+Da bei einer Ionisation Elektronen und Ionen aus dem gleichen Target stammen, ist es intuitiv klar, dass die Impulserhaltung gewährleistet sein muss. Da Ionen und Elektronen eine enorme Massendifferenz besitzen, wirkt sich das in sehr verschiedenen Energien und Geschwindigkeiten der Elektronen verglichen mit den Ionen aus. Um die leichteren und schnelleren Elektronen auf den Detektor zu lenken, wären demnach ein sehr viel stärkeres elektrisches Feld vonnöten. Um aber von der höheren Auflösung eines schwachen elektrischen Feldes zu profitieren und trotzdem alle Elektronen zu detektieren, verwendet das REMI ein externes Magnetfeld, das die Elektronen auf Spiralbahnen um die Spektrometerachse zwingt, während die Ionen so gut wie unbeeinflusst bleiben. Trotz der somit komplizierteren Flugbahnen, kann aus dem Auftreffort und der Flugzeit der dreidimensionale Impuls der Fragmente zurückgerechnet werden. 
+
+\section{Detektor}
+
+Der Detektor ist aufgebaut wie in Abbildun (\ref{fig:Detektor}). Seine Aufgaben sind es die Flugzeit und den Auftreffort des geladenen Teilchens möglichst genau zu bestimmen. 
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=1\textwidth]{../Detektor.png}%
+\captionof{figure}{a) Orts- und Zeitauflösender Detektor eines Reaktionsmikroskopes. b) Zwei, um 180° gegeneinander verdreht, gestapelte MCPs, c) Prinzip der Positionsbestimmung der Delay-Line-Anode \cite{Fech14}}  
+ \label{fig:Detektor}
+\end{minipage} 
+\end{center} 
+
+\subsubsection{Mikrokanalplatte}
+Zuerst trifft das geladene Teilchen auf die Mikrokanalplatte (englisch: micro-channel plate, kurz MCP). Eine MCP ist eine ca 1mm dünne Scheibe, die homogen mit mikroskopisch kleinen Kanälen (Innendurchmesser $\approx$ 25µm) versehen ist. Die Oberflächen der MCP sind mit einem geeigneten Halbleiter gemantelt, sodass zwischen ihnen eine Spannung, von typischerweise 1200V, angelegt werden kann. Trifft nun ein geladenes Teilchen auf die Innenwand eines solchen Kanals, werden Sekundärelektronen freigeschlagen und durch die Spannung beschleunigt, sodass kaskadenartig eine Elektronenwolke ensteht (siehe Abb. \ref{fig:Detektor} b)). Oft werden mehrere MCPs gestapelt um die resultierende Elektronenwolke zu verstärken. Durch die Auslösung der Elektronenwolke fällt die Spannung der MCP schlagartig. Dieses Signal wird ausgelesen und stellt, durch die Differenz mit dem externen Triggersignal des Lasers, die Flugzeit des Teilchens dar. 
+
+\subsubsection{Verzögerungsleitungs-Anode}
+
+Die austretende Elektronenwolke wird anschließend auf die Verzögerungsleitungs-Anode (englisch: delay line anode) beschleunigt, während sie sich durch die abstoßende Coulombkraft unter den Elektronen aufweitet. Eine solche Verzögerungsleitungs-Anode besteht aus einem Kupferkabel, das um in gleichmäßigen Abständen um eine Basis gewickelt wurde. Trifft nun die Elektronenwolke auf das Kupferkabel der Verzögerungsleitungs-Anode, ensteht lokal eine größere Elektronendichte, welche sich dann zu beiden Enden des Kabels ausbreitet und dort detektiert wird. Bei bekannter Länge des Kabels und der Ausbreitungsgeschwindigkeit von Elektronen in diesem kann die Auftreffkoordinate entlang einer Raumrichtung, über die Zeitdifferenz des Signals an den Enden berechnet werden(siehe Abb. \ref{fig:Detektor} c).
+
+
+
+
+\newpage
 \section{Cluster}
 
-Für die in der Motivation erwähnten Experimente benötigen wir eine Quelle, die ein Target aus Wasserdimeren zur Verfügung stellt. Wir haben uns entschieden, durch adiabatische Überschallexpansion solche Wassercluster zu realisieren. Die entsprechende Düse wurde von uns eigens zu diesem Zweck designt und wird im weiteren Verlauf der Arbeit noch eingehend besprochen[Referenz zum entsprechenden Kapitel].
+Für die in der Motivation erwähnten Experimente benötigen wir eine Quelle, die ein Target aus Wasserdimeren zur Verfügung stellt. Wir haben uns entschieden, durch adiabatische Überschallexpansion solche Wassercluster zu realisieren. Durch diese Methode werden ungewollte relative Bewegungen der Moleküle in einen gerichtete Bewegung mit einer geringen Geschwindigkeitsverteilung übersetzt, was natürlich später für die Auswertung von großem Vorteil sein wird, weil man schärfere Peaks bei der Impulsverteilung erhält.
+
+ Die entsprechende Düse wurde von uns eigens zu diesem Zweck designt und wird im weiteren Verlauf der Arbeit noch eingehend besprochen[Referenz zum entsprechenden Kapitel].
 (unbedingt neu schreiben!)
 
-%Missglückte Einleitung
-%Was regt uns an Cluster zu untersuchen?
-%Cluster sind Ansammlungen von einer bestimmten Anzahl an Atomen	oder Molekülen. Je nach Größe zeigen Sie Eigenschaften von Aggregatszuständen. Das ermöglicht es Übergänge von z.B gasförmig zu flüssig auf elementarer Ebene physikalisch zu Untersuchen.
-% Auch andere Vorgänge wie die Gleichgewichtsreaktion von $\mathrm{H}_2\mathrm{O}+ \mathrm{H}_2\mathrm{O}^+ \rightarrow \mathrm{H}_3\mathrm{O}^+ + \mathrm{H}\mathrm{O}$ können in einem isolierten Rahmen untersucht werden,
-% indem man nur die zwei Wassermoleküle in einem Cluster hat und reagieren lässt.\\
 
 \subsection{Definition}
 Als Cluster bezeichnet man Agglomerate aus Atomen oder Molekülen. Diese können bei kleinen Exemplaren 2 bis mehrere Hundert Teilchen enthalten und bei großen Clustern aus bis zu ca. $\mathrm{10^6}$ Teilchen bestehen. Je nach Größe besitzen Cluster verschiedene Eigenschaften und bilden damit eine Brücke zwischen der Atomphysik, der Molekülphysik und der Festkörperphysik.\\
@@ -185,6 +223,10 @@ Das ist eine zu große mittlere Teilchendichte, wenn wir nur hauptsächlich Dime
 
 
 \section{Jet}
+
+
+
+
 
 Skimmer und Jetstages und Fokussierung des Strahls ins Remi $\mathrm{\rightarrow}$ Dump
 
