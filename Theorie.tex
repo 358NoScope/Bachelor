@@ -2,7 +2,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%% Vorbereitung/Theorie %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Experimentelle Realisierung} 
-
+%
+%
+%%\section{REMI und oder Quadrupol}
+%%
+%%Grundlegendes Prinzip des REMIs, Ionisation, Detektoren, MCP, DelayLineAnode
+%%
+%%%Gute Beschreibungen bei Kirsten und Lutz
+%%
+%
+%
 \section{Reaktionsmikroskop}
 
 Wie man weis, führt die Interaktion von starken Lasern mit Atomen oder Molekülen, so wie sie bei den eingangs erwähnten Versuchen stattfinden wird, oft zu Ionisation und dadurch auch zur Entstehung geladener Fragmente. Um die zugrundeliegenden Prozesse der Entstehung der Fragmente zu beleuchten, eignet es sich die Impulse zu untersuchen. Reaktionsmikroskope (kurz: REMI)sind in der Lage hochauflösende 3D-Impulsverteilungen zu messen und das für Elektronen und Ionen in Koinzidenz. Damit ist diese Art von Spektrometer perfekt geeignet für unsere Zwecke. Das folgende Kapitel wird das Funktionsprinzip und die einzelnen Teile des REMIs erklären und sich dabei an den Doktorarbeiten von Schnorr \cite{Schn14} und Fechner \cite{Fech14} orientieren. %Tiefergehende Informationen über das Reaktionsmikroskop können in Ull13 gefunden werden.
@@ -17,39 +26,41 @@ Wie man weis, führt die Interaktion von starken Lasern mit Atomen oder Molekül
 
 \subsection{Spektrometer}
 
-Im Spektrometer wird in der Mitte einer Ultrahochvakuumkammer ($p \approx 10^{-12}$mbar) ein hochfokussierter Laser mit einem kalten Target-Jet gekreuzt. Durch die Interaktion der Targetatome bzw. -moleküle kommt es durch Ionisation oder Dissoziation zur Entstehung von positiv geladenen Ionen und Elektronen. Das homogene elektrische Feld des Spektrometers beschleunigt die Ionen, respektive Elektronen, in entgegengesetzte Richtungen auf einen ortsauflösenden Detektor. Das homogene Feld wird erreicht durch mehrere koaxial angebrachte Metallringe, die jeweils über einen Widerstand elektrisch mit ihren Nachbarn verbunden werden. Dabei muss man darauf achten die Feldstärke richtig zu wählen, denn die genaue Zusammensetzung der Fragmente wird über die Abhängigkeit der Flugzeit vom Masse-zu-Ladungsverhältnis bestimmt. Deswegen ist die Problematik, das Feld nicht zu stark einzustellen, weil dann die Flugzeiten und der Auftreffort von verschiedenen Ionen zu ähnlich werden, aber auch nicht zu schwach, weil dann die Raumwinkelabdeckung des Spektrometers schlechter wird, denn schwere, aber leichtgelandene Ionen werden nichtmehr genug abgelenkt, um auf den Detektor zu treffen.
+Im Spektrometer wird in der Mitte einer Ultrahochvakuumkammer ($p \approx 10^{-12}$ mbar) ein hochfokussierter Laser mit einem kalten Target-Jet gekreuzt. Durch die Interaktion der Targetatome bzw. -moleküle kommt es durch Ionisation oder Dissoziation zur Entstehung von positiv geladenen Ionen und Elektronen. Das homogene elektrische Feld des Spektrometers beschleunigt die Ionen, respektive Elektronen, in entgegengesetzte Richtungen auf einen ortsauflösenden Detektor. Das homogene Feld wird erreicht durch mehrere koaxial angebrachte Metallringe, die jeweils über einen Widerstand elektrisch mit ihren Nachbarn verbunden werden. Dabei muss man darauf achten die Feldstärke richtig zu wählen, denn die genaue Zusammensetzung der Fragmente wird über die Abhängigkeit der Flugzeit vom Masse-zu-Ladungsverhältnis bestimmt. Deswegen ist die Problematik, das Feld nicht zu stark einzustellen, weil dann die Flugzeiten und der Auftreffort von verschiedenen Ionen zu ähnlich werden, aber auch nicht zu schwach, weil dann die Raumwinkelabdeckung des Spektrometers schlechter wird, denn schwere, aber leichtgelandene Ionen werden nichtmehr genug abgelenkt, um auf den Detektor zu treffen.
 Da bei einer Ionisation Elektronen und Ionen aus dem gleichen Target stammen, ist es intuitiv klar, dass die Impulserhaltung gewährleistet sein muss. Da Ionen und Elektronen eine enorme Massendifferenz besitzen, wirkt sich das in sehr verschiedenen Energien und Geschwindigkeiten der Elektronen verglichen mit den Ionen aus. Um die leichteren und schnelleren Elektronen auf den Detektor zu lenken, wären demnach ein sehr viel stärkeres elektrisches Feld vonnöten. Um aber von der höheren Auflösung eines schwachen elektrischen Feldes zu profitieren und trotzdem alle Elektronen zu detektieren, verwendet das REMI ein externes Magnetfeld, das die Elektronen auf Spiralbahnen um die Spektrometerachse zwingt, während die Ionen so gut wie unbeeinflusst bleiben. Trotz der somit komplizierteren Flugbahnen, kann aus dem Auftreffort und der Flugzeit der dreidimensionale Impuls der Fragmente zurückgerechnet werden. 
 
 \section{Detektor}
 
 Der Detektor ist aufgebaut wie in Abbildun (\ref{fig:Detektor}). Seine Aufgaben sind es die Flugzeit und den Auftreffort des geladenen Teilchens möglichst genau zu bestimmen. 
 
+\subsubsection{Mikrokanalplatte}
+Zuerst trifft das geladene Teilchen auf die Mikrokanalplatte (englisch: micro-channel plate, kurz MCP). Eine MCP ist eine ca 1mm dünne Scheibe, die homogen mit mikroskopisch kleinen Kanälen (Innendurchmesser $\approx$ 25µm) versehen ist. Die Kanäle auf der Mikrokanalplatte sind typischerweise um 8° gegen die Oberflächennormale gekippt, um zu verhindern, dass zu detektierende Teilchen einfach hindurchfliegen. Die Oberflächen der MCP sind mit einem geeigneten Halbleiter gemantelt, sodass zwischen ihnen eine Spannung von typischerweise 1200V, angelegt werden kann. Trifft nun ein geladenes Teilchen auf die Innenwand eines solchen Kanals, werden Sekundärelektronen freigeschlagen und durch die Spannung beschleunigt, sodass kaskadenartig eine Elektronenwolke ensteht (siehe Abb. \ref{fig:Detektor} b)). Oft werden mehrere MCPs gestapelt um die resultierende Elektronenwolke zu verstärken. Beim Stapeln wird darauf geachtet, dass die Kanäle nicht in die gleiche Richtung verlaufen, um gänzlich du verhindern, dass Partikel hindurchfliegen können. %Gleichzeitig verhindert diese, als \enquote{chevron} Geometrie bezeichnete Stapelweise, dass die in den Kanälen befindlichen Restgase, die durch den Elektronenschauer ionisiert wurden durch das elektrische Feld beschleunigt wieder ins Spektrometer gelangen können, denn bevor das passiert werden sie an einer Kanalwand auf abgefangen.
+Durch das Auslösen der Elektronenwolke fällt die Spannung der MCP schlagartig ab. Dieses Signal wird ausgelesen und stellt, durch die Differenz mit dem externen Triggersignal des Lasers, die Flugzeit des Teilchens dar. 
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=1\textwidth]{../Detektor.png}%
+\includegraphics[width=0.9\textwidth]{../Detektor.png}%
 \captionof{figure}{a) Orts- und Zeitauflösender Detektor eines Reaktionsmikroskopes. b) Zwei, um 180° gegeneinander verdreht, gestapelte MCPs, c) Prinzip der Positionsbestimmung der Delay-Line-Anode \cite{Fech14}}  
  \label{fig:Detektor}
 \end{minipage} 
 \end{center} 
 
-\subsubsection{Mikrokanalplatte}
-Zuerst trifft das geladene Teilchen auf die Mikrokanalplatte (englisch: micro-channel plate, kurz MCP). Eine MCP ist eine ca 1mm dünne Scheibe, die homogen mit mikroskopisch kleinen Kanälen (Innendurchmesser $\approx$ 25µm) versehen ist. Die Oberflächen der MCP sind mit einem geeigneten Halbleiter gemantelt, sodass zwischen ihnen eine Spannung, von typischerweise 1200V, angelegt werden kann. Trifft nun ein geladenes Teilchen auf die Innenwand eines solchen Kanals, werden Sekundärelektronen freigeschlagen und durch die Spannung beschleunigt, sodass kaskadenartig eine Elektronenwolke ensteht (siehe Abb. \ref{fig:Detektor} b)). Oft werden mehrere MCPs gestapelt um die resultierende Elektronenwolke zu verstärken. Durch die Auslösung der Elektronenwolke fällt die Spannung der MCP schlagartig. Dieses Signal wird ausgelesen und stellt, durch die Differenz mit dem externen Triggersignal des Lasers, die Flugzeit des Teilchens dar. 
 
 \subsubsection{Verzögerungsleitungs-Anode}
 
-Die austretende Elektronenwolke wird anschließend auf die Verzögerungsleitungs-Anode (englisch: delay line anode) beschleunigt, während sie sich durch die abstoßende Coulombkraft unter den Elektronen aufweitet. Eine solche Verzögerungsleitungs-Anode besteht aus einem Kupferkabel, das um in gleichmäßigen Abständen um eine Basis gewickelt wurde. Trifft nun die Elektronenwolke auf das Kupferkabel der Verzögerungsleitungs-Anode, ensteht lokal eine größere Elektronendichte, welche sich dann zu beiden Enden des Kabels ausbreitet und dort detektiert wird. Bei bekannter Länge des Kabels und der Ausbreitungsgeschwindigkeit von Elektronen in diesem kann die Auftreffkoordinate entlang einer Raumrichtung, über die Zeitdifferenz des Signals an den Enden berechnet werden(siehe Abb. \ref{fig:Detektor} c).
+Die austretende Elektronenwolke wird anschließend auf die Verzögerungsleitungs-Anode (englisch: delay line anode) beschleunigt, während sie sich durch die abstoßende Coulombkraft unter den Elektronen aufweitet. Eine solche Verzögerungsleitungs-Anode besteht aus einem Kupferkabel, das um in gleichmäßigen Abständen um eine Basis gewickelt wurde. Trifft nun die Elektronenwolke auf das Kupferkabel der Verzögerungsleitungs-Anode, ensteht lokal eine größere Elektronendichte, welche sich dann zu beiden Enden des Kabels ausbreitet und dort detektiert wird. Die dabei gemessene Zeitdifferenz $\Delta t$ hängt von der Entfernung des Auftreffortes der Elektronenwolke zur Mitte des Kabels ab. Um nun die Auftreffkoordinate normal zu den Wicklungen zu bestimmen, kann man die Formel
 
+\begin{equation}
+x = c_w \Delta t
+\end{equation}
 
+verwenden, wobei x für die Position entlang einer beliebigen Raumkoordinate steht und $c_w$=const die effektive Signalausbreitungsgeschwindigkeit in diese Richtung ist. Um nun einen zweidimensionalen Auftreffort zu detektieren, muss eine zweite Verzögerungsleitungs-Anode, rechtwinkling zu der ersten orientiert, angebracht werden (siehe Abb. \ref{fig:Detektor} a)). Mit solch einer Verzögerungsleitungs-Anode können auch mehrere, aus einem Ionisationsevent stammende, Partikel gleichzeitig detektiert und aufgelöst werden, solange die Differenz der Auftrefforte und Flugzeiten nicht unter die Auflösung fällt.
 
 
 \newpage
 \section{Cluster}
 
-Für die in der Motivation erwähnten Experimente benötigen wir eine Quelle, die ein Target aus Wasserdimeren zur Verfügung stellt. Wir haben uns entschieden, durch adiabatische Überschallexpansion solche Wassercluster zu realisieren. Durch diese Methode werden ungewollte relative Bewegungen der Moleküle in einen gerichtete Bewegung mit einer geringen Geschwindigkeitsverteilung übersetzt, was natürlich später für die Auswertung von großem Vorteil sein wird, weil man schärfere Peaks bei der Impulsverteilung erhält.
-
- Die entsprechende Düse wurde von uns eigens zu diesem Zweck designt und wird im weiteren Verlauf der Arbeit noch eingehend besprochen[Referenz zum entsprechenden Kapitel].
-(unbedingt neu schreiben!)
+Für die in der Motivation vorgestellten Experimente benötigt man für ein Reaktionsmikroskop, das die bei einer Fragmentation entstehenden geladenen Teilchen kinematisch vollständig vermessen kann, eben auch eine Quelle die Targetteilchen einer geringen Impulsverteilung liefert, sodass die Genauigkeit der Messergebnisse nicht unnötig verschmiert wird. Bei typischen Ionisationsreaktionen entstehen nämlich Fragmente mit Impulsen im meV-Bereich. Bei Zimmertemperatur aber haben Gase eine kinetische Energie von etwa 40meV und deswegen ist es wichtig einen sehr kalten Target zu nutzen \cite{kurka07}. Das Verfahren unserer Wahl ist die Kühlung des Targets durch Überschallexpansion, weil durch die Kühlung, die für die angestrebten Versuche essentielle Clusterentstehung ebenfalls angeregt wird. Im den folgenden Abschnitten wird näher auf Cluster und deren Entstehung durch Überschallexpansion eingegangen.
 
 
 \subsection{Definition}
@@ -73,10 +84,9 @@ Und zum Schluss gibt es noch die Gruppe, mit der wir uns in dieser Arbeit befass
 
 \subsection{Überschallexpansion}
 
-Die Überschallexpansion ist ein adiabatischer Prozess, bei dem Gas durch eine kleine Öffnung von einem Bereich mit hohem Druck, in einen Bereich mit niedrigem Druck strömt. Da die räumliche Dichte abnimmt, muss die Dichte im Impulsraum zunehmen, was einer Temperaturabnahme entspricht. Diese Temperaturabnahme ist sehr bemerkenswert, da sie es ermöglicht van-der-Waals-gebundene Moleküle wie z.B. $\mathrm{^4}\mathrm{He}_2$ zu produzieren und zu detektieren. Das $\mathrm{^4}\mathrm{He}_2$-Molekül ist ein sehr beeindruckendes Beispiel dafür, weil die He-He-Bindung nach quantenmechanischen Berechnungen die schwächste bekannte Bindung ist. Diese Moleküle wurden 1993 erstmals, via Überschallexpansion erzeugt und nachgewiesen \cite{Luo1993}, obwohl die Bindungsenergie  nur 1,176 mK, also etwa $\mathrm{10^{-4}}$ eV entspricht \cite{Lohr2007}. 
+Die Überschallexpansion ist ein adiabatischer Prozess, bei dem Gas durch eine kleine Öffnung von einem Bereich mit hohem Druck, in einen Bereich mit niedrigem Druck strömt. Da bei adiabatischen Prozessen die Entropie erhalten bleibt, muss auch die Zustandsdichte erhalten bleiben. Deswegen muss bei einer Abnahme der räumlichen Dichte, die Dichte im Impulsraum im Gegenzug zunehmen \cite{kurka07}. Eine Erhöhung der Dichte im Impulsraum allerdings bedeutet eine schmalere Geschwindigkeitsverteilung und eine Abnahme der Temperatur. Diese Temperaturabnahme ist sehr bemerkenswert, da sie es ermöglicht van-der-Waals-gebundene Moleküle, wie z.B. $\mathrm{^4}\mathrm{He}_2$, zu produzieren und zu detektieren. Das $\mathrm{^4}\mathrm{He}_2$-Molekül ist ein sehr beeindruckendes Beispiel dafür, weil die He-He-Bindung nach quantenmechanischen Berechnungen die schwächste bekannte Bindung ist. Diese Moleküle wurden 1993 erstmals, via Überschallexpansion erzeugt und nachgewiesen \cite{Luo1993}, obwohl die Bindungsenergie  nur 1,176 mK, also etwa $\mathrm{10^{-4}}$ eV entspricht \cite{Lohr2007}. 
 
 In der folgenden Erklärung von den Prozessen und Formeln die bei der Clusterbildung durch Überschallexpansion eine Rolle spielen orientiere ich mich im Wesentlichen am Kapitel 2 des Buches \enquote{Atomic and Molecular Beam Methods Vol 1}\cite{scoles1988} und der Zusammenfassung darüber in der Dissertation über \enquote{Ultraschnelle Dynamik in dotierten und reinen Wassercluster} von Jan Müller \cite{mul13}.
-
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
@@ -85,32 +95,28 @@ In der folgenden Erklärung von den Prozessen und Formeln die bei der Clusterbil
  \label{fig:Machexpansion}
 \end{minipage} 
 \end{center} 
-
-Wenn das Gas aus einem Reservoir mit Temperatur $t_0$ und Druck $p_0$ adiabatisch durch eine Düse mit Durchmesser d expandiert, folgt die Druckabnahme der Gesetzmäßigkeit
-
+%
+Expandiert Gas aus einem Reservoir mit Temperatur $t_0$ und Druck $p_0$ adiabatisch durch eine Düse mit Durchmesser d, folgt die Druckabnahme der thermodynamischen Gesetzmäßigkeit
 \begin{equation}
 pV^{\gamma/(1-\gamma)}\ \mbox{mit}\ \gamma=c_p/c_v=(f+2)/f \ \mbox{bei} \ \Delta S=0.
 \end{equation}
-
+%
 Der Exponent $\gamma$ zählt die Anzahl der Freiheitsgrade und kann wie in der Formel angegeben als Quotient aus der isobaren und isochoren Wärmekapazität experimentell bestimmt werden. Reines Wasser, wie es bei uns verwendet wird, hat bei Raumtemperatur 6 Freiheitsgrade [brauch ich hierfür Referenz? oder Fußnote mit Werten für id Gas oder Moleküle anhängen]. 
 Da bei der Expansion ins Vakuum die Dichte und Temperatur des Gases sinken, muss aufgrund der Energieerhaltung, die Geschwindigkeit zunehmen. 
 %Wenn man die Düsenöffnung als klein betrachtet (was bei ca 50$\mu$m berechtigt ist), darf man die Expansion eindimensional behandeln und damit kann man sich anschaulich vorstellen, dass die Beschleunigung in Richtung der Achse des Molekularstrahls erfolgen muss.
 Nimmt man an dass die gesamte thermische Energie in kinetische Energie umgewandelt wird erhält man folgende Formel für die Endgeschwindigkeit.
-
 \begin{equation}
 v_\infty=\sqrt{2\int_{T_0}^{T_\infty \ll T_0} c_{p,mol}dT}= \sqrt{\frac{2R}{W}\left(\frac{\gamma}{\gamma-1}\right)T_0}
 \end{equation}
-
+%
 Wobei der Zusammenhang für ideale Gase
-
 \begin{equation}
 c_{p,mol}= \left(\frac{\gamma}{\gamma-1}\right)\left(\frac{R}{W}\right)
 \end{equation}
-
+%
 verwendet wurde. R steht hier f"ur die universelle Gaskonstante, W kennzeichent das Molekulargewicht des verwendeten Gases und $T_0$ steht für die Düsentemperatur.
 Bei Gasgemischen muss man die, nach ihrem atomaren Anteil gewichteteten, Mittelwerte $\bar{c}_{p,mol}$ und $\bar{W}_{mol}$ verwenden.
 Vergleicht man die Endgeschwindigkeit $v_{\infty}$ mit der Schallgeschwindigkeit für ideales Gas
-
 \begin{equation}
 c=\sqrt{\frac{R \gamma}{W}T}
 \end{equation}
@@ -124,7 +130,7 @@ M(\vec{r})= v(\vec{r})/c(p(\vec{r}))
 ist bei der Überschallexpansion eine wichtige Größe, die skalar in vielen thermodynamischen Rechnungen dazu eine Rolle spielt und vektoriell betrachtet das Strömungsfeld an jedem Ort $\vec{r}$ charakterisiert. 
 
 Nach Austritt aus der Düse hat das Gas eine Machzahl M$>$1, was bedeutet, das Gas breitet sich mit Überschallgeschwindigkeit aus. Das hat zur Folge, das der Gasstrom zunächst unabhängig von jeglichen externen Randbedingungen ist. Dieser Effekt rührt daher, dass sich Information \enquote{nur} mit Schallgeschwindigkeit ausbreitet und das Fluid eben schneller (M$>$1) ist. Doch obwohl der Gasstrom nichts von Randbedingungen weiß, muss er sich an diese anpassen. Das wird nach kurzer Zeit von Schockwellen realisiert, die an begrenzenden Wänden oder ähnlichen \enquote{Randbedingungen} abprallen und auf ihrem Rückweg den Strom regulieren. Wie man an Bild \ref{fig:Machexpansion} erkennen kann gibt es mehrere Instanzen dieser Schockwellen, die nichtisentropische Gebiete sind und sich durch starke Dichte-, Temperatur-, Geschwindigkeits- und Druckgradienten auszeichnen. Durch diese Eigenschaften kann man die Schockwellen mit diversen Lichtstreutechniken sichtbar machen.
-
+%
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
@@ -133,18 +139,17 @@ Nach Austritt aus der Düse hat das Gas eine Machzahl M$>$1, was bedeutet, das G
  \label{fig:Machexpansion}
 \end{minipage} 
 \end{center} 
- 
+% 
 Der von diesen Schockwellen eingegrenzte Bereich ist dennoch unbeeinflusst von den Randbedingungen und wird deswegen auch \enquote{zone of silence} genannt. 
 Die Lage der Schockstrukturen hauptsächlich abhängig von dem Verhältnis von Düsendruck $p_0$ zu Hintergrunddruck $p_b$ der Kammer. Eine weitere wichtige Schockstruktur ist die sog. Mach-Scheibe (englisch \enquote{mach disc}), die normal zur Ausbreitungsrichtung des Gases liegt. Da Schockwellen enormen Druck auf die im Strom vorkommenden Cluster ausübt, muss der für Experimente verwendete Molekülstrahl noch vor der Mach-Scheibe entnommen werden. Diese Entnahme wird durch einen Skimmer realisiert, welcher den gewollten Teil des Molekülstrahls durchlässt und den restlichen Anteil von der Strahlachse wegreflektiert, doch auf diesen Teil werde ich im Kapitel [Kapitel über Jet/Skimmer] etwas genauer eingehen. 
 
 Die Position der Mach-Scheibe lässt sich mittels
-
 \begin{equation}
 \frac{x_m}{d}=0.67 \sqrt{\left( \frac{p_0}{p_b}\right)}
 \end{equation}
-
+%
 bestimmen, wobei $x_m$ die besagte Mach-Scheibenposition, ausgehend von der Düse und d die Größe der Düsenöffnung ist.
-Um einen kleinen Vorausgriff zu wagen, habe ich hier schonmal grobe Werte unseres Experimentes eingesetzt. Mit d = 50 µm, $p_0 \approx$ 1000 mbar und $p_b \approx 10^{-3}$  mbar erhält man für\\ $x_m \approx 3,35$ cm. Ein sehr großer Wert, wenn man bedenkt, dass man üblicherweise wenige Millimeter nah an den Skimmer fährt und zudem der Wert in der Realität noch größer ist, weil ich hier für $p_0$ den Dampfdruck im Reservoir bei 100°C gewählt habe (man weiß noch nicht dass verdampft wird!) und nicht den an der Düse der garantiert größer sein wird.
+Um einen kleinen Vorausgriff zu wagen, habe ich hier schonmal grobe Werte unseres Experimentes eingesetzt. Mit d = 50 µm, $p_0 \approx$ 1000 mbar und $p_b \approx 10^{-3}$  mbar erhält man für\\ $x_m \approx 3,35$ cm. Ein sehr großer Wert, wenn man bedenkt, dass man üblicherweise wenige Millimeter nah an den Skimmer fährt und zudem der Wert in der Realität noch größer ist, weil ich hier für $p_0$ den Dampfdruck im Reservoir bei 100°C gewählt habe (man weiß noch nicht dass verdampft wird!) und nicht den an der Düse, der garantiert größer sein wird.
 
  %Um das Strömungsfeld der Überschallexpansion zu charakterisieren muss man nicht nur die erwähnten Schockwelleneffekte betrachten, sondern sich auch die Form der Düse anschauen. Hier gibt es einen effektiven Düsendurchmesser $d_{eff}$ der z.B. bewirkt, dass konische Düsen bei geringerem Gasfluss, gleiche Gasdichten auf der Strahlachse und gleiche Clustergrößen produziert, wie eine zylindrische Düse mit gleichem $d_{eff}$ \cite{HOb72}. Den effektiven Düsendurchmesser
 %Jetzt das mit eff Düsenöffnung
@@ -154,7 +159,7 @@ Um einen kleinen Vorausgriff zu wagen, habe ich hier schonmal grobe Werte unsere
 \subsection{Clusterbildung}
 
 Das zur Clusterproduktion verwendete reine Wasser wird bei Temperaturen um 100 °C und einem entsprechendem Dampfdruck von ca. 1 bar durch eine kurze konische Düse geleitet (Abb. \ref{fig:Duse}).
-
+%
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
@@ -168,73 +173,54 @@ Nachdem es den engsten Querschnitt durchquert hat, kommt es zu einer starken Exp
 Die Größe der Cluster die bei einer Überschallexpansion lässt sich durch eine Boltzmannverteilung beschreiben, deren große Breite proportional zur mittleren Clustergröße $\left\langle N \right\rangle$ ist. 
 
 Um auf die Clusterverteilungen in idealen Gasen schließen, benutzt man den empirischen Skalenparameter $\Gamma$ von Hagena \cite{hagena1987}:
-
+%
 \begin{equation} \label{eq:Skalenparameter}
 \Gamma = n_0\ d^q\ T_0^{sq - f/2} \quad (0 < q \leq 1).
 \end{equation}
-
+%
 Für axialsymmetrische Flüsse gilt $s = (f-2)/4$ und q ist ein Parameter der experimentell bestimmt werden muss. $n_0, T_0$ and $d$ sind die Quellendichte, die Düsentemperatur und der Düsendurchmesser.
 
 Um $\Gamma$ unabhängig von den Einheiten zu machen wird der reduzierte Skalenparameter
-
+%
 \begin{equation} \label{eq:RedSkalenparameter}
 \Gamma^* = \Gamma / (r_{ch}^{q-3}\ T_{ch}^{\alpha})
 \end{equation}
-
+%
 eingeführt mit $\alpha= q - 3$. Dabei sind
-
+%
 \begin{equation}
 r_{ch} = \frac{m_{atom}}{\rho ^{1/3}}\quad \textmd{und}\quad T_{ch}= \frac{ \Delta h_{atom,0}}{k_B}
 \end{equation}
-
+%
 $r_{ch}$ bringt hierbei die Eigenschaften des Gases in die Gleichung ein, wobei m die Atommasse und $\rho$ die Festkörperdichte ist. $T_{ch}$ ist die charakteristische Temperatur mit der Sublimationsenthalpie $\Delta h_{atom,0}$ bei 0 K  und der Boltzmannkonstante $k_B$. Für Wasser wurden die Werte $r_{ch} = 3,19$ \AA{} und $T_{ch} = 5684$K ermittelt \cite{bobbert2002}. Die mittlere Clustergröße ergibt sich nach Hagena als
-
+%
 \begin{equation} \label{eq:HagOriginalFormel}
 \left\langle N \right\rangle  = D \left( \frac{\Gamma^*}{1000}\right)^a \:,
 \end{equation}
-
+%
 wobei $a$ und $D$ experimentell ermittelt werden müssen. Hagena hat sich damals für $D$ = 33 und $a$ = 2,35 entschieden. Im Jahre 1996 haben Buck und Krohne herausgefunden, dass man man die Parameter $a$ und $D$ abhängig von $\Gamma^*$ wählen sollte um ein genaueres Ergebnis für $\left\langle N \right\rangle $ zu erhalten \cite{buck1996}. Für große Werte von $\Gamma^* > 1800$ bestätigen Sie die Originalformel von Hagena. 
 Für einen mittleren Bereich $350 \leq \Gamma^* \leq 1800$ Sie die Formel angepasst zu
-
+%
 \begin{equation}
 \left\langle N \right\rangle  = 38,4 \left( \frac{\Gamma^*}{1000}\right)^{1,64} \:,
 \end{equation}
-
+%
 und für $\Gamma^* < 350$ empfehlen Sie ein Polynom dritten Grades zu verwenden,
-
+%
 \begin{equation}
 \left\langle N \right\rangle  = exp(2,23 + 7 \cdot 10^{-3}\ \Gamma^* + 8,3 \cdot 10^{-5}\ \Gamma* + 2,55 \cdot 10^{-7}\ \Gamma^* ) \:.
 \end{equation}
-
+%
 \textit{Hier teil mit schnellerer Formel aus ICDBerlin ergänzen!}
-
-
+%
+%
 
 Wie schon angedeutet, lässt sich das Prinzip der Skalenparameter auch auf Wasser anwenden, obwohl sich die Thermodynamik von Wasser durch die starken Wasserstoffbrückenbindungen doch sehr von der, der schwach gebundenen idealen Gasen, unterscheidet. In der Publikation von Bobbert et al. \cite{bobbert2002} wurden die freien Parameter aus Gleichung (\ref{eq:HagOriginalFormel}) für Wasser zu $a$ = 1,886(64), $D$ = 11,60(1,62) und $q$ = 0,634(68) bestimmt. Um $\Gamma$ unabhängig von der Form der Düse berechnen zu können, wird der effektive Düsendurchmesser
-
+%
 \begin{equation} \label{eq:deff}
 d_{eff} = G(f)\ d\ /\tan(\beta); \quad \textmd{mit} \; G(f)= 0,5 (f+1)^{-(f+1)/4} A^{f/2} \ ,
 \end{equation}
-
+%
 wobei $\beta$ der halbe Öffnungswinkel der Düse, d der Düsendurchmesser und A eine von Ashkenas und Sherman berechnete Kontante ist, die, bei einem dreidimensional achsensymmetrischen Fluss, den Wert A = 3,83 hat \cite{bobbert2002}. Damit ergibt sich für Wasser mit 6 Freiheitsgraden bei ca. 100°C $G(f=6)=0,933$. 
-Zur Anwendung der Theorie kann man an dieser Stelle eine Beispielrechnung durchführen. Nehmen wir an, wir haben eine Reservoirtemperatur von 100°C und dementsprechend einen Druck von 1 bar bzw. eine Teilchendichte $n_0 = 1,9 \cdot 10^{25}$ Moleküle/cm$^{3}$. Unsere Düsen haben die Öffnungsdurchmesser 50 bzw. 30µm und einen halben Öffnungswinkel von 45°. Der effektive Düsendurchmesser ergibt sich gemäß Gleichung (\ref{eq:deff}) zu 46µm respektive 28µm. Mit $s = 1$ und der Verwendung von $d_{eff}$ in Gleichung (\ref{eq:Skalenparameter}) erhält man $\Gamma = 3,3 \cdot 10^{17}\ \textmd{bzw.} \ 2,4 \cdot 10^{17} (\mathrm{cm}\cdot \mathrm{K})^{q-3}$. Mit Gleichung (\ref{eq:RedSkalenparameter}) folgt dann $\Gamma^* = 8535\ \textmd{bzw.}\ 6231$ was schließlich mit (\ref{eq:HagOriginalFormel}) zu $\left\langle N \right\rangle = 662\ \textmd{bzw.} \ 365$ führt.
+Zur Anwendung der Theorie kann man an dieser Stelle eine Beispielrechnung durchführen. Nehmen wir an, es herrscht eine Reservoirtemperatur von 100°C und dementsprechend einen Druck von 1 bar bzw. eine Teilchendichte $n_0 = 1,9 \cdot 10^{25}$ Moleküle/cm$^{3}$. Die Düsen haben den Öffnungsdurchmesser 50 bzw. 30µm und einen halben Öffnungswinkel von 45°. Der effektive Düsendurchmesser ergibt sich gemäß Gleichung (\ref{eq:deff}) zu 46µm respektive 28µm. Mit $s = 1$ und der Verwendung von $d_{eff}$ in Gleichung (\ref{eq:Skalenparameter}) erhält man $\Gamma = 3,3 \cdot 10^{17}\ \textmd{bzw.} \ 2,4 \cdot 10^{17} (\mathrm{cm}\cdot \mathrm{K})^{q-3}$. Mit Gleichung (\ref{eq:RedSkalenparameter}) folgt dann $\Gamma^* = 8535\ \textmd{bzw.}\ 6231$ was schließlich mit (\ref{eq:HagOriginalFormel}) zu $\left\langle N \right\rangle = 662\ \textmd{bzw.} \ 365$ führt.
 Das ist eine zu große mittlere Teilchendichte, wenn wir nur hauptsächlich Dimere erzeugen wollen. Wenn man sich die Formeln ansieht, kann man erkennen, dass eine höhere Düsentemperatur und gleichzeitig niedrigerer Teilchendruck zu kleineren Clustern führen. Das ist kein Widerspruch, denn Reservoir und Spitze werden bei uns seperat geheizt und man kann ein Trägergas, z.B. Helium, hinzufügen, und damit den Partialdruck vom Wasserdampf erniedrigen und gleichzeitig durch die Gesamtdruckerhöhung für einen höheren Fluss sorgen. Ein weiterer nützlicher Effekt des Trägergases ist, dass dieses bei Dreiköperkollisionen mit zwei Wassermolekülen, den Impuls abtransportieren kann. Durch Variation der Masse des Gases lässt sich damit der Clusterprozess optimieren.
-
-
-
-\section{Jet}
-
-
-
-
-
-Skimmer und Jetstages und Fokussierung des Strahls ins Remi $\mathrm{\rightarrow}$ Dump
-
-%Vergleichstext 
-
-\section{REMI und oder Quadrupol}
-
-Grundlegendes Prinzip des REMIs, Ionisation, Detektoren, MCP, DelayLineAnode
-
-%Gute Beschreibungen bei Kirsten und Lutz
-
