@@ -18,6 +18,7 @@
 %\usepackage		[latin1]							{inputenc} 		 %für Umlaute, aber Formatfehler
 \usepackage		[ngerman]							{babel}				%deutsche Bezeichnungen für Kapitel etc
 \usepackage		[autostyle=true,german=quotes]		{csquotes}			%für Anführungszeichen
+%\usepackage											{textcomp}			%für Pfeile im Text
 
 
 \begin{document}
@@ -77,6 +78,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% A N H A N G  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \include{Anhang}  
+ 
+  %   \listoffigures
+  %   \addcontentsline{toc}{chapter}{Literaturverzeichnis}
+     \backmatter
+     \bibliography{Literaturverzeichnis}{}
+     \citestyle{egu}
+     \bibliographystyle{plainnat}
+ %    \include{deposition}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

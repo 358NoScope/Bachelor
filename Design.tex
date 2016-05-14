@@ -1,10 +1,102 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% D E S I G N  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Design der Düse} 
+\chapter{Technische Umsetzung} 
 
-Wie und wieso wurde die Düse konstruiert wie sie ist. Konische Spitze wegen Gradient und Düsenöffnung so groß usw.
+Der Hauptbestandteil dieser Arbeit bestand darin, eine verlässliche und praktische Wassercluster-Quelle zu konstruieren, die einen vakuumseitiges Reservoir besitzt und während des Betriebes wiederbefüllt werden kann, damit die bestmöglichen Vorraussetzungen für Experimente damit herrschen. (Hier etwas sinnvolles ausdenken + kleine Inhaltsübersicht)
 
-Wie detailliert wird das? Aber schon alle Gedanken die wichtig waren erwähnen?
+\section{Düse}
 
-\section{Auf wichtige Details und Gründe bei der Konstruktion eingehen}
+Das Design wurde gewissermaßer durch die Arbeiten von Mucke \cite{mucke2011} und Wechselberger \cite{wechselberger2014} inspririert und durch eigene Überlegungen verfeinert.
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=1\textwidth]{../Duseschnitt.png}%
+\captionof{figure}{Querschnitt der konstruierten Düse (maßstäblich) Nummerierungen verändern, anpassen!}  
+ \label{fig:QuerschnittDuse}
+\end{minipage} 
+\end{center} 
+
+(\textbf{ICDBerlin schaun..Seite 100})
+Die Düse ist so und so groß, wobei das maximale Volumen gewählt wurde, was der Innendurchmesser des Manipulatorbalgs erlaubt hat...
+
+In Abb \ref{fig:QuerschnittDuse} sieht man einen Querschnitt der neu konstruierten Wasserclusterquelle. Sie zeichnet sich durch ein vakuumseitiges Reservoir aus, das während des Betriebes wiederbefüllt werden kann. Das Reservoir ist über eine Trennwand, die oben ein kleines Loch bestitzt, mit der Spitze verbunden, die die Düse beinhaltet. Da Wasser in das Reservoir gefüllt wird, welches nicht durch das Loch ausfließen darf, ist die Orientierung der Düse beim einbau zu betrachten. Die Reservoirkammer wird von außen mit einer heizdrahtwicklung geheizt und hat an der Rückseite drei Swagelok-Rohre mit jeweils 3mm Außendurchmesser. Zwei dieser Rohre dienen der Wasserbefüllung und sind außerhalb des Vakuums mit durchsichtigen PVC-Schläuchen mit Spritzen verbunden. Eines der Rohre geht relativ mittig in das Reservoir ein und das Andere befindet sich knapp unter der Kante des erwähnten Loches. Durch das tieferstehende Rohr wird das Wasser mit einer Spritze per Hand gegen den Betriebsdruck eingeführt und das höherstehende Rohr saugt gleichzeitig mit einer weiteren Spritze dasselbe Volumen ab bis im transparenten Silikonschlauch Wasser zu erkennen ist. Sobald dies der Fall ist kann das Befüllen beendet werden, da der Maximalfüllstand erreicht ist. In dem Reservoir finden etwa maximal 36 ml Wasser Platz. \textbf{Formeln/Rechnung dazu?} So tief, wie es die Schweißung zugelassen hat, befindet sich eine 50W Heizpatrone von Watlow, welche das Wasser erhitzen wird, sodass der gewünschte Wasserdampfdruck eingestellt wird. Um den Druck \enquote{künstlich} zu erhöhen, damit die Expansionsbedingungen auf eine bestimmte Clustergröße angepasst werden können, oder einfach um gemische Cluster erzeugen zu können, ist es notwendig einen Gaseinlass zu haben. Diese Funktion erfüllt, das höchstgelegene Swagelok-Rohr. Am vorderen Ende des Reservoires, nahe der Trennwand, sind von außen zwei Pt-100-Thermofühler angebracht, um die Temperatur des Reservoires abschätzen zu können und um Referenzwerte für die aktuellen Einstellungen zu liefern, damit bestimmte Einstellungen reproduzierbar sind. 
+In folgender Abbildung sieht man den vorderen Teil der Wasserclusterquelle, den ich als Spitze bezeichnen werde, etwas mehr im Detail (\textbf{Bild einfügen}).  Die Spitze wird gegenüber dem Reservoir mit einem O-Ring abgedichtet und ringsum verschraubt.(\textbf{ist das deutsch?}) Bei Betrieb entsteht im Reservoir Wasserdampf, das durch das Loch in der Trennwand in die Spitze strömt. In der Spitze ist eine konische Aushöhlung durch die der Wasserdampf zu der Düse kommt. Vor der konischen Aushöhlung ist ein bleigedichteter, gesinterter Filterring mit 5µm bzw. 10µm Porenweite zum Einsatz vorgesehen. Zwischen der Trennwand und dem Filterring ist ein kleiner Hohlraum in den theoretisch ein Feststoff hineingegeben werden kann, um dotierte Cluster (englisch: doped clusters) über das Pick-Up-Verfahren zu produzieren. Nachdem das Gas die konische Aushöhlung durchquert hat, muss es die Düse passieren um ins Vakuum zu expandieren (\textbf{Detailaufnahme}). Als Düse wird eine Platin/Irdium-Blende von Plano mit 50µm bzw. 30µm Lochdurchmesser verwendet (siehe Abb. \ref{fig:Duse})(\textbf{warum diese Abmessungen, schon immer so, Preise?}), die mit einem dünnen Bleiring gedichtet und mit einer Halteplatte fest angepresst wird. %
+Die ganze Spitze verjüngt sich in Richtung der Düse und wird von außen gleichmäßig durch einen Heizdraht geheizt. Dadurch, dass sich bis zur Spitze hin immer weniger Edelstahl zwischen Heizdraht und dem Gas in der Aushöhlung befindet, sodass nach vorne hin ein Wärmegradient entsteht, der verhindern wird, dass das Wasser kondensieren kann und die Düse verstopft. Nahe an der Spitze befinden sich abermals 2 Pt-100-Thermofühler, um die ungefähre Temperatur der Düse abschätzen zu können und um Heizbedingungen rekonstruieren zu können. 
+%
+Die drei anfangs erwähnten Rohrleitungen werden direkt durch den Flansch nach außen geführt mit dem die gesamte Konstruktion an einem xyz-Manipulator befestigt wird. Der xyz-Manipulator ermöglicht es den Targetjet in alle Raumrichtungen zu justieren. Der Manipulator und die Wasserclusterquelle werden als Einheit an der ersten Jetstufe montiert. 
+Die Stromleitungen, die für die Verkabelung von Thermofühlern, Heizdrähten und der Heizpatrone verwendet werden, werden durch mehrpolige Durchführungen in der ersten Jetstufe übersetzt. 
+
+
+
+Eine für spätere Anwendungen vielleicht interessante Eigenschaft ist, dass dieser Jet auch in vertikaler Position betrieben werden kann.
+
+Die genauen Konstruktionszeichnungen der Düse sind im Anhang begefügt.
+%
+%
+%Wie detailliert wird das? Aber schon alle Gedanken die wichtig waren erwähnen?
+
+%Auf wichtige Details und Gründe bei der Konstruktion eingehen + Vergleich mit alter Bauweise!}
+
+
+\section{Skimmer} \label{sec:Skimmer}
+
+%Vielleicht erst hier die Rechnung mit Position?, aber auf jedenfall hier referenzieren
+
+Wie schon im Kapitel \ref{sec:uberschallexp} Überschallexpansion beschrieben unterteilt sich der Gasstrom in den Bereich der \enquote{zone of silence} und den von Schockwellen und turbulenten Strömungen dominierten Restbereich. Die experimentell geeigneten Clustertargets müssen aus der zone of silence extrahiert werden. Dies wird mit einem Skimmer realisiert. Ein Skimmer ist eine speziell entworfene konische Apertur, die einen schmalen Molekülstrahl durchlässt und die Zerstörung dessen Intensität und Clusterbeschaffenheit durch an den Wänden reflektierten Streustrahlen weitestgehend verhindert. 
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=0.9\textwidth]{../skimmer1.png}%
+\captionof{figure}{links: Bild eines Skimmers von Beam Dynamics Inc. \qquad rechts: typische Größenordnung der Abmessungen eines Skimmers. \cite{rausmann2004} }  
+ \label{fig:Skimmer}
+\end{minipage} 
+\end{center} 
+In Abbildung \ref{fig:Skimmer} sieht man einen beispielhaften Skimmer, der auch ein Gefühl für die Größenordnungen der Abmessungen. Die Wandstärke des aus Nickel bestehenden Skimmers betragt an der Spitze unter 10µm (\textbf{Webseite angeben?}). Im Gegensatz zu früheren Ausführungen ist er nicht mehr kegelförmig, sondern wird nach oben hin schmaler. Der flache Winkel an der kleinen Öffnung bewirkt, dass der abgeschälte Teil sanft abgelenkt wird und nicht abprallt und den Gasstrom auf dem Rückweg beeinflusst. Durch die Verbreiterung nach unten bekommen die abgeschälten Moleküle bzw. Atome eine größere Geschwindigkeit weg vom Skimmer und werden somit daran gehindert zurückzustreuen.
+Da eine Überschallexpansion innerhalb der zone of silence einen Strom erzeugt, der sich in alle Richtungen ausbreitet, muss bei der Positionierung des Skimmers darauf geachtet werden, dass man keine Reflektionen im Inneren des Skimmers erzeugt, und dass man auch keine Intensität verliert, wenn man zuweit entfernt ist.
+
+Die perfekte Position der Düse lässt sich abschätzen wenn man die Innenwandung des Skimmers zu einem Kegel verlängert. An der Spitze des imaginären Kegels soll die Düse positioniert werden, denn so können die, in erster Näherung radial austretenden Atome oder Moleküle weder an der Skimmerinnenwand noch an der Skimmeraußenwand reflektiert werden (siehe Abb. \ref{fig:Skimmerpos}, mitte). Und da sich die Skimmerspitze in der zone of silence befindet, wird die größtmögliche Menge der \enquote{guten} Moleküle durchgelassen, wennauch damit auch die schlechteste Fokussierung des Strahls in Kauf genommen wird.
+%
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=1.2\textwidth]{../skimmerpos.png}%
+\captionof{figure}{Strahlverlauf bei verschiedenen Entfernungen zum Skimmer. 
+links: Zu nahe, Reflektionen an der Skimmerinnenwand; mitte: Richtig, Teilchen werden weder Innen noch Außen am Skimmer gestreut; rechts: Zu weit entfernt, man büßt Intensität ein;\textbf{Stichworte ok?}  \cite{mueller12} }  
+ \label{fig:Skimmerpos}
+\end{minipage} 
+\end{center} 
+
+Wenn die Düse zu nah am Skimmer positioniert wird, erhält man zwar eine noch größere Intensität des Moleküljets, aber die Teile des Strahls, die an den Innenwänden des Skimmers reflektiert werden streuen wieder in den Strahl selbst und stoßen da mit anderen Targetteilchen (vgl. Abb. \ref{fig:Skimmerpos}, erstes Bild). Dadurch wird die Eigenschaft, dass die Targetteilchen nur sehr geringe Relativgeschwindigkeiten haben, zerstört und der Jet somit unbrauchbar für eine Verwendung im REMI. Denn wie schon im Kapitel \ref{sec:Cluster} erläutert wurde, ist ein Jet mit geringer (unbekannter) Impulsverteilung essentiell, damit die Impulse der Reaktionsfragmente nicht im Hintergrund verschwinden. 
+Sitzt die Düse allerdings zu weit weg von dem Skimmer, wird ein zu großer Teil des Molekülstrahls \enquote{abgeskimmt} und die Intensität des Targetstrahls leidet darunter (siehe Abb. \ref{fig:Skimmerpos}, drittes Bild). Da wir ohnehin nur eine Ausbeute von wenigen Prozent an Dimeren erhoffen, würde das die Messzeit nur unnötig in die Länge ziehen.
+% Für den in dieser Arbeit verwendeten Skimmer ergibt sich für ein 75 μm großes Expansionsgebiet (98 \% der Endgeschwindigkeit der Teilchen erreicht) ein Mindestabstand von 1,8 mm. Beginnend mit dieser oder einer etwas weiter entfernten Position kann die Düse in x- und y-Richtung durch Maximierung der Drücke in Kammer 2 und 3 in Position gebracht werden. \textbf{Wie wende ich das an?}
+Hat man einmal die optimale Entfernung der Düse zum Skimmer berechnet, wird die xy-Positionierung durch maximierung
+
+
+
+\section{Jetstufen}
+
+\textbf{Muss ich erklären dass gepumpt wird und wie gepumpt wird?}
+Bei Betrieb der Wasserclusterquelle erwarten wir einen Druck von $p_b \approx 10^{-3}$ mbar in der ersten Jetstufe. Wie der Name schon suggeriert gibt es davon mehrere. Der Grund dafür ist, dass man später bei dem Experiment von einem Druck von ca. 1 bar in der Düse auf etwa $\approx 10^{-12}$ mbar in der Hauptkammer kommen möchte. Realisiert wird das durch beliebig viele differentielle Pumpstufen, auch als Jetstufen bezeichnet. In dem experimentellen Aufbau, in dem die eingangs besprochenen Versuche stattfinden werden sind 6 Jetstufen im Einsatz (siehe Abb. ).
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=1.0\textwidth]{../Jetstageaufbau.png}%
+\captionof{figure}{Querschnitt durch den REMI-Aufbau in Hamburg. Die Numern 1-6 kennzeichnen die Jetstages. In der Hauptkammer des REMI ist der Laserfokuspunkt mit dem roten Punkt gekennzeichnet und die Detektoren in türkis angedeutet. Der Jetstrahl ist als graue gestrichelte Linie gekennzeichnet. \cite{Sch11}}  
+ \label{fig:Jetstageaufbau}
+\end{minipage} 
+\end{center} 
+
+In dem Versuchsaufbau den ich in dieser Arbeit zu Testzwecken in Betrieb nehmen werde, besitzt auch 6 Jetstufen. Für den Moment sind nur die ersten drei Stufen von Interesse, da diese wichtig sind die Düse vor dem Skimmer zu positionieren. Die Z-Einstellung wurde schon im vorigen Abschnitt \ref{sec:Skimmer} behandelt. Um die xy-Positionierung zu optimieren müssen die Drücke in den Jetstufen zwei und drei maximiert werden. Das hat den Nutzen, dass man somit eine Position findet an dem besonders viel des Molekularstrahls den Skimmer passiert. Geht man von einer perfekt radialen Ausbreitung in der Zone der Ruhe aus, was in erster Näherung in der Nähe der Düse vertretbar ist, ist es in Bezug auf die konische Form des Skimmerspitze ersichtlich, dass diese Position eine zentrische Ausrichtung in Bezug auf die Skimmeröffnung darstellt. 
+In der zweiten Jetsufe bedindet sich ein weiterer Skimmer, der aber eine leicht größere Öffnung als der erste besitzt. Die beiden Skimmer sind auf einer Achse ausgerichtet, sodass man den zweiten Skimmer nicht auch noch in Bezug auf den ersten ausrichten muss. Seine Hauptfunktion besteht darin, die Bereiche des Targetsstrahls abzuschälen, die die größte Bewegung orthogonal zur Strahlachse besitzen. Dadurch wird eine gewisse konstante Strahldichte auf dem Weg zum Laserfokus gewährleistet. (\textbf{Der Satz ist zu larifari}) 
+Die restlichen Jetstufen 4-6 sind mit verstellbaren Schlitzen ausgestattet, die es erlauben den Strahl weiter in seiner räumlichen Ausdehnung zu beschneiden und damit auch den Hauptkammerdruck zu wahren. Nach allen Einstellmaßnahmen besitzt der Targetstrahl am Fokuspunkt ungefähr einen Durchmesser von 1mm (\textbf{?}) und vernachlässigbar geringe Impulskomponenten normal zur Strahlachse.
+%
+%\section{Jet}
+%
+%
+%Skimmer und Jetstages und Fokussierung des Strahls ins Remi $\mathrm{\rightarrow}$ Auffänger
+%
+%
+%
