@@ -14,70 +14,89 @@
 %
 \section{Reaktionsmikroskop}
 
-Wie man weis, führt die Interaktion von starken Lasern mit Atomen oder Molekülen, so wie sie bei den eingangs erwähnten Versuchen stattfinden wird, oft zu Ionisation und dadurch auch zur Entstehung geladener Fragmente. Um die zugrundeliegenden Prozesse der Entstehung der Fragmente zu beleuchten, eignet es sich die Impulse zu untersuchen. Reaktionsmikroskope (kurz: REMI)sind in der Lage hochauflösende 3D-Impulsverteilungen zu messen und das für Elektronen und Ionen in Koinzidenz. Damit ist diese Art von Spektrometer perfekt geeignet für unsere Zwecke. Das folgende Kapitel wird das Funktionsprinzip und die einzelnen Teile des REMIs erklären und sich dabei an den Doktorarbeiten von Schnorr \cite{Schn14} und Fechner \cite{Fech14} orientieren. %Tiefergehende Informationen über das Reaktionsmikroskop können in Ull13 gefunden werden.
+
+
+Wie theoretisch und experimentell vielfach bestätigt, führt die Interaktion von starken Lasern mit Atomen oder Molekülen zu deren Ionisation und der Entstehung von geladenen Fragmenten (\cite{hertel2011}). Um die Kinematik dieser Reaktionen im Detail verstehen zu können, müssen die Impulsvektoren aller beteiligten Fragmente bekannt sein. Reaktionsmikroskope (REMIs) sind hochauflösende Impulsspektrometer, mit denen die dreidimensionalen Impulsverteilungen der Fragmente vermessen werden können und somit ein kinematisch vollständiges Verständnis der Reaktion liefern. \\
+%Die Interaktion von starken Lasern mit Atomen oder Molekülen oft zu Ionisation und dadurch auch zur Entstehung geladener Fragmente. Um die zugrundeliegenden Prozesse der Entstehung der Fragmente zu beleuchten, eignet es sich die Impulse zu untersuchen. Reaktionsmikroskope (kurz: REMI)sind in der Lage hochauflösende 3D-Impulsverteilungen zu messen und das für Elektronen und Ionen in Koinzidenz. Damit ist diese Art von Spektrometer perfekt geeignet für unsere Zwecke. 
+Das folgende Kapitel wird das Funktionsprinzip und die einzelnen Komponenten des REMIs erklären und sich dabei an den Doktorarbeiten von Schnorr \cite{Schn14} und Fechner \cite{Fech14} orientieren. %Tiefergehende Informationen über das Reaktionsmikroskop können in Ull13 gefunden werden.
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=0.7\textwidth]{../REMI.png}%
-\captionof{figure}{Schematischer Aufbau eines Reaktionsmikroskopes: 1: Fokussierter Laserstrahl. 2: Kalter Überschallgasjet. 3: Spektrometer Ionenseite. 4: Spektrometer Elektronenseite. 5: Ionendetektor. 6: Elektronendetektor. 7 und 8: Helmholtz-Spulenpaar. \cite{Sch11}}  
- \label{fig:REMI}
+\captionof{figure}{Schematischer Aufbau eines Reaktionsmikroskopes: 1: Fokussierter Laserstrahl. 2: Kalter Überschallgasjet. (siehe Kapitel \ref{sec:uberschallexp}) 3: Spektrometer Ionenseite. 4: Spektrometer Elektronenseite. (siehe Kapitel \ref{sec:Spektrometer}) 5: Ionendetektor. 6: Elektronendetektor. (siehe Kapitel \ref{sec:Detektor}) 7 und 8: Helmholtz-Spulenpaar. \cite{Sch11} (\textbf{schöne Verweise überlegen})}  
+ \label{fig:REMI} 
 \end{minipage} 
 \end{center} 
 
-\subsection{Spektrometer}
+\subsection{Spektrometer} \label{sec:Spektrometer} 
 
-Im Spektrometer wird in der Mitte einer Ultrahochvakuumkammer ($p \approx 10^{-12}$ mbar) ein hochfokussierter Laser mit einem kalten Target-Jet gekreuzt. Durch die Interaktion der Targetatome bzw. -moleküle kommt es durch Ionisation oder Dissoziation zur Entstehung von positiv geladenen Ionen und Elektronen. Das homogene elektrische Feld des Spektrometers beschleunigt die Ionen, respektive Elektronen, in entgegengesetzte Richtungen auf einen ortsauflösenden Detektor. Das homogene Feld wird erreicht durch mehrere koaxial angebrachte Metallringe, die jeweils über einen Widerstand elektrisch mit ihren Nachbarn verbunden werden. Dabei muss man darauf achten die Feldstärke richtig zu wählen, denn die genaue Zusammensetzung der Fragmente wird über die Abhängigkeit der Flugzeit vom Masse-zu-Ladungsverhältnis bestimmt. Deswegen ist die Problematik, das Feld nicht zu stark einzustellen, weil dann die Flugzeiten und der Auftreffort von verschiedenen Ionen zu ähnlich werden, aber auch nicht zu schwach, weil dann die Raumwinkelabdeckung des Spektrometers schlechter wird, denn schwere, aber leichtgelandene Ionen werden nichtmehr genug abgelenkt, um auf den Detektor zu treffen.
-Da bei einer Ionisation Elektronen und Ionen aus dem gleichen Target stammen, ist es intuitiv klar, dass die Impulserhaltung gewährleistet sein muss. Da Ionen und Elektronen eine enorme Massendifferenz besitzen, wirkt sich das in sehr verschiedenen Energien und Geschwindigkeiten der Elektronen verglichen mit den Ionen aus. Um die leichteren und schnelleren Elektronen auf den Detektor zu lenken, wären demnach ein sehr viel stärkeres elektrisches Feld vonnöten. Um aber von der höheren Auflösung eines schwachen elektrischen Feldes zu profitieren und trotzdem alle Elektronen zu detektieren, verwendet das REMI ein externes Magnetfeld, das die Elektronen auf Spiralbahnen um die Spektrometerachse zwingt, während die Ionen so gut wie unbeeinflusst bleiben. Trotz der somit komplizierteren Flugbahnen, kann aus dem Auftreffort und der Flugzeit der dreidimensionale Impuls der Fragmente zurückgerechnet werden. 
+In der Mitte einer Ultrahochvakuumkammer ($p \approx 10^{-12}$ mbar) wird ein stark fokussierter Laser \footnote{\label{foot:1}Außer Photonen werden auch Elektronen und Ionen als Projektile verwendet. \cite{ullrich2003}} im 90° Winkel mit einem kalten Gasjet gekreuzt. Im Laserfokus werden Targetatome/-moleküle ionisiert und es entstehenden positive Ionen und Elektronen.
+%
+%ein hochfokussierter Laser mit einem kalten Target-Jet gekreuzt. Durch die Interaktion der Targetatome bzw. -moleküle kommt es durch Ionisation oder Dissoziation zur Entstehung von positiv geladenen Ionen und Elektronen. 
+Das Spektrometer besteht aus mehreren koaxial angebrachten und äquidistant angeordneten Metallringen, die über eine Widerstandskaskade leitend verbunden sind. Legt man an den Enden eine Spannung an, entsteht ein sehr homogenes elektrisches Feld im Inneren. Das elektrische Feld beschleunigt die Ionen und Elektronen in entgegengesetzte Richtungen auf einen zeit- und ortsauflösenden Detektor. 
+%
+%
+%Dabei muss man darauf achten die Feldstärke richtig zu wählen, denn die genaue Zusammensetzung der Fragmente wird über die Abhängigkeit der Flugzeit vom Masse-zu-Ladungsverhältnis bestimmt. Deswegen ist die Problematik, das Feld nicht zu stark einzustellen, weil dann die Flugzeiten und der Auftreffort von verschiedenen Ionen zu ähnlich werden, aber auch nicht zu schwach, weil dann die Raumwinkelabdeckung des Spektrometers schlechter wird, denn schwere, aber leichtgelandene Ionen werden nichtmehr genug abgelenkt, um auf den Detektor zu treffen.
+%
 
-\subsection{Detektor}
+Da bei einer Ionisation Elektronen und Ionen aus dem gleichen Target stammen ist der Impuls erhalten. Ionen und Elektronen besitzen eine enorme Massendifferenz %\footnote{\label{foot:2}$m_p \approx 1836\ m_e$} 
+und das wirkt sich in sehr verschiedenen Energien und Geschwindigkeiten der Elektronen, verglichen mit den Ionen aus. Um die leichteren und schnelleren Elektronen auf den Detektor zu lenken, ist  ein sehr viel stärkeres elektrisches Feld vonnöten, als dies bei Ionen der Fall ist. Die Ortsauflösung des Detektors wird aber mit zunehmendem \textbf{E-Feld} schlechter, weil dann die Flugzeiten und die Auftrefforte von verschiedenen Ionen zu ähnlich werden.
+Um alle Ionen und Elektronen mit hoher Auflösung zu detektieren, wird im REMI, mit einem externen Helmholtzspulenpaar, ein Magnetfeld erzeugt. Dieses zwingt die Elektronen auf Spiralbahnen um die Spektrometerachse, während der Effekt für Ionen klein ist. Trotz der somit komplizierteren Flugbahnen, kann aus dem Auftreffort und der Flugzeit der dreidimensionale Impuls der Fragmente berechnet werden. 
 
-Der Detektor ist aufgebaut wie in Abbildun (\ref{fig:Detektor}). Seine Aufgaben sind es die Flugzeit und den Auftreffort des geladenen Teilchens möglichst genau zu bestimmen. 
+\subsection{Detektor} \label{sec:Detektor} 
 
-\subsubsection{Mikrokanalplatte}
-Zuerst trifft das geladene Teilchen auf die Mikrokanalplatte (englisch: micro-channel plate, kurz MCP). Eine MCP ist eine ca 1mm dünne Scheibe, die homogen mit mikroskopisch kleinen Kanälen (Innendurchmesser $\approx$ 25µm) versehen ist. Die Kanäle auf der Mikrokanalplatte sind typischerweise um 8° gegen die Oberflächennormale gekippt, um zu verhindern, dass zu detektierende Teilchen einfach hindurchfliegen. Die Oberflächen der MCP sind mit einem geeigneten Halbleiter gemantelt, sodass zwischen ihnen eine Spannung von typischerweise 1200V, angelegt werden kann. Trifft nun ein geladenes Teilchen auf die Innenwand eines solchen Kanals, werden Sekundärelektronen freigeschlagen und durch die Spannung beschleunigt, sodass kaskadenartig eine Elektronenwolke ensteht (siehe Abb. \ref{fig:Detektor} b)). Oft werden mehrere MCPs gestapelt um die resultierende Elektronenwolke zu verstärken. Beim Stapeln wird darauf geachtet, dass die Kanäle nicht in die gleiche Richtung verlaufen, um gänzlich du verhindern, dass Partikel hindurchfliegen können. %Gleichzeitig verhindert diese, als \enquote{chevron} Geometrie bezeichnete Stapelweise, dass die in den Kanälen befindlichen Restgase, die durch den Elektronenschauer ionisiert wurden durch das elektrische Feld beschleunigt wieder ins Spektrometer gelangen können, denn bevor das passiert werden sie an einer Kanalwand auf abgefangen.
-Durch das Auslösen der Elektronenwolke fällt die Spannung der MCP schlagartig ab. Dieses Signal wird ausgelesen und stellt, durch die Differenz mit dem externen Triggersignal des Lasers, die Flugzeit des Teilchens dar. 
+Der orts- und zeitauflösende Detektor besteht aus zwei Komponenten, dem(\textbf{?}) Micro-Channel Plate (kurz: MCP) und der Delayline-Anode. Das MCP detektiert den Auftreffzeitpunkt des geladenen Teilchens und verstärkt das Signal für die Delayline-Anode. Die Delayline-Anode detektiert im Anschluss den Auftreffort des Teilchens. \textbf{In Abbildung (\ref{fig:Detektor}) ist der Detektor schematisch dargestellt.}\\
+\textbf{In den Folgenden beiden Abschnitten wird die Funktionsweise der beiden Komponenten näher besprochen.}
+
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=0.9\textwidth]{../Detektor.png}%
-\captionof{figure}{a) Orts- und Zeitauflösender Detektor eines Reaktionsmikroskopes. b) Zwei, um 180° gegeneinander verdreht, gestapelte MCPs, c) Prinzip der Positionsbestimmung der Delay-Line-Anode \cite{Fech14}}  
+\captionof{figure}{a) Orts- und Zeitauflösender Detektor eines Reaktionsmikroskopes. b) Zwei gestapelte MCPs. Geladenes Teilchen (roter Pfeil) trifft auf die MCP Innenwand und löst Sekundärelektronen aus. Durch die anliegende Spannung beschleunigt, lösen diese Elektronen bei Kontakt mit der Innenwand weitere Elektronen aus, bis der Elektronenschauer aus dem MCP austritt c) Prinzip der Positionsbestimmung der Delay-Line-Anode. Elektronenschauer trifft auf den Kupferdraht und sorgt für eine lokal erhöhte Ladungsdichte. Diese breitet sich entlang des Drahtes aus und kann an beiden Drahtenden nachgewiesen werden. Die Zeitdifferenz dieser Signale ist eindeutig mit dem Auftreffort verknüpft. \cite{Fech14}}  
  \label{fig:Detektor}
 \end{minipage} 
 \end{center} 
 
+\subsubsection{Multi-Channel Plate}
+ Ein MCP ist eine ca. 1mm dünne Glasplatte, die homogen mit mikroskopisch kleinen Kanälen (Innendurchmesser $\approx$ 25µm) versehen ist. Die Kanäle auf dem MCP sind typischerweise um 8° gegen die Oberflächennormale geneigt, um zu gewährleisten, dass eintretende Teilchen die Innenwand treffen. Zwischen den beiden Oberflächen der MCP wird eine Hochspannung von typischerweise 1200V angelegt.
+ Trifft ein geladenes Teilchen auf die Innenwand eines solchen Kanals, werden Sekundärelektronen ausgelöst. Durch die Spannung werden die Elektronen in Richtung Delayline-Anode beschleunigt und treffen dabei weitere Male auf die Innenwand, sodass kaskadenartig ein Elektronenschauer ensteht (siehe Abb. \ref{fig:Detektor}.b ). \textbf{Die Oberflächen des MCP sind mit einem geeigneten Halbleiter beschichtet, der die Austrittsarbeit von Elektronen verringert und damit die Effizienz erhöht. Warum auf Oberfläche?}
+ 
+In der Regel werden mehrere MCPs gestapelt, um die Verstärkung zu erhöhen. Die Kanäle werden beim Stapeln verschieden orientiert angeordnet, um die Anzahl der Wandkontakte der Elektronen zu maximieren. %Gleichzeitig verhindert diese, als \enquote{chevron} Geometrie bezeichnete Stapelweise, dass die in den Kanälen befindlichen Restgase, die durch den Elektronenschauer ionisiert wurden durch das elektrische Feld beschleunigt wieder ins Spektrometer gelangen können, denn bevor das passiert werden sie an einer Kanalwand auf abgefangen.
+Durch das Auslösen des Elektronenschauers fällt die Spannung über dem MCP schlagartig ab. Dieses Signal wird ausgelesen und stellt, durch die Differenz mit dem externen Triggersignal des Lasers, die Flugzeit des Teilchens dar. 
 
-\subsubsection{Verzögerungsleitungs-Anode}
 
-Die austretende Elektronenwolke wird anschließend auf die Verzögerungsleitungs-Anode (englisch: delay line anode) beschleunigt, während sie sich durch die abstoßende Coulombkraft unter den Elektronen aufweitet. Eine solche Verzögerungsleitungs-Anode besteht aus einem Kupferkabel, das um in gleichmäßigen Abständen um eine Basis gewickelt wurde. Trifft nun die Elektronenwolke auf das Kupferkabel der Verzögerungsleitungs-Anode, ensteht lokal eine größere Elektronendichte, welche sich dann zu beiden Enden des Kabels ausbreitet und dort detektiert wird. Die dabei gemessene Zeitdifferenz $\Delta t$ hängt von der Entfernung des Auftreffortes der Elektronenwolke zur Mitte des Kabels ab. Um nun die Auftreffkoordinate normal zu den Wicklungen zu bestimmen, kann man die Formel
 
+\subsubsection{Delayline-Anode}
+
+Der austretende Elektronenschauer trifft anschließend auf die Delayline-Anode \cite{sobottka1988}, während sie sich durch die abstoßende Coulombkraft unter den Elektronen aufweitet. Eine solche Delayline-Anode besteht aus einem Kupferdraht, der in gleichmäßigen Abständen um eine isolierende Keramik gewickelt wurde. Trifft der Elektronenschauer auf das Kupferkabel der Delayline-Anode, entsteht eine lokal erhöhte Ladungsdichte, welche sich zu beiden Enden des Drahtes ausbreitet und dort detektiert wird. Die Zeitdifferenz $\Delta t$ zwischen den Signalen hängt linear mit der Auftreffposition des Elektronenschauers zusammen (siehe Abb. \ref{fig:Detektor}.c ). Um die Auftreffkoordinate zu bestimmen, nutzt man die Formel
 \begin{equation}
-x = c_w \Delta t
+x = c_{w,x} \Delta t\ ,
 \end{equation}
-
-verwenden, wobei x für die Position entlang einer beliebigen Raumkoordinate steht und $c_w$=const die effektive Signalausbreitungsgeschwindigkeit in diese Richtung ist. Um nun einen zweidimensionalen Auftreffort zu detektieren, muss eine zweite Verzögerungsleitungs-Anode, rechtwinkling zu der ersten orientiert, angebracht werden (siehe Abb. \ref{fig:Detektor} a)). Mit solch einer Verzögerungsleitungs-Anode können auch mehrere, aus einem Ionisationsevent stammende, Partikel gleichzeitig detektiert und aufgelöst werden, solange die Differenz der Auftrefforte und Flugzeiten nicht unter die Auflösung fällt.
-
+wobei x die Position senkrecht zu den Wicklungen beschreibt und $c_{w,x}$ = const die effektive Signalausbreitungsgeschwindigkeit in diese Richtung ist. Um einen zweidimensionalen Auftreffort zu erhalten, wird eine zweite Kupferdrahtwicklung rechtwinkling zu der ersten orientiert angebracht (siehe Abb. \ref{fig:Detektor} a)). \textbf{Dadurch, dass das (Ladungs-)Signal die gesamte Drahtlänge durchläuft, ist die Summe der beiden Zeitsignale an den Enden vordefiniert. Mithilfe dieser Zeitsummenbedingung können auch mehrere Teilchen gleichzeitig(?, oder <8ns) ortsaufgelöst werden.}\\
+\textbf{Könnte noch beschreiben dass es einen zweiten Draht gibt, Hintergrund}
 
 \newpage
 \section{Cluster} \label{sec:Cluster}
 
-Für die in der Motivation vorgestellten Experimente benötigt man für ein Reaktionsmikroskop, das die bei einer Fragmentation entstehenden geladenen Teilchen kinematisch vollständig vermessen kann, eben auch eine Quelle die Targetteilchen einer geringen Impulsverteilung liefert, sodass die Genauigkeit der Messergebnisse nicht unnötig verschmiert wird. Bei typischen Ionisationsreaktionen entstehen nämlich Fragmente mit Impulsen im meV-Bereich. Bei Zimmertemperatur aber haben Gase eine kinetische Energie von etwa 40meV und deswegen ist es wichtig einen sehr kalten Target zu nutzen \cite{kurka07}. Das Verfahren unserer Wahl ist die Kühlung des Targets durch Überschallexpansion, weil durch die Kühlung, die für die angestrebten Versuche essentielle Clusterentstehung ebenfalls angeregt wird. Im den folgenden Abschnitten wird näher auf Cluster und deren Entstehung durch Überschallexpansion eingegangen.
+Da bei typischen Reaktionen liegen die zu messenden Impulse der erzeugten Ionen in der Größenordnung von einer atomaren Einheit, und damit die Energien im meV-Bereich. Um diese Vorgänge mit einem REMI aufzulösen ist ein kalter Targetstrahl essentiell, die die mittlere kinetische Energie von Gasen bei Raumtemperatur bei ca. 40 meV liegt \cite{kurka07}. Ein Überschall-Gasjet erreicht Targettemperaturen in der Größenordnung eines Kelvin. Der Prozess der Überschallexpansion fördert zudem die Entstehung von Clustern, wie sie für die in Kapitel \ref{sec:Motivation} vorgestellten Experimente erforderlich sind.
+
+In den folgenden Abschnitten wird näher auf Cluster und deren Entstehung durch Überschallexpansion eingegangen.
 
 
 \subsection{Definition}
-Als Cluster bezeichnet man Agglomerate aus Atomen oder Molekülen. Diese können bei kleinen Exemplaren 2 bis mehrere Hundert Teilchen enthalten und bei großen Clustern aus bis zu ca. $\mathrm{10^6}$ Teilchen bestehen. Je nach Größe besitzen Cluster verschiedene Eigenschaften und bilden damit eine Brücke zwischen der Atomphysik, der Molekülphysik und der Festkörperphysik.\\
-Bei kleinen Clustern lassen sich noch alle Eigenschaften anhand der Atom- und Molekülphysik beschreiben. Ähnlich wie beim Atom besitzen kleine Cluster diskrete Energieniveaus.
-Bis zu einer gewissen Größe, strukturieren sich die Cluster beim Dazukommen eines weiteren Atoms vollständig um und verändern auf diese Weise auch ihre physikalischen und chemischen Eigenschaften. Sobald das Cluster eine Größe von etwa 100 Atomen oder Molekülen erreicht, kann man allmählich die Anordnung in einer Gitterstruktur wie bei Festkörpern beobachten. Auch die anfangs diskreten Energieniveaus gehen langsam in ein kontinuierliches Energieband über[Referenzen zu Büchern einfügen].
-Sogenannte Mikrokristalle sind Cluster die aus ca 1000 Atomen oder Molekülen bestehen. Die besitzen schon einige Eigenschaften von Festkörpern und bei Clustern in der Größe von etwa 50000 Konstituenten kann man von Festkörpern sprechen, da sie diesen in allen Eigenschaften ähneln. \\
 
-Cluster können aus fast jeder Art von Atomen oder Molekülen erzeugt werden. Diese werden je nach ihren Bestandteilen und Bindungstypen in verschiedene Gruppen eingeteilt[HierReferenzWiki-Buch?]. \\
+Als Cluster bezeichnet man Agglomerate aus Atomen oder Molekülen. Diese können bei kleinen Exemplaren zwei bis mehrere Hundert Teilchen enthalten und bei großen Clustern aus bis zu ca. $\mathrm{10^6}$ Teilchen bestehen. Je nach Größe besitzen Cluster verschiedene Eigenschaften und bilden damit eine Brücke zwischen der Atomphysik, der Molekülphysik und der Festkörperphysik. Cluster können im Allgemeinen auf zwei Wege \textbf{produziert} werden. Einerseits kann man sie aus ihren einzelnen Bestandteilen zusammensetzen (z.B. \textbf{ultrakalte Stöße}, Kondensation aus der Gasphase), andererseits können sie durch Abspaltung von größeren Agglomeraten gewonnen werden (z.B. Abspaltung durch Teilchenbeschuss) \cite{barth2007}. \\
+Bei kleinen Clustern lassen sich alle Eigenschaften anhand der Atom- und Molekülphysik beschreiben. Ähnlich wie beim Atom besitzen kleine Cluster diskrete Energieniveaus.
+Bis zu einer gewissen Größe strukturieren sich die Cluster beim Hinzukommen eines weiteren Atoms vollständig um und verändern auf diese Weise ihre physikalischen und chemischen Eigenschaften. Sobald das Cluster eine Größe von etwa 100 Atomen oder Molekülen erreicht, kann man allmählich die Anordnung in einer Gitterstruktur wie bei Festkörpern beobachten. Auch die anfangs diskreten Energieniveaus gehen langsam in ein kontinuierliches Energieband über (\cite{benedek1988} \cite{General08}).
+ Mikrokristalle sind Cluster, die aus ca 1000 Atomen oder Molekülen bestehen. Diese besitzen einige Eigenschaften von Festkörpern. Bei Clustern in der Größe von etwa 50000 Konstituenten kann man von Festkörpern sprechen, da sie diesen in allen Eigenschaften ähneln \cite{General08}. Cluster können aus fast jeder Art von Atomen oder Molekülen erzeugt werden. Diese werden je nach ihren Bestandteilen und Bindungstypen in verschiedene Gruppen eingeteilt \cite{jortner1984cluster}. \\
 
-Da gibt es zum einen die Gruppe der metallischen Cluster. Diese z.B. $\mathrm{Al}_n$-Cluster bilden untereinander eine metallische Verbindung mit einem halbvollen Band delokalisierter Bindungselektronen. Die Bindungsenergien sind hierbei in einem Bereich von 0,5 - 3 eV. Metallische Cluster bestehen oft aus $\mathrm{n > 200}$ Atomen.
+Zum Einen gibt es die Gruppe der metallischen Cluster. Diese z.B. $\mathrm{Al}_n$-Cluster bilden untereinander eine metallische Verbindung mit einem halbvollen Band delokalisierter Bindungselektronen. Die Bindungsenergien sind hierbei in einem Bereich von 0,5 - 3 eV. Metallische Cluster bestehen oft aus $\mathrm{n > 200}$ Atomen \cite{kreibig2013}.
 
 Dann gibt es die Gruppe der ionischen Cluster. Hier weisen die Bestandteile oft einen großen Unterschied in Elektronegativität auf und werden durch Coulombwechselwirkung zusammengehalten. Ihre Struktur ist meist kubisch wie wir das von $\mathrm{NaCl}_n$ kennen und die Bindungsenergien liegen zwischen 2 - 4 eV. 
 
 Eine weitere bekannte Gruppe ist die der kovalenten Cluster, die vor allem durch C-Cluster wie Fullerene bekannt wurde. Diese besitzen eine ausgerichtete Bindung durch Elektronenpaare, mit einer mittleren Bindungsenergie von 1 - 4 eV. Bei diesem Typ liegt die charakteristische Clustergröße bei 30 $\mathrm{< n <}$ 80.
 
-Weiterhin gibt es die Van-der-Waals-Cluster, die durch eine Dipol-Wechselwirkung zwischen Atomen und Molekülen verbunden werden. Sie besitzen nur eine geringe mittlere Bindungsenergie von 0,001 - 0,3 eV. Repräsentanten dieser Gruppe sind z.B. Edelgascluster wie $\mathrm{H}_2$-Cluster. Diese Cluster bestehen meist aus $\mathrm{n < 10}$ Atomen oder Molekülen .
+Weiterhin gibt es die Van-der-Waals-Cluster, die durch eine Dipol-Wechselwirkung zwischen Atomen und Molekülen verbunden werden. Sie besitzen nur eine geringe mittlere Bindungsenergie von 0,001 - 0,3 eV. Repräsentanten dieser Gruppe sind z.B. Edelgascluster wie $\mathrm{He}_2$-Cluster. Diese Cluster bestehen meist aus $\mathrm{n < 10}$ Atomen oder Molekülen .
 
 Und zum Schluss gibt es noch die Gruppe, mit der wir uns in dieser Arbeit befassen werden, und zwar die Gruppe der Cluster mit Wasserstoffbindung. Die Dipol-Dipol-Anziehung hält diese Cluster mit einer mittleren Bindungsenergie von 0,15 - 0,5 eV zusammen. \\
 
@@ -215,7 +234,7 @@ und für $\Gamma^* < 350$ empfehlen Sie ein Polynom dritten Grades zu verwenden,
 %
 %
 
-Wie schon angedeutet, lässt sich das Prinzip der Skalenparameter auch auf Wasser anwenden, obwohl sich die Thermodynamik von Wasser durch die starken Wasserstoffbrückenbindungen doch sehr von der, der schwach gebundenen idealen Gasen, unterscheidet. In der Publikation von Bobbert et al. \cite{bobbert2002} wurden die freien Parameter aus Gleichung (\ref{eq:HagOriginalFormel}) für Wasser zu $a$ = 1,886(64), $D$ = 11,60(1,62) und $q$ = 0,634(68) bestimmt. Um $\Gamma$ unabhängig von der Form der Düse berechnen zu können, wird der effektive Düsendurchmesser
+Wie schon angedeutet, lässt sich das Prinzip der Skalenparameter auch auf Wasser anwenden, obwohl sich die Thermodynamik von Wasser durch die starken Wasserstoffbrückenbindungen doch sehr von der, der schwach gebundenen idealen Gasen, unterscheidet. In der Publikation von Bobbert $et\ al.$ \cite{bobbert2002} wurden die freien Parameter aus Gleichung (\ref{eq:HagOriginalFormel}) für Wasser zu $a$ = 1,886(64), $D$ = 11,60(1,62) und $q$ = 0,634(68) bestimmt. Um $\Gamma$ unabhängig von der Form der Düse berechnen zu können, wird der effektive Düsendurchmesser
 %
 \begin{equation} \label{eq:deff}
 d_{eff} = G(f)\ d\ /\tan(\beta); \quad \textmd{mit} \; G(f)= 0,5 (f+1)^{-(f+1)/4} A^{f/2} \ ,
