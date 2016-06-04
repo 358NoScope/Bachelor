@@ -78,7 +78,7 @@ wobei x die Position senkrecht zu den Wicklungen beschreibt und $c_{w,x}$ = cons
 \newpage
 \section{Cluster} \label{sec:Cluster}
 
-Da bei typischen Reaktionen liegen die zu messenden Impulse der erzeugten Ionen in der Größenordnung von einer atomaren Einheit, und damit die Energien im meV-Bereich. Um diese Vorgänge mit einem REMI aufzulösen ist ein kalter Targetstrahl essentiell, die die mittlere kinetische Energie von Gasen bei Raumtemperatur bei ca. 40 meV liegt \cite{kurka07}. Ein Überschall-Gasjet erreicht Targettemperaturen in der Größenordnung eines Kelvin. Der Prozess der Überschallexpansion fördert zudem die Entstehung von Clustern, wie sie für die in Kapitel \ref{sec:Motivation} vorgestellten Experimente erforderlich sind.
+Da bei typischen Reaktionen liegen die zu messenden Impulse der erzeugten Ionen in der Größenordnung von einer atomaren Einheit, und damit die Energien im meV-Bereich. Um diese Vorgänge mit einem REMI aufzulösen ist ein kalter Targetstrahl essentiell, die die mittlere kinetische Energie von Gasen bei Raumtemperatur bei ca. 40 meV liegt \cite{kurka07}. Ein Überschall-Gasjet kann eine innere Temperatur der Teilchen von unter einem Kelvin erreichen. Der Prozess der Überschallexpansion fördert zudem die Entstehung von Clustern, wie sie für die in Kapitel \ref{sec:Motivation} vorgestellten Experimente erforderlich sind.
 
 In den folgenden Abschnitten wird näher auf Cluster und deren Entstehung durch Überschallexpansion eingegangen.
 
@@ -88,24 +88,65 @@ In den folgenden Abschnitten wird näher auf Cluster und deren Entstehung durch 
 Als Cluster bezeichnet man Agglomerate aus Atomen oder Molekülen. Diese können bei kleinen Exemplaren zwei bis mehrere Hundert Teilchen enthalten und bei großen Clustern aus bis zu ca. $\mathrm{10^6}$ Teilchen bestehen. Je nach Größe besitzen Cluster verschiedene Eigenschaften und bilden damit eine Brücke zwischen der Atomphysik, der Molekülphysik und der Festkörperphysik. Cluster können im Allgemeinen auf zwei Wege \textbf{produziert} werden. Einerseits kann man sie aus ihren einzelnen Bestandteilen zusammensetzen (z.B. \textbf{ultrakalte Stöße}, Kondensation aus der Gasphase), andererseits können sie durch Abspaltung von größeren Agglomeraten gewonnen werden (z.B. Abspaltung durch Teilchenbeschuss) \cite{barth2007}. \\
 Bei kleinen Clustern lassen sich alle Eigenschaften anhand der Atom- und Molekülphysik beschreiben. Ähnlich wie beim Atom besitzen kleine Cluster diskrete Energieniveaus.
 Bis zu einer gewissen Größe strukturieren sich die Cluster beim Hinzukommen eines weiteren Atoms vollständig um und verändern auf diese Weise ihre physikalischen und chemischen Eigenschaften. Sobald das Cluster eine Größe von etwa 100 Atomen oder Molekülen erreicht, kann man allmählich die Anordnung in einer Gitterstruktur wie bei Festkörpern beobachten. Auch die anfangs diskreten Energieniveaus gehen langsam in ein kontinuierliches Energieband über (\cite{benedek1988} \cite{General08}).
- Mikrokristalle sind Cluster, die aus ca 1000 Atomen oder Molekülen bestehen. Diese besitzen einige Eigenschaften von Festkörpern. Bei Clustern in der Größe von etwa 50000 Konstituenten kann man von Festkörpern sprechen, da sie diesen in allen Eigenschaften ähneln \cite{General08}. Cluster können aus fast jeder Art von Atomen oder Molekülen erzeugt werden. Diese werden je nach ihren Bestandteilen und Bindungstypen in verschiedene Gruppen eingeteilt \cite{jortner1984cluster}. \\
-
-Zum Einen gibt es die Gruppe der metallischen Cluster. Diese z.B. $\mathrm{Al}_n$-Cluster bilden untereinander eine metallische Verbindung mit einem halbvollen Band delokalisierter Bindungselektronen. Die Bindungsenergien sind hierbei in einem Bereich von 0,5 - 3 eV. Metallische Cluster bestehen oft aus $\mathrm{n > 200}$ Atomen \cite{kreibig2013}.
-
-Dann gibt es die Gruppe der ionischen Cluster. Hier weisen die Bestandteile oft einen großen Unterschied in Elektronegativität auf und werden durch Coulombwechselwirkung zusammengehalten. Ihre Struktur ist meist kubisch wie wir das von $\mathrm{NaCl}_n$ kennen und die Bindungsenergien liegen zwischen 2 - 4 eV. 
-
-Eine weitere bekannte Gruppe ist die der kovalenten Cluster, die vor allem durch C-Cluster wie Fullerene bekannt wurde. Diese besitzen eine ausgerichtete Bindung durch Elektronenpaare, mit einer mittleren Bindungsenergie von 1 - 4 eV. Bei diesem Typ liegt die charakteristische Clustergröße bei 30 $\mathrm{< n <}$ 80.
-
-Weiterhin gibt es die Van-der-Waals-Cluster, die durch eine Dipol-Wechselwirkung zwischen Atomen und Molekülen verbunden werden. Sie besitzen nur eine geringe mittlere Bindungsenergie von 0,001 - 0,3 eV. Repräsentanten dieser Gruppe sind z.B. Edelgascluster wie $\mathrm{He}_2$-Cluster. Diese Cluster bestehen meist aus $\mathrm{n < 10}$ Atomen oder Molekülen .
-
-Und zum Schluss gibt es noch die Gruppe, mit der wir uns in dieser Arbeit befassen werden, und zwar die Gruppe der Cluster mit Wasserstoffbindung. Die Dipol-Dipol-Anziehung hält diese Cluster mit einer mittleren Bindungsenergie von 0,15 - 0,5 eV zusammen. \\
-
+ Mikrokristalle sind Cluster, die aus ca 1000 Atomen oder Molekülen bestehen. Diese besitzen einige Eigenschaften von Festkörpern. Bei Clustern in der Größe von etwa 50000 Konstituenten kann man von Festkörpern sprechen, da sie diesen in allen Eigenschaften ähneln \cite{General08}. Cluster können aus fast jeder Art von Atomen oder Molekülen erzeugt werden. Homogene \textbf{Aggregate} werden nach ihren Bindungstypen und mittleren Bindungsenergie (BE) pro Atom oder Molekül unterschieden \cite{jortner1984cluster}. \\
+ Zur Gruppe der schwachgebundenen Cluster zählen die durch van-der-Waals Wechselwirkung \textbf{stabilisierten} Cluster. Van-der-Waals Cluster sind mit einer mittleren Bindungsenergie von BE $\leq$ 0,3 eV, die am schwächsten gebundenen Cluster. Die Dipol-Wechselwirkung erlaubt es Moleküle ohne permanentes Dipolmoment oder Edelgase zu Clustern, wie z.B. $\mathrm{He}_n$ zu formen. Die Größe dieser Cluster bleibt wegen der schwachen Bindung meist bei n $<$ 10.
+ 
+ Die Gruppe der moderat gebundenen Cluster enthält Molekülcluster und wasserstoffbrückengebundene Cluster. \textit{Die höhere Energie erlaubt typische Clustergrößen von n $\approx$ 10 $^2$.}
+ Cluster wie \textbf{(HF)$_n$} oder (H$_2$O)$_n$ werden durch Wasserstoffbrückenbindungen realisiert. Die Dipol-Dipol-Anziehung hält diese Cluster mit einer mittleren Bindungsenergie von BE $\approx$ 0,3 - 0,5 eV zusammen.
+ Polare organische Moleküle bilden durch Van-der-Waals-Wechselwirkung und schwache kovalente Anteile sogenannte Molekülcluster mit einer mittleren Bindungsenergie von BE $\approx$ 0,3 - 1 eV. (I$_2$)$_n$ oder (As$_4$)$_n$ sind Repräsentanten molekularer Cluster.
+ 
+ Einen Übergang zwischen den moderat und den stark gebundenen Clustern stellen die metallischen Cluster dar. Diese bilden untereinander eine metallische Verbindung mit einem halbvollen Band delokalisierter Bindungselektronen. Die mittlere Bindungsenergie beträgt hierbei BE $\approx$ 0,5 - 3 eV.
+ 
+ Zu den stark gebundenen Clustern zählen kovalente und ionische Cluster.
+ Kovalente Cluster sind auch als konventionelle Moleküle bekannt. Durch Elektronenpaarbindungen  werden mittlere Bindungsenergien (\textbf{plural?}) von BE $\approx$ 1 - 4 eV erreicht. Fullerene sind \textbf{namhafte} kovalente C$_n$-Cluster. 
+ Bei ionischen Clustern weisen die Bestandteile einen großen Unterschied in Elektronegativität auf.(\textbf{führt EN zu Coulomb-WW?}) Die resultierende Coulombwechselwirkung führt zu einer mittleren Bindungesenergie von BE $\approx$ 2 - 4 eV. Zu Vertretern dieser Cluster gehören (NaCl)$_n$ und (CaF$_2$)$_n$.\\
+ \textbf{Jortner ist die Referenz zu allen. Jedesmal wiederholen oder reicht am Anfang?}
+\textbf{Das Ziel der Arbeit ist Wassermikrocluster zu erzeugen.. Sollte in Motivation erwähnt werden}
 
 \subsection{Überschallexpansion} \label{sec:uberschallexp}
 
-Die Überschallexpansion ist ein adiabatischer Prozess, bei dem Gas durch eine kleine Öffnung von einem Bereich mit hohem Druck, in einen Bereich mit niedrigem Druck strömt. Da bei adiabatischen Prozessen die Entropie erhalten bleibt, muss auch die Zustandsdichte erhalten bleiben. Deswegen muss bei einer Abnahme der räumlichen Dichte, die Dichte im Impulsraum im Gegenzug zunehmen \cite{kurka07}. Eine Erhöhung der Dichte im Impulsraum allerdings bedeutet eine schmalere Geschwindigkeitsverteilung und eine Abnahme der Temperatur. Diese Temperaturabnahme ist sehr bemerkenswert, da sie es ermöglicht van-der-Waals-gebundene Moleküle, wie z.B. $\mathrm{^4}\mathrm{He}_2$, zu produzieren und zu detektieren. Das $\mathrm{^4}\mathrm{He}_2$-Molekül ist ein sehr beeindruckendes Beispiel dafür, weil die He-He-Bindung nach quantenmechanischen Berechnungen die schwächste bekannte Bindung ist. Diese Moleküle wurden 1993 erstmals, via Überschallexpansion erzeugt und nachgewiesen \cite{Luo1993}, obwohl die Bindungsenergie  nur 1,176 mK, also etwa $\mathrm{10^{-4}}$ eV entspricht \cite{Lohr2007}. 
+Die Überschallexpansion ist ein adiabatischer Prozess, bei dem Gas durch eine kleine Öffnung von einem Bereich mit hohem Druck, in einen Bereich mit niedrigem Druck strömt. Dabei wird auf Grund von Stößen der Translationsimpuls der Gaspartikel ausgerichtet. Die kinetische Energie der ungerichteten Bewegung (Wärme) wird in gerichtete Bewegungsenergie (Geschwindigkeit) umgewandelt. Da bei adiabatischen Prozessen kein Wärmeaustausch mit der Umgebung stattfindet, bedeutet dies eine Abkühlung des Gases \cite{Vielteilch92}. Dieser thermodynamische Effekt ermöglicht Endgeschwindigkeiten von über 1000 m/s bei Endtemperaturen von unter 1 K \cite{mueller12}. 
+Solche niedrigen Temperaturen ermöglichen es schwache van-der-Waals Cluster, wie  $\mathrm{^4}\mathrm{He}_2$ zu erzeugen, obwohl ein solches Heliumdimer mit einer Bindungsenergie von $\mathrm{1,013 \cdot 10^{-7}}$ eV (BE $\widehat{=}$ 1,176 mK \cite{Lohr2007}) die bisher schwächste bekannte \textbf{Molekül}bindung besitzt \cite{Luo1993}. \\
+%Da bei adiabatischen Prozessen die Entropie erhalten bleibt, muss auch die Zustandsdichte erhalten bleiben. Deswegen muss bei einer Abnahme der räumlichen Dichte, die Dichte im Impulsraum im Gegenzug zunehmen \cite{kurka07}. Eine Erhöhung der Dichte im Impulsraum allerdings bedeutet eine schmalere Geschwindigkeitsverteilung und eine Abnahme der Temperatur.
+Die nachfolgende genauere Betrachtung der Prozesse und Formeln, die bei der Clusterbildung durch Überschallexpansion eine Rolle spielen, folgt den Darstellungen von Miller \cite{scoles1988} und Müller \cite{mul13}.
 
-In der folgenden Erklärung von den Prozessen und Formeln die bei der Clusterbildung durch Überschallexpansion eine Rolle spielen orientiere ich mich im Wesentlichen am Kapitel 2 des Buches \enquote{Atomic and Molecular Beam Methods Vol 1}\cite{scoles1988} und der Zusammenfassung darüber in der Dissertation über \enquote{Ultraschnelle Dynamik in dotierten und reinen Wassercluster} von Jan Müller \cite{mul13}.
+%
+Expandiert Gas mit Volumen V aus einem Reservoir mit Temperatur $t_0$ und Druck $p_0$ adiabatisch ($\delta$S = 0), folgt die Druckabnahme der thermodynamischen Gesetzmäßigkeit
+\begin{equation}
+pV^{\gamma/(1-\gamma)} = \textmd{const, mit}\ \gamma=c_p/c_v=(f+2)/f .
+\end{equation}
+%
+Der Exponent $\gamma$ zählt die Anzahl der aktiven Freiheitsgrade\footnote[3]{\ $\gamma$ = 3 für einatomige Gase, $\gamma$ = 5 für zweiatomige Gase, $\gamma$ = 6 für Wasser \cite{mul13}} und kann als Quotient aus der isobaren und isochoren Wärmekapazität, $c_p$ und $c_v$, experimentell bestimmt werden. 
+
+%Die Anzahl der Freiheitsgrade $\gamma$ ergibt sich aus der Summe der Translationsfreiheitsgerade, der Rotationsfreiheitsgerade und zwei Mal der Vibrationsfreiheitsgrade. Zu beachten ist, dass die Rotations- und Vibrationsfreiheitsgrade erst ab bestimmten Temperaturen angeregt werden. So hat ein zweiatomiges Molekül bei Raumtemperatur drei Translations-, zwei Rotations aber keine Vibrationsfreiheitsgrade. Ein einzelnes Atom hingegen behält im freien Raum bei allen Temperaturen seine drei Translationsfreiheitsgrade.
+%Wenn man die Düsenöffnung als klein betrachtet (was bei ca 50$\mu$m berechtigt ist), darf man die Expansion eindimensional behandeln und damit kann man sich anschaulich vorstellen, dass die Beschleunigung in Richtung der Achse des Molekularstrahls erfolgen muss.
+Nimmt man an, dass bei der Überschallexpansion die gesamte thermische Energie in kinetische Energie umgewandelt wird, erhält man folgende Formel für die Endgeschwindigkeit des Gasjets.
+\begin{equation}
+v_\infty=\sqrt{2\int_{T_0}^{T_\infty \ll T_0} c_{p,{\tiny \textmd{mol}}}\ dT}= \sqrt{\frac{2\textmd{R}}{\textmd{W}}\left(\frac{\gamma}{\gamma-1}\right)T_0}
+\end{equation}
+%
+Wobei der Zusammenhang für ideale Gase
+\begin{equation}
+c_{p,mol}= \left(\frac{\gamma}{\gamma-1}\right)\left(\frac{\textmd{R}}{\textmd{W}}\right)
+\end{equation}
+%
+verwendet wurde. R steht für die universelle Gaskonstante, W kennzeichnet das Molekulargewicht des verwendeten Gases und $T_0$ steht für die Düsentemperatur.
+Bei Gasgemischen muss man die, nach ihrem atomaren Anteil gewichteteten, Mittelwerte $\bar{c}_{p,mol}$ und $\bar{W}_{mol}$ verwenden.
+Vergleicht man die Endgeschwindigkeit $v_{\infty}$ mit der Schallgeschwindigkeit $c$ für ideales Gas
+\begin{equation}
+v_\infty= \sqrt{\frac{\textmd{R}\gamma}{\textmd{W}}T_0\left(\frac{2}{\gamma-1}\right)} = c\ \sqrt{\left(\frac{2}{\gamma-1}\right)\frac{T_0}{T}} \textmd{ mit } c=\sqrt{\frac{\textmd{R} \gamma}{\textmd{W}}T}
+\end{equation}
+
+sieht man, dass $v_{\infty}$ größer ist als c, weil die Temperatur des expandierten Gases T sehr viel kleiner ist, als die Düsentemperatur $T_0$ und der Faktor $\sqrt{(2/\gamma -1)}=2,45$ (mit $\gamma$ = 6 bei Wasser) den Unterschied verstärkt.\\
+Die Machzahl 
+\begin{equation}
+M(\vec{r})= v(\vec{r})/c(p(\vec{r}))
+\end{equation}
+
+ist bei der Überschallexpansion eine wichtige Größe, die skalar in vielen thermodynamischen Rechnungen eine Rolle spielt und vektoriell betrachtet das Strömungsfeld an jedem Ort $\vec{r}$ charakterisiert. 
+
+Sofern das Verhältnis von Stagnationsdruck zu Hintergrunddruck $p_0/p_b > 2.1$ beträgt breitet sich das Gas nach Austritt aus der Düse mit Überschallgeschwindigkeit aus, was eine Machzahl M $>$ 1 bedeutet. Das hat zur Folge, das der Gasstrom zunächst unabhängig von jeglichen externen Randbedingungen ist. Dieser Effekt rührt daher, dass sich Information \enquote{nur} mit Schallgeschwindigkeit ausbreitet und der Teilchenstrom schneller als diese ist. Doch obwohl der Gasstrom nichts von Randbedingungen \enquote{weiß}, muss er sich nach ihnen richten. Deswegen bilden sich nach kurzer Zeit von Schockwellen aus, die aus Teilchen bestehen, die an begrenzenden Wänden oder ähnlichen \enquote{Randbedingungen} abprallen und auf ihrem Rückweg den Strom regulieren. Wie man an Abbildung \ref{fig:Machexpansion} erkennen kann, gibt es mehrere Arten dieser Schockwellen, die nichtisentropische Gebiete sind und sich durch starke Dichte-, Temperatur-, Geschwindigkeits- und Druckgradienten auszeichnen. Durch diese Eigenschaften kann man die Schockwellen mit diversen Lichtstreutechniken sichtbar machen \cite{Mou09} (siehe Abbildung \ref{fig:Schockwellen}).
+%
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
@@ -115,60 +156,25 @@ In der folgenden Erklärung von den Prozessen und Formeln die bei der Clusterbil
 \end{minipage} 
 \end{center} 
 %
-Expandiert Gas aus einem Reservoir mit Temperatur $t_0$ und Druck $p_0$ adiabatisch durch eine Düse mit Durchmesser d, folgt die Druckabnahme der thermodynamischen Gesetzmäßigkeit
-\begin{equation}
-pV^{\gamma/(1-\gamma)}\ \mbox{mit}\ \gamma=c_p/c_v=(f+2)/f \ \mbox{bei} \ \Delta S=0.
-\end{equation}
-%
-Der Exponent $\gamma$ zählt die Anzahl der Freiheitsgrade und kann wie in der Formel angegeben als Quotient aus der isobaren und isochoren Wärmekapazität experimentell bestimmt werden. Reines Wasser, wie es bei uns verwendet wird, hat bei Raumtemperatur 6 Freiheitsgrade [brauch ich hierfür Referenz? oder Fußnote mit Werten für id Gas oder Moleküle anhängen]. 
-Da bei der Expansion ins Vakuum die Dichte und Temperatur des Gases sinken, muss aufgrund der Energieerhaltung, die Geschwindigkeit zunehmen. 
-%Wenn man die Düsenöffnung als klein betrachtet (was bei ca 50$\mu$m berechtigt ist), darf man die Expansion eindimensional behandeln und damit kann man sich anschaulich vorstellen, dass die Beschleunigung in Richtung der Achse des Molekularstrahls erfolgen muss.
-Nimmt man an dass die gesamte thermische Energie in kinetische Energie umgewandelt wird erhält man folgende Formel für die Endgeschwindigkeit.
-\begin{equation}
-v_\infty=\sqrt{2\int_{T_0}^{T_\infty \ll T_0} c_{p,mol}dT}= \sqrt{\frac{2R}{W}\left(\frac{\gamma}{\gamma-1}\right)T_0}
-\end{equation}
-%
-Wobei der Zusammenhang für ideale Gase
-\begin{equation}
-c_{p,mol}= \left(\frac{\gamma}{\gamma-1}\right)\left(\frac{R}{W}\right)
-\end{equation}
-%
-verwendet wurde. R steht hier f"ur die universelle Gaskonstante, W kennzeichent das Molekulargewicht des verwendeten Gases und $T_0$ steht für die Düsentemperatur.
-Bei Gasgemischen muss man die, nach ihrem atomaren Anteil gewichteteten, Mittelwerte $\bar{c}_{p,mol}$ und $\bar{W}_{mol}$ verwenden.
-Vergleicht man die Endgeschwindigkeit $v_{\infty}$ mit der Schallgeschwindigkeit für ideales Gas
-\begin{equation}
-c=\sqrt{\frac{R \gamma}{W}T}
-\end{equation}
-
-sieht man, dass $v_{\infty}$ größer ist als c, weil die Temperatur des expandierten Gases T sehr viel kleiner ist, als die Düsentemperatur $T_0$ und der andere Faktor $\sqrt{(2/\gamma -1)}=2,45$ (mit f=6 bei Wasser) den Unterschied nochmal verstärkt.\\
-Die Machzahl 
-\begin{equation}
-M(\vec{r})= v(\vec{r})/c(p(\vec{r}))
-\end{equation}
-
-ist bei der Überschallexpansion eine wichtige Größe, die skalar in vielen thermodynamischen Rechnungen dazu eine Rolle spielt und vektoriell betrachtet das Strömungsfeld an jedem Ort $\vec{r}$ charakterisiert. 
-
-Nach Austritt aus der Düse hat das Gas eine Machzahl M$>$1, was bedeutet, das Gas breitet sich mit Überschallgeschwindigkeit aus. Das hat zur Folge, das der Gasstrom zunächst unabhängig von jeglichen externen Randbedingungen ist. Dieser Effekt rührt daher, dass sich Information \enquote{nur} mit Schallgeschwindigkeit ausbreitet und das Fluid eben schneller (M$>$1) ist. Doch obwohl der Gasstrom nichts von Randbedingungen weiß, muss er sich an diese anpassen. Das wird nach kurzer Zeit von Schockwellen realisiert, die an begrenzenden Wänden oder ähnlichen \enquote{Randbedingungen} abprallen und auf ihrem Rückweg den Strom regulieren. Wie man an Bild \ref{fig:Machexpansion} erkennen kann gibt es mehrere Instanzen dieser Schockwellen, die nichtisentropische Gebiete sind und sich durch starke Dichte-, Temperatur-, Geschwindigkeits- und Druckgradienten auszeichnen. Durch diese Eigenschaften kann man die Schockwellen mit diversen Lichtstreutechniken sichtbar machen.
-%
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=0.7\textwidth]{../shockwaves.png}%
 \captionof{figure}{Druckverteilung bei einem Argon-Jet mit einer 20 µm breiten schlitzförmigen Düsenöffnung. Die gekennzeichnete Schockwelle in der Mitte begrenzt den isentropen Bereich, also die \enquote{zone of silence} \cite{Mou09} }
- \label{fig:Machexpansion}
+ \label{fig:Schockwellen}
 \end{minipage} 
 \end{center} 
 % 
-Der von diesen Schockwellen eingegrenzte Bereich ist dennoch unbeeinflusst von den Randbedingungen und wird deswegen auch \enquote{zone of silence} genannt. 
-Die Lage der Schockstrukturen hauptsächlich abhängig von dem Verhältnis von Düsendruck $p_0$ zu Hintergrunddruck $p_b$ der Kammer. Eine weitere wichtige Schockstruktur ist die sog. Mach-Scheibe (englisch \enquote{mach disc}), die normal zur Ausbreitungsrichtung des Gases liegt. Da Schockwellen enormen Druck auf die im Strom vorkommenden Cluster ausübt, muss der für Experimente verwendete Molekülstrahl noch vor der Mach-Scheibe entnommen werden. Diese Entnahme wird durch einen Skimmer realisiert, welcher den gewollten Teil des Molekülstrahls durchlässt und den restlichen Anteil von der Strahlachse wegreflektiert, doch auf diesen Teil werde ich im Kapitel [Kapitel über Jet/Skimmer] etwas genauer eingehen. 
+Der von diesen Schockwellen eingegrenzte Bereich wird \enquote{zone of silence} genannt, weil er von Randbedingungen unbeeinflusst ist \textbf{und keine Stöße unter den Teilchen stattfinden, da sie die Düse verlassen haben und sich ihr Impuls bereits angeglichen hat.wird deswegen \enquote{zone of silence} genannt}
+Die Lage der Schockstrukturen wird bestimmt durch Verhältnis von Stagnationsdruck $p_0$ zu Hintergrunddruck $p_b$ der Kammer. Eine wichtige Schockstruktur ist die sogenannte Mach-Scheibe, die normal zur Ausbreitungsrichtung des Gases liegt. Trifft der Jet auf eine Schockstruktur, wird ein enormer Druck auf dessen \textbf{Konstituenten} ausgeübt. Enthält der Gasstrom z.B. empfindliche Cluster, besteht die Gefahr, dass diese zerstört werden. Das kann verhindert werden, indem man den gewünschten Teil des Teilchenstroms mit einem Skimmer (siehe Kapitel \ref{sec:Skimmer}) vor der Machscheibe herausschält.
 
-Die Position der Mach-Scheibe lässt sich mittels
+Die Position der Mach-Scheibe lässt sich mittels der empirischen Formel
 \begin{equation}
 \frac{x_m}{d}=0.67 \sqrt{\left( \frac{p_0}{p_b}\right)}
 \end{equation}
 %
-bestimmen, wobei $x_m$ die besagte Mach-Scheibenposition, ausgehend von der Düse und d die Größe der Düsenöffnung ist.
-Um einen kleinen Vorausgriff zu wagen, habe ich hier schonmal grobe Werte unseres Experimentes eingesetzt. Mit d = 50 µm, $p_0 \approx$ 1000 mbar und $p_b \approx 10^{-3}$  mbar erhält man für\\ $x_m \approx 3,35$ cm. Ein sehr großer Wert, wenn man bedenkt, dass man üblicherweise wenige Millimeter nah an den Skimmer fährt und zudem der Wert in der Realität noch größer ist, weil ich hier für $p_0$ den Dampfdruck im Reservoir bei 100°C gewählt habe (man weiß noch nicht dass verdampft wird!) und nicht den an der Düse, der garantiert größer sein wird.
+bestimmen, wobei $x_m$ die besagte Mach-Scheibenposition, ausgehend von der Düse und $d$ die Größe der Düsenöffnung ist.
+%Um einen kleinen Vorausgriff zu wagen, habe ich hier schonmal grobe Werte unseres Experimentes eingesetzt. Mit d = 50 µm, $p_0 \approx$ 1000 mbar und $p_b \approx 10^{-3}$  mbar erhält man für\\ $x_m \approx 3,35$ cm. Ein sehr großer Wert, wenn man bedenkt, dass man üblicherweise wenige Millimeter nah an den Skimmer fährt und zudem der Wert in der Realität noch größer ist, weil ich hier für $p_0$ den Dampfdruck im Reservoir bei 100°C gewählt habe (man weiß noch nicht dass verdampft wird!) und nicht den an der Düse, der garantiert größer sein wird.
 
  %Um das Strömungsfeld der Überschallexpansion zu charakterisieren muss man nicht nur die erwähnten Schockwelleneffekte betrachten, sondern sich auch die Form der Düse anschauen. Hier gibt es einen effektiven Düsendurchmesser $d_{eff}$ der z.B. bewirkt, dass konische Düsen bei geringerem Gasfluss, gleiche Gasdichten auf der Strahlachse und gleiche Clustergrößen produziert, wie eine zylindrische Düse mit gleichem $d_{eff}$ \cite{HOb72}. Den effektiven Düsendurchmesser
 %Jetzt das mit eff Düsenöffnung
