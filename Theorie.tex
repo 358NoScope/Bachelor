@@ -73,12 +73,12 @@ Der austretende Elektronenschauer trifft anschließend auf die Delayline-Anode \
 x = c_{w,x} \Delta t\ ,
 \end{equation}
 wobei x die Position senkrecht zu den Wicklungen beschreibt und $c_{w,x}$ = const die effektive Signalausbreitungsgeschwindigkeit in diese Richtung ist. Um einen zweidimensionalen Auftreffort zu erhalten, wird eine zweite Kupferdrahtwicklung rechtwinkling zu der ersten orientiert angebracht (siehe Abb. \ref{fig:Detektor} a)). \textbf{Dadurch, dass das (Ladungs-)Signal die gesamte Drahtlänge durchläuft, ist die Summe der beiden Zeitsignale an den Enden vordefiniert. Mithilfe dieser Zeitsummenbedingung können auch mehrere Teilchen gleichzeitig(?, oder <8ns) ortsaufgelöst werden.}\\
-\textbf{Könnte noch beschreiben dass es einen zweiten Draht gibt, Hintergrund}
+\textbf{Könnte noch beschreiben, dass es einen zweiten Draht gibt, Hintergrund, und dann Spannung an der Anode anliegt, die die Elektronen beschleunigt.}
 
 \newpage
 \section{Cluster} \label{sec:Cluster}
 
-Da bei typischen Reaktionen liegen die zu messenden Impulse der erzeugten Ionen in der Größenordnung von einer atomaren Einheit, und damit die Energien im meV-Bereich. Um diese Vorgänge mit einem REMI aufzulösen ist ein kalter Targetstrahl essentiell, die die mittlere kinetische Energie von Gasen bei Raumtemperatur bei ca. 40 meV liegt \cite{kurka07}. Ein Überschall-Gasjet kann eine innere Temperatur der Teilchen von unter einem Kelvin erreichen. Der Prozess der Überschallexpansion fördert zudem die Entstehung von Clustern, wie sie für die in Kapitel \ref{sec:Motivation} vorgestellten Experimente erforderlich sind.
+Da bei typischen Reaktionen liegen die zu messenden Impulse der erzeugten Ionen in der Größenordnung von einer atomaren Einheit, und damit die Energien im meV-Bereich. Um diese Vorgänge mit einem REMI aufzulösen ist ein kalter Targetstrahl essentiell, da die mittlere kinetische Energie von Gasen bei Raumtemperatur bei ca. 40 meV liegt \cite{kurka07}. Ein Überschall-Gasjet kann eine innere Temperatur der Teilchen von unter einem Kelvin erreichen. Der Prozess der Überschallexpansion fördert zudem die Entstehung von Clustern, wie sie für die in Kapitel \ref{sec:Motivation} vorgestellten Experimente erforderlich sind.
 
 In den folgenden Abschnitten wird näher auf Cluster und deren Entstehung durch Überschallexpansion eingegangen.
 
@@ -116,7 +116,7 @@ Expandiert Gas mit Volumen V aus einem Reservoir mit Temperatur $t_0$ und Druck 
 pV^{\gamma/(1-\gamma)} = \textmd{const, mit}\ \gamma=c_p/c_v=(f+2)/f .
 \end{equation}
 %
-Der Exponent $\gamma$ zählt die Anzahl der aktiven Freiheitsgrade\footnote{\ $\gamma$ = 3 für einatomige Gase, $\gamma$ = 5 für zweiatomige Gase, $\gamma$ = 6 für Wasser \cite{mul13}} und kann als Quotient aus der isobaren und isochoren Wärmekapazität, $c_p$ und $c_v$, experimentell bestimmt werden. 
+Der Exponent $\gamma$ hängt von der Anzahl der aktiven Freiheitsgrade\footnote{\ f = 3 für einatomige Gase, f = 5 für zweiatomige Gase, f = 6 für Wasser \cite{mul13}} f ab und kann als Quotient aus der isobaren und isochoren Wärmekapazität, $c_p$ und $c_v$, experimentell bestimmt werden. 
 
 %Die Anzahl der Freiheitsgrade $\gamma$ ergibt sich aus der Summe der Translationsfreiheitsgerade, der Rotationsfreiheitsgerade und zwei Mal der Vibrationsfreiheitsgrade. Zu beachten ist, dass die Rotations- und Vibrationsfreiheitsgrade erst ab bestimmten Temperaturen angeregt werden. So hat ein zweiatomiges Molekül bei Raumtemperatur drei Translations-, zwei Rotations aber keine Vibrationsfreiheitsgrade. Ein einzelnes Atom hingegen behält im freien Raum bei allen Temperaturen seine drei Translationsfreiheitsgrade.
 %Wenn man die Düsenöffnung als klein betrachtet (was bei ca 50$\mu$m berechtigt ist), darf man die Expansion eindimensional behandeln und damit kann man sich anschaulich vorstellen, dass die Beschleunigung in Richtung der Achse des Molekularstrahls erfolgen muss.
@@ -137,7 +137,7 @@ Vergleicht man die Endgeschwindigkeit $v_{\infty}$ mit der Schallgeschwindigkeit
 v_\infty= \sqrt{\frac{\textmd{R}\gamma}{\textmd{W}}T_0\left(\frac{2}{\gamma-1}\right)} = c\ \sqrt{\left(\frac{2}{\gamma-1}\right)\frac{T_0}{T}} \textmd{ mit } c=\sqrt{\frac{\textmd{R} \gamma}{\textmd{W}}T}
 \end{equation}
 
-sieht man, dass $v_{\infty}$ größer ist als c, weil die Temperatur des expandierten Gases T sehr viel kleiner ist, als die Düsentemperatur $T_0$ und der Faktor $\sqrt{(2/\gamma -1)}=2,45$ (mit $\gamma$ = 6 bei Wasser) den Unterschied verstärkt.\\
+sieht man, dass $v_{\infty}$ größer ist als c, weil die Temperatur des expandierten Gases T sehr viel kleiner ist, als die Düsentemperatur $T_0$ und der Faktor $\sqrt{(2/\gamma -1)}=2,45$ (mit $\gamma$ = 8/6 bei Wasser) den Unterschied verstärkt.\\
 Die Machzahl 
 \begin{equation}
 M(\vec{r})= v(\vec{r})/c(p(\vec{r}))
@@ -145,7 +145,7 @@ M(\vec{r})= v(\vec{r})/c(p(\vec{r}))
 
 ist bei der Überschallexpansion eine wichtige Größe, die skalar in vielen thermodynamischen Rechnungen eine Rolle spielt und vektoriell betrachtet das Strömungsfeld an jedem Ort $\vec{r}$ charakterisiert. 
 
-Sofern das Verhältnis von Stagnationsdruck zu Hintergrunddruck $p_0/p_b > 2.1$ beträgt breitet sich das Gas nach Austritt aus der Düse mit Überschallgeschwindigkeit aus, was eine Machzahl M $>$ 1 bedeutet \cite{scoles1988}. Das hat zur Folge, das der Gasstrom zunächst unabhängig von jeglichen externen Randbedingungen ist. Dieser Effekt rührt daher, dass sich Information \enquote{nur} mit Schallgeschwindigkeit ausbreitet und der Teilchenstrom schneller als diese ist. Doch obwohl der Gasstrom nichts von Randbedingungen \enquote{weiß}, muss er sich nach ihnen richten. Deswegen bilden sich nach kurzer Zeit von Schockwellen aus, die aus Teilchen bestehen, die an begrenzenden Wänden oder ähnlichen \enquote{Randbedingungen} abprallen und auf ihrem Rückweg den Strom regulieren. Wie man an Abbildung \ref{fig:Machexpansion} erkennen kann, gibt es mehrere Arten dieser Schockwellen, die nichtisentropische Gebiete sind und sich durch starke Dichte-, Temperatur-, Geschwindigkeits- und Druckgradienten auszeichnen. Durch diese Eigenschaften kann man die Schockwellen mit diversen Lichtstreutechniken sichtbar machen \cite{Mou09} (siehe Abbildung \ref{fig:Schockwellen}).
+Sofern das Verhältnis von Stagnationsdruck zu Hintergrunddruck $p_0/p_b > 2.1$ beträgt breitet sich das Gas nach Austritt aus der Düse mit Überschallgeschwindigkeit aus, was eine Machzahl M $>$ 1 bedeutet \cite{scoles1988}. Das hat zur Folge, das der Gasstrom zunächst unabhängig von jeglichen externen Randbedingungen ist. Dieser Effekt rührt daher, dass sich Information \enquote{nur} mit Schallgeschwindigkeit ausbreitet und der Teilchenstrom schneller als diese ist. Doch obwohl der Gasstrom nichts von Randbedingungen \enquote{weiß}, muss er sich nach ihnen richten. Deswegen bilden sich nach kurzer Zeit Schockwellen aus, die aus Teilchen bestehen, die an begrenzenden Wänden oder ähnlichen \enquote{Randbedingungen} abprallen und auf ihrem Rückweg den Strom regulieren. Bei der Überschallexpansion bilden sich mehrere dieser Schockwellen aus (siehe Abbildung \ref{fig:Machexpansion}). Schockwellen sind nichtisentropische Gebiete und zeichnen sich durch starke Dichte-, Temperatur-, Geschwindigkeits- und Druckgradienten aus. Durch diese Eigenschaften kann man Schockwellen mit diversen Lichtstreutechniken sichtbar machen \cite{Mou09} (siehe Abbildung \ref{fig:Schockwellen}).
 %
 \begin{center}
 \begin{minipage}{\linewidth}
@@ -160,13 +160,13 @@ Sofern das Verhältnis von Stagnationsdruck zu Hintergrunddruck $p_0/p_b > 2.1$ 
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=0.7\textwidth]{../shockwaves.png}%
-\captionof{figure}{Druckverteilung bei einem Argon-Jet mit einer 20 µm breiten schlitzförmigen Düsenöffnung. Die gekennzeichnete Schockwelle in der Mitte begrenzt den isentropen Bereich, also die \enquote{zone of silence} \cite{Mou09} }
+\captionof{figure}{Druckverteilung bei einem Argon-Jet mit einer 20 µm breiten schlitzförmigen Düsenöffnung. Die gekennzeichnete Schockwelle in der Mitte begrenzt den isentropen Bereich, also die zone of silence \cite{Mou09} }
  \label{fig:Schockwellen}
 \end{minipage} 
 \end{center} 
 % 
-Der von diesen Schockwellen eingegrenzte Bereich wird \enquote{zone of silence} genannt, weil er von Randbedingungen unbeeinflusst ist \textbf{und keine Stöße unter den Teilchen stattfinden, da sie die Düse verlassen haben und sich ihr Impuls bereits angeglichen hat.wird deswegen \enquote{zone of silence} genannt}
-Die Lage der Schockstrukturen wird bestimmt durch Verhältnis von Stagnationsdruck $p_0$ zu Hintergrunddruck $p_b$ der Kammer. Eine wichtige Schockstruktur ist die sogenannte Mach-Scheibe, die normal zur Ausbreitungsrichtung des Gases liegt. Trifft der Jet auf eine Schockstruktur, wird ein enormer Druck auf dessen \textbf{Konstituenten} ausgeübt. Enthält der Gasstrom z.B. empfindliche Cluster, besteht die Gefahr, dass diese zerstört werden. Das kann verhindert werden, indem man den gewünschten Teil des Teilchenstroms mit einem Skimmer (siehe Kapitel \ref{sec:Skimmer}) vor der Machscheibe herausschält.
+Der von den Schockwellen eingegrenzte Bereich wird zone of silence genannt, weil er von Randbedingungen unbeeinflusst ist und sich die Teilchen in diesem Bereich überschallschnell fortbewegen.
+Die Lage der Schockstrukturen wird maßgeblich durch das Verhältnis von Stagnationsdruck $p_0$ zu Hintergrunddruck $p_b$ der Kammer bestimmt. Eine wichtige Schockstruktur ist die sogenannte Mach-Scheibe, die normal zur Ausbreitungsrichtung des Gases liegt. Trifft der Jet auf eine Schockstruktur, wird ein enormer Druck auf dessen \textbf{Konstituenten} ausgeübt. Enthält der Gasstrom z.B. empfindliche Cluster, besteht die Gefahr, dass diese zerstört werden. Das kann verhindert werden, indem man den gewünschten Teil des Teilchenstroms mit einem Skimmer (siehe Kapitel \ref{sec:Skimmer}) vor der Machscheibe herausschält.
 
 Die Position der Mach-Scheibe lässt sich mittels der empirischen Formel
 \begin{equation} \label{eq:Machscheibe}
