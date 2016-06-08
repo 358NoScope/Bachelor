@@ -3,32 +3,71 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Technische Umsetzung} 
 
-Der Hauptbestandteil dieser Arbeit bestand darin, eine stabile und praktikable Wasserclusterquelle zu konstruieren, die einen vakuumseitiges Reservoir besitzt und während des Betriebes wiederbefüllt werden kann, damit die bestmöglichen Vorraussetzungen für Experimente damit herrschen. (Hier etwas sinnvolles ausdenken + kleine Inhaltsübersicht)
+Bestandteil der Vorbereitungen \textbf{auf} die eingangs besprochenen Experimente war die Konstruktion einer Cluster-Quelle für Flüssigkeiten. Um auch Flüssigkeiten wie Wasser in die Gasphase überführen zu können, ist die Implementierung von Heizelementen erforderlich. Weitere Ansprüche waren ein möglichst großes vakuumseitiges Reservoir und die Möglichkeit dieses während des Betriebes zu befüllen. \textit{Das folgende Kapitel behandelt neben der neuen Cluster-Quelle, die Komponenten die in der Praxis notwendig sind, um den kalten Teilchenstrom unter optimalen Bedingungen in die Hauptkammer des Reaktionsmikroskopes zu führen. Brauch ne bessere Überleitung}
 
-\section{Quelle} \label{sec:Quelle}
+\section{Design der Cluster-Quelle} \label{sec:Quelle}
 
-Das Design wurde gewissermaßer durch die Arbeiten von Mucke \cite{mucke2011} und Wechselberger \cite{wechselberger2014} inspririert und durch eigene Überlegungen verfeinert.Die dezidierte Wasserclusterquelle ist in Abbildung \ref{fig:QuerschnittDuse} im Querschnitt dargestellt. Wie aus der Abbildung zu erkennen ist, hat die Quelle an sich eine Länge von 114 mm und einen Außendurchmesser von 35mm, welcher auf den maximalen Innendurchmesser des Manipulatorbalgs abgestimmt ist \textbf{haha}. Die in braun angedeuteten Haltestangen sorgen für eine starre Verbindung zwischen Quelle und Flansch und schützen die Rohrleitungen, in dunkelgrün, davor, durch die Last der Quelle zu verbiegen. Die Haltestangen haben eine Länge von 240 mm, die in Rücksicht auf die Jetkammer gewählt wurden und es ermöglichen beliebig nahe an den Skimmer heranzufahren (\textbf{Hier Bild Düse mit Jetkammer referenzieren und das Bild in Anhang stecken?}). Die gesamte Quelle wird mit Heizdraht von außen geheizt. Dabei wird die Spitze und das Reservoir separat umwickelt, damit diese Bauteile seperat geheizt werden können. Da das Reservoir durch die Heizpatrone schon eine effektive Lösung zum erhitzen des Wassers hat ist die Umwicklung nicht besonders notwendig, und wird vorraussichtlich nur leicht betrieben um die Kondensation an den Wänden zu hemmen. Die Heizdrahtwicklung an der Spitze ist hingegen für die Stabilität der Quelle essentiell. Die Spitze wird so geheizt, dass sie immer etwa 10-20 Kelvin über der Reservoirtemperatur ist, damit keine Wassertropfen an den Wänden kondensieren und damit für schubartige Austöße aus der Düse oder sogar zur Vereisung der Düse führen würden.
+%\begin{figure}[t]
+%\centering
+%\includegraphics[width=1\linewidth]{../dusenackt}
+%\caption[asd]{ert}
+%\label{fig:dusenackt}
+%\end{figure}
+\begin{center}
+\begin{minipage}{1\linewidth}
+\centering
+\includegraphics[width=1.0\textwidth]{../dusenackt.jpg}%
+\captionof{figure}{Foto der Cluster-Quelle für Flüssigkeiten. Die Heizdrahtwicklungen und Temperaturfühler sind nicht angebracht.}
+ \label{fig:dusenackt}
+\end{minipage} 
+\end{center} 
 
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{../Dusekomplett2.png}%
-
+\captionof{figure}{Querschnitt der Cluster-Quelle ohne Heizdraht und Thermofühler. Maße in mm. Die einzelnen Bauteile sind farbig hervorgehoben: lila: Düsenhalteplatte, blau: Spitze, gelb: Filter aus gesintertem Edelstahl, orange: Filterhalteplatte, schwarz: Viton O-Ring, rot: Reservoirkammer, hellgrün: Heizpatrone, beige: Reservoirrückwand, dunkelgrün: Rohrleitungen, braun: Haltestangen. Die Lochdüse ist zwischen der Spitze und der Düsenhalteplatte zu erkennen. }
  \label{fig:QuerschnittDuse}
 \end{minipage} 
-\captionof{figure}{Querschnitt der konstruierten Wasserclusterquelle ohne Heizdraht (maßstäblich). Maße in mm. Die Wasserclusterquelle ist aus Edelstahl. Die einzelnen Bauteil sind farbig hervorgehoben (von links nach rechts): lila: Düsenhalteplatte; blau: Spitze; gelb: Filter; orange: Filterhalteplatte; schwarz: O-Ring; rot: Reservoirkammer; hellgrün: Heizpatrone; beige: Reservoirrückwand; dunkelgrün: Rohrleitungen; braun: Haltestangen; Die Düse selbst ist zwischen der Spitze und der Düsenhalteplatte zu erkennen. }
 \end{center} 
-%
-%{\centering
-%\includegraphics[width=1\textwidth]{../Dusekomplett2.png}
-%\captionof{figure}{Querschnitt der konstruierten Wasserclusterquelle (maßstäblich). Maße in mm. Die Wasserclusterquelle ist aus Edelstahl. Die einzelnen Bauteil sind farbig hervorgehoben: lila:Düsenhalteplatte; blau: Spitze; gelb: Filter; orange: Filterhalteplatte; schwarz: O-Ring; rot: Reservoirkammer; hellgrün: Heizpatrone; beige: Reservoirrückwand; dunkelgrün: Rohrleitungen; Die Düse selbst ist zwischen der Spitze und der Düsenhalteplatte leicht gelb zu erkennen.}
-%}
 
-(\textbf{ICDBerlin schaun..Seite 100})
+ Die Cluster-Quelle ist in Abbildung \ref{fig:QuerschnittDuse} im Querschnitt dargestellt. Die Quelle besteht aus Edelstahl 1.4301 und hat eine Länge von 114 mm und einen Außendurchmesser von 35 mm. Die in braun angedeuteten Haltestangen sorgen für eine starre Verbindung zwischen Quelle und CF DN40 Halteflansch. Gleichzeitig entlasten sie die Rohrleitungen (dunkelgrün), die von der Reservoirrückwand (beige), durch den Halteflansch hindurch, bis nach außen führen. Der Halteflansch wird auf einen XYZ-Manipulator (siehe Kapitel \ref{sec:Ausrichtung der Jetduse}) mit 50 mm Hub in Z-Richtung montiert. Die Haltestangen haben eine Länge von 240 mm. Diese Länge wurde so gewählt, dass die Düse beliebig nahe an den Skimmer in der ersten Jetkammer herangefahren werden kann.
+ 
+ \begin{center}
+ \begin{minipage}{\linewidth}
+ \centering
+ \includegraphics[width=1\textwidth]{../duseinjetkammer.pdf}%
+ \captionof{figure}{
+ Maßstabsgetreue Darstellung der Konfiguration von Skimmer und Cluster-Quelle in der ersten Jetkammer bei 210 mm Haltestangenlänge und \textbf{eingefahrenem Manipulatorhub} (Z = 0 mm). Alle Abmessungen in mm.}
+  \label{fig:duseinjetkammer}
+ \end{minipage} 
+ \end{center} 
+ 
 
-\textbf{Iwie fehlt hier die überleitung} Das Reservoir ist über eine Trennwand, die oben ein kleines Loch bestitzt, mit der Spitze verbunden. Da Wasser in das Reservoir gefüllt wird, welches nicht durch das Loch ausfließen darf, ist die Orientierung der Düse beim Einbau zu betrachten. Die Reservoirkammer wird von außen mit einer Heizdrahtwicklung geheizt und hat an der Rückseite drei Swagelok-Rohre mit jeweils 3mm Außendurchmesser. Zwei dieser Rohre dienen der Wasserbefüllung und sind außerhalb des Vakuums mit durchsichtigen PVC-Schläuchen mit Spritzen verbunden. Eines der Rohre geht relativ mittig in das Reservoir ein und das Andere befindet sich knapp unter der Kante des erwähnten Loches. Durch das tieferstehende Rohr wird das Wasser mit einer Spritze per Hand gegen den Betriebsdruck eingeführt und das höherstehende Rohr saugt gleichzeitig mit einer weiteren Spritze dasselbe Volumen ab bis im transparenten Silikonschlauch Wasser zu erkennen ist. Sobald dies der Fall ist, ist der Maximalfüllstand erreicht und das Befüllen beendet. In dem Reservoir finden maximal 36 ml Wasser Platz. \textbf{Formeln/Rechnung dazu?} So tief, wie es die Schweißung zugelassen hat, befindet sich eine 50W(\textbf{?}) Heizpatrone von Watlow, welche das Wasser erhitzen wird, sodass der gewünschte Wasserdampfdruck eingestellt wird. Der Dampfdruck des Wassers enstpricht auch etwa dem Stagnationsdruck hinter der Düse, wobei man beachten muss, dass die konische Form der Aushöhlung den Druck bis zur Düse erhöhen wird. Wie sehr dieser Effekt eine Rolle spielt muss experimentell geprüft werden. Es besteht die Möglichkeit den Stagnationsdruck zu erhöhen, indem man ein zusätzliches Gas koexpandieren lässt. Diese Funktion erfüllt das höchstgelegene Swagelok-Rohr. Mit dieser Methode kann man die Expansionsbedingungen für eine bestimmte Clustergröße optimieren, oder auch gemischte Cluster produzieren. Am vorderen Ende des Reservoires, nahe der Trennwand, sind von außen zwei Pt-100-Thermofühler angebracht, um die Temperatur des Reservoires abschätzen zu können und um Referenzwerte für den aktuellen Zustand zu liefern, damit bestimmte Einstellungen reproduzierbar sind. 
-In Abbildung \ref{fig:Spitze2} sieht man den vorderen Teil der Wasserclusterquelle, der als Spitze bezeichnet wird etwas mehr im Detail.
-Die Spitze wird gegenüber dem Reservoir mit einem O-Ring gedichtet und ringsum verschraubt.(\textbf{ist das deutsch?}) Bei Betrieb entsteht im Reservoir Wasserdampf, das durch das Loch in der Trennwand in die Spitze strömt. In der Spitze ist eine konische Aushöhlung durch die der Wasserdampf zu der Düse kommt. Vor der konischen Aushöhlung ist ein bleigedichteter, gesinterter Filterring mit 5µm bzw. 10µm Porenweite zum Einsatz vorgesehen. Zwischen der Trennwand und dem Filterring ist ein kleiner Hohlraum in den theoretisch ein Feststoff hineingegeben werden kann, um dotierte Cluster (englisch: doped clusters) über das Pick-Up-Verfahren zu produzieren. Nachdem das Gas die konische Aushöhlung durchquert hat, muss es die Düse passieren um ins Vakuum zu expandieren (\textbf{Detailaufnahme}). Als Düse wird eine Platin/Irdium-Blende von Plano mit 50µm bzw. 30µm Lochdurchmesser verwendet (siehe Abb. \ref{fig:Duse})(\textbf{warum diese Abmessungen, schon immer so, Preise?}), die mit einem dünnen Bleiring gedichtet und mit einer Halteplatte fest angepresst wird. %
+ \begin{center}
+  \begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=1\textwidth]{../duseheiz.pdf}%
+  \captionof{figure}{Foto der Cluster-Quelle für Flüssigkeiten mit angebrachten Heizdrahtwicklungen und Temperaturfühlern.}
+   \label{fig:duseheiz}
+  \end{minipage} 
+  \end{center} 
+  
+  Von außen wird die ganze Oberfläche der Jetdüse mit Heizdrähten geheizt (siehe Abbildung \ref{fig:duseheiz}). Da die Spitze konisch zuläuft wurde eine Spiralnut eingefräst, um dem Heizdraht darin Halt zu bieten. Die Spitze und das Reservoir können separat auf unterschiedliche Temperaturen geheizt werden. Um die Flüssigkeit im Inneren des Reservoirs möglichst effektiv beheizen zu können, befindet sich dort eine 50 W Heizpatrone (siehe Abbildung \ref{fig:QuerschnittDuse}, \textbf{hellgrün}). Dadurch ist die Mithilfe des Reservoirheizdrahtes zwar nicht zwingend notwendig, aber nützlich um die Kondensation des \textbf{verdampften Gases}
+  an den Reservoirwänden zu verhindern. Im Gegensatz dazu, ist die Heizdrahtwicklung an der Spitze sehr wichtig für die Stabilität der Quelle. Sollte es im Bereich der Düse zur Kondensation kommen, würde das zu schubartigen Ausstößen oder sogar zur Vereisung der Düse führen. \textbf{Um das zu verhindern, wird die Düsentemperatur hoch genug gewählt, sodass die Kondensation des Dampfes ,unter Berücksichtigung des Stagnationsdruckes, nicht stattfindet.} Im Normalfall ist das gewährleistet, wenn die Düse um 10 - 20 K wärmer ist, als das Reservoir.
+  Zwischen Reservoir und Spitze befindet sich eine Trennwand mit einem Loch, das höher liegt als der Maximalfüllstand. Durch das Loch gelangt das bei Reservoirtemperatur $T_0$ entstehende Gas mit Stagnationsdruck $p_0$ von dem Reservoir zur Düse. 
+  Da Flüssigkeit in das Reservoir gefüllt wird, welches nicht durch das Loch ausfließen darf, ist die Orientierung der Düse beim Einbau zu beachten. Die drei Rohrenden (Durchmesser = 3 mm) in der Reservoirrückwand sind so angeordnet, dass die Erste Öffnung über dem Maximalfüllstand liegt, die Zweite knapp unter dem Maximalfüllstand und die Dritte relativ mittig liegt. Die zwei unteren Rohre dienen der Wiederbefüllung des Reservoirs. Dabei wird je eine 50 ml- Einwegspritze über einen durchsichtigen PVC-Schlauch an die Ausgänge der Rohre angeschlossen. Saugt man mit der oberen Spritze Volumen aus dem Reservoir ein, wird im Ausgleich dazu dasselbe Volumen aus der unteren Spritze in das Reservoir gefüllt. Sobald kleine Flüssigkeitsmengen anfangen in den PVC-Schlauch der oberen Spritze zu fließen, ist der Befüllvorgang abgeschlossen. Das Reservoir fasst bis zu 36 ml Flüssigkeit. Das höchstgelegene Rohr eröffnet die Möglichkeit Versuche mit koexpandierendem Gas durchzuführen. \textbf{Dieses Vorgehen beeinflusst die Expansionsbedingungen und kann somit zur Anpassung von Expansionsbedingungen an gewünschte Werte benutzt werden.
+   Mit dieser Methode kann man die Expansionsbedingungen für eine bestimmte Clustergröße optimieren, oder auch gemischte Cluster produzieren. }
+   
+   Am vorderen Ende des Reservoires und der Spitze sind von außen jeweils zwei Pt-100-Thermofühler angebracht, um die Außentemperatur der Cluster-Quelle messen zu können. 
+   Die Parameter Düsen- und Reservoirtemperatur sowie der Expansionskammerdruck sind wichtige Überwachungsgrößen um die Stabilität einer Expansion einschätzen zu können.
+   
+In Abbildung \ref{fig:Spitze2} sieht die Spitze der Clusterquelle etwas mehr im Detail.
+Die Spitze wird gegenüber dem Reservoir mit einem O-Ring gedichtet und ringsum verschraubt.
+
+
+%Im Betrieb entsteht im Reservoir Wasserdampf, das durch das Loch in der Trennwand in die Spitze strömt.
+ In der Spitze ist eine konische Aussparung durch die das Gas zu der Düse kommt. Vor dieser Aussparung befindet sich ein bleigedichteter, gesinterter Filterring mit 5µm bzw. 10µm Porenweite. Zwischen der Trennwand und dem Filterring ist ein kleiner Hohlraum in den theoretisch ein Feststoff hineingegeben werden kann, um dotierte Cluster  über das Pick-Up-Verfahren zu produzieren. Nachdem das Gas die konische Aushöhlung durchquert hat, muss es die Düse passieren um ins Vakuum zu expandieren (siehe Abbildung \ref{fig:Spitze2}-Detailaufnahme). Als Lochdüse wird eine Platin/Irdium-Blende von Plano mit 50µm bzw. 30µm Lochdurchmesser verwendet \textbf{(siehe Kapitel \ref{sec:uberschalexp})}(\textbf{warum diese Abmessungen, schon immer so, Preise?}), die mit einem dünnen Bleiring gedichtet und mit einer Halteplatte fest angepresst wird. %
 
 \begin{center} 
 \begin{minipage}{\linewidth}
@@ -37,14 +76,14 @@ Die Spitze wird gegenüber dem Reservoir mit einem O-Ring gedichtet und ringsum 
 \end{minipage} 
 \end{center} 
 
-Die ganze Spitze verjüngt sich in Richtung der Düse und wird von außen gleichmäßig durch einen Heizdraht geheizt. Dadurch, dass sich bis zur Spitze hin immer weniger Edelstahl zwischen Heizdraht und dem Gas in der Aushöhlung befindet, stellt sich ein Wärmegradient ein. Vorne an der Spitze befinden sich abermals 2 Pt-100-Thermofühler, die dazu dienen die ungefähre Temperatur der Düse abschätzen zu können und Referenzwerte liefern mit denen man die Heizbedingungen an der Spitze wieder rekonstruieren zu kann. 
+Die Spitze verjüngt sich in Richtung der Düse und wird von außen gleichmäßig durch einen Heizdraht geheizt. Dadurch, dass sich bis zur Spitze hin immer weniger Edelstahl zwischen Heizdraht und dem Gas in der Aushöhlung befindet, stellt sich ein Wärmegradient ein. Vorne an der Spitze befinden sich abermals 2 Pt-100-Thermofühler, die dazu dienen die ungefähre Temperatur der Düse abschätzen zu können und Referenzwerte liefern mit denen man die Heizbedingungen an der Spitze wieder rekonstruieren zu kann. 
 %
 Die drei anfangs erwähnten Rohrleitungen werden direkt durch den Flansch nach außen geführt mit dem die gesamte Konstruktion an einem xyz-Manipulator befestigt wird. Der xyz-Manipulator ermöglicht es den Targetjet in alle Raumrichtungen zu justieren. Der Manipulator und die Wasserclusterquelle werden als Einheit an der ersten Jetstufe montiert. 
 Die Stromleitungen, die für die Verkabelung von Thermofühlern, Heizdrähten und der Heizpatrone verwendet werden, werden durch mehrpolige Durchführungen in dem Manipulatorflansch übersetzt. 
 
 Eine für spätere Anwendungen vielleicht interessante Eigenschaft ist, dass dieser Jet auch in vertikaler Position betrieben werden kann.
 
-Die genauen Konstruktionszeichnungen der Düse sind im Anhang begefügt.
+Die Konstruktionszeichnungen der Düse sind im Anhang beigefügt.
 %
 %
 %Wie detailliert wird das? Aber schon alle Gedanken die wichtig waren erwähnen?
