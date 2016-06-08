@@ -80,6 +80,9 @@ wobei x die Position senkrecht zu den Wicklungen beschreibt und $c_{w,x}$ = cons
 
 Da bei typischen Reaktionen liegen die zu messenden Impulse der erzeugten Ionen in der Größenordnung von einer atomaren Einheit, und damit die Energien im meV-Bereich. Um diese Vorgänge mit einem REMI aufzulösen ist ein kalter Targetstrahl essentiell, da die mittlere kinetische Energie von Gasen bei Raumtemperatur bei ca. 40 meV liegt \cite{kurka07}. Ein Überschall-Gasjet kann eine innere Temperatur der Teilchen von unter einem Kelvin erreichen. Der Prozess der Überschallexpansion fördert zudem die Entstehung von Clustern, wie sie für die in Kapitel \ref{sec:Motivation} vorgestellten Experimente erforderlich sind.
 
+\textbf{For the purpose of this thesis not simply atoms or molecules have been investigated by means of coincidence photoelectron spectroscopy but atomic and molecular clusters. So what are clusters? And what makes them unique?Clusters are aggregates that consist of a finite number of atoms or molecules.Their limited size makes them bridge the gap between a single atom or molecule
+and the infinite solid or liquid.}
+
 In den folgenden Abschnitten wird näher auf Cluster und deren Entstehung durch Überschallexpansion eingegangen.
 
 
@@ -105,8 +108,8 @@ Bis zu einer gewissen Größe strukturieren sich die Cluster beim Hinzukommen ei
 
 \subsection{Überschallexpansion} \label{sec:uberschallexp}
 
-Die Überschallexpansion ist ein adiabatischer Prozess, bei dem Gas durch eine kleine Öffnung von einem Bereich mit hohem Druck, in einen Bereich mit niedrigem Druck strömt. Dabei wird auf Grund von Stößen der Translationsimpuls der Gaspartikel ausgerichtet. Die kinetische Energie der ungerichteten Bewegung (Wärme) wird in gerichtete Bewegungsenergie (Geschwindigkeit) umgewandelt. Da bei adiabatischen Prozessen kein Wärmeaustausch mit der Umgebung stattfindet, bedeutet dies eine Abkühlung des Gases \cite{Vielteilch92}. Dieser thermodynamische Effekt ermöglicht Endgeschwindigkeiten von über 1000 m/s bei Endtemperaturen von unter 1 K \cite{mueller12}. 
-Solche niedrigen Temperaturen ermöglichen es schwache van-der-Waals Cluster, wie  $\mathrm{^4}\mathrm{He}_2$ zu erzeugen, obwohl ein solches Heliumdimer mit einer Bindungsenergie von $\mathrm{1,013 \cdot 10^{-7}}$ eV (BE $\widehat{=}$ 1,176 mK \cite{Lohr2007}) die bisher schwächste bekannte \textbf{Molekül}bindung besitzt \cite{Luo1993}. \\
+Die Überschallexpansion ist ein adiabatischer Prozess, bei dem Gas durch eine kleine Öffnung von einem Bereich mit hohem Druck, in einen Bereich mit niedrigem Druck strömt. Dabei wird auf Grund von Stößen untereinander der Translationsimpuls der Gaspartikel ausgerichtet. Die kinetische Energie der ungerichteten Bewegung (Wärme) wird in gerichtete Bewegungsenergie (Geschwindigkeit) umgewandelt. Da bei adiabatischen Prozessen kein Wärmeaustausch mit der Umgebung stattfindet, bedeutet dies eine Abkühlung des Gases \cite{Vielteilch92}. Dieser thermodynamische Effekt ermöglicht Endgeschwindigkeiten von über 1000 m/s bei Endtemperaturen von unter 1 K \cite{mueller12}. 
+Solche niedrigen Temperaturen gestatten es schwache van-der-Waals Cluster, wie  $\mathrm{^4}\mathrm{He}_2$ zu erzeugen, obwohl ein solches Heliumdimer mit einer Bindungsenergie von $\mathrm{1,013 \cdot 10^{-7}}$ eV (BE $\widehat{=}$ 1,176 mK \cite{Lohr2007}) die bisher schwächste bekannte Molekülbindung besitzt \cite{Luo1993}. \\
 %Da bei adiabatischen Prozessen die Entropie erhalten bleibt, muss auch die Zustandsdichte erhalten bleiben. Deswegen muss bei einer Abnahme der räumlichen Dichte, die Dichte im Impulsraum im Gegenzug zunehmen \cite{kurka07}. Eine Erhöhung der Dichte im Impulsraum allerdings bedeutet eine schmalere Geschwindigkeitsverteilung und eine Abnahme der Temperatur.
 Die nachfolgende genauere Betrachtung der Prozesse und Formeln, die bei der Clusterbildung durch Überschallexpansion eine Rolle spielen, folgt den Darstellungen von Miller \cite{scoles1988} und Müller \cite{mul13}.
 
@@ -183,71 +186,118 @@ bestimmen, wobei $x_m$ die besagte Mach-Scheibenposition, ausgehend von der Düs
 
 \subsection{Clusterbildung}
 
-\textbf{Vergleiche mit TUBerlinICD mit Wasser2011design}
 
-Das zur Clusterproduktion verwendete reine Wasser wird bei Temperaturen um 100 °C und einem entsprechendem Dampfdruck von ca. 1 bar durch eine kurze konische Düse geleitet (Abb. \ref{fig:Duse}).
-%
+Wie es bei der Überschallexpansion zur Clusterbildung, wird in diesem Kapitel allgemein an idealem Gas erklärt. Zusätzlich werden die Modelle auf Wasser angewandt um eine Abschätzung der zu erwartenden Jeteigenschaften zu erhalten.
+
+Im vorigen Kapitel wurde erwähnt, dass die Gasteilchen sich im Bereich der Düse stoßen und dabei abkühlen. In diesem Zeitfenster entstehen auch die Cluster. Der Clusteringprozess kann auf zwei Weisen beschrieben werden. Die erste Beschreibung ist mechanischer Natur und geht davon aus, dass es über Dreikörperstöße zur Agglomeration zweier Atome oder Moleküle kommt, sobald die thermische Energie der Teilchen unter die Bindungsenergie eines Dimers sinkt. Der dritte Körper transportiert dabei überschüssige Energie ab und \textbf{dient} somit der Energie- und Impulserhaltung. Die enstandenen Dimere \textbf{dienen} dann als Kondensationskeime, an die sich weitere Atome oder Moleküle anlagern. Je größer das Cluster ist, desto mehr innere Freiheitsgrade besitzt es um die freiwerdende Bindungenergie der sich anlagernden Teilchen vorübergehend aufzunehmen. Daher wird die Anlagerung wahrscheinlicher, je größer das Cluster ist. \cite{dreikcluster05} \\
+Die zweite Beschreibung erfolgt thermodynamisch und wird die Kondensationstheorie genannt. 
+Abbildung \ref{fig:Thermo} zeigt ein beispielhaftes p-T-Phasendiagramm, anhand dessen die Theorie veranschaulicht wird. Der Punkt A repräsentiert die Anfangsbedingungen, also ein ideales Gas bei Temperatur $T_0$ und Druck $p_0$. Das Gas expandiert bei dem Austritt aus der Düse entlang der Isentropen bis zum Punkt B, auf der Dampfdrucklinie $p_v(T)$. Die weitere Expansion folgt, aber nicht der Gleichgewichtskurve $p_v(T)$, sondern setzt sich entlang der \enquote{trockenen} Isentrope fort, sodass sich das Gas in einem übersättigten Zustand befindet. An Punkt C kollabiert die \enquote{trockene} Expansion. Das Gas kondensiert zu Clustern und die Isentrope kehrt dadurch zur Gleichgewichtskurve $p_v(T)$ zurück. \cite{hagena1981nucleation}
+
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=0.8\textwidth]{../duse.pdf}%
-\captionof{figure}{Abmessungen der von uns benutzten Platin-Blenden von Plano als Düse. Als Düsenöffnung d haben wir 30 µm und 50 µm benutzt. D ist der Durchmeser des Plättchens und H die Höhe. Pfeile normal nachen!}
- \label{fig:Duse}
+\includegraphics[width=0.6\textwidth]{../Clusterthermo.pdf}%
+\captionof{figure}{Schematisches $p$-$T$-Diagramm von idealem Gas bei der Überschallexpansion. $p(T)$ stellt die isentrope Expansionslinie und $p_v(T)$ die flache Dampfdrucklinie eines kondensierenden Gases dar. \cite{hagena1981nucleation} }
+ \label{fig:Thermo}
 \end{minipage} 
-\end{center} 
+\end{center}
 
-Nachdem es den engsten Querschnitt durchquert hat, kommt es zu einer starken Expansion und damit einhergehend zu einer starken Abkühlung des Gases (Joule-Thomson-Effekt). Durch das Abkühlen werden die Relativgeschwindigkeiten der Gasmoleküle sehr klein, sodass sich ein gerichteter Teilchenstrom einstellt. Wenn die thermische Energie der Moleküle unter die Bindungsenergie eines Dimers sinkt, kann es durch Dreikörperstöße zur Agglomeration zweier Moleküle kommen. Der dritte Körper ist bei diesem Prozess wichtig zur Bewahrung der Energie und Impulserhaltung. Die enstandenen Dimere dienen nun als Kondensationskeim, an den sich viele weitere Moleküle anlagern können. Allerdings, gibt jeder weiter sich anlagernde Moleküle die Bindungsenergie frei, durch die sich das Cluster aufheizt. Damit wird die Stabilität natürlich eingeschränkt, was dazu führt dass einige Moleküle wieder abdampfen. Wenn ein hoher Gasdruck herrscht, sprich eine große Teilchendichte existiert, gibt es mehr Teilchen die durch Stöße mit dem Cluster die überschüssige Energie abtransportieren können und somit die Clusterbildung unterstützen.
-Die Größe der Cluster die bei einer Überschallexpansion lässt sich durch eine Boltzmannverteilung beschreiben, deren große Breite proportional zur mittleren Clustergröße $\left\langle N \right\rangle$ ist. 
+Mittels der thermodynamischen Beschreibung wurden von Hagena $et\ al.$ in den 80er Jahren Gleichungen hergeleitet, die, mit empirischen Skalierungsparametern ergänzt, Messergebnisse zu Clustergrößen gut beschreiben. Interessant ist, dass die Düsenform bei der Clusterentstehung eine wichtige Rolle spielt \cite{hagena1972duseform}. Je länger die Düse die Expansion des Gases, bei gleichen Anfangsbedingungen ($d,\ p_0, \ T_0$) einschränkt, desto größer sind die enstehenden Cluster. 
 
-Um auf die Clusterverteilungen in idealen Gasen schließen, benutzt man den empirischen Skalenparameter $\Gamma$ von Hagena \cite{hagena1987}:
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=1\textwidth]{../Dusenformenbild.pdf}%
+\captionof{figure}{Typische, bei der Überschallexpansion verwendete Düsen mit charakteristischen Größen. \cite{hagena1972duseform}}
+ \label{fig:Formen}
+\end{minipage} 
+\end{center}
+
+Um verschiedene typischen Düsenformen (siehe Abbildung \ref{fig:Formen}) mit denselben Gleichungen behandeln zu können, wurde die \enquote{equivalente Düsenöffnung} $d_{eq}$ eingeführt. Da in dieser Arbeit der Fokus darauf liegt Wasserdimere zu produzieren wird eine Lochdüse verwendet, weil diese die Expansion des Gases am wenigsten einschränkt. Der equivalente Düsendurchmesser entspricht bei Lochdüsen der Düsenöffnung, $d_{eq} \equiv d$.
+%Das zur Clusterproduktion verwendete reine Wasser wird bei Temperaturen um 100 °C und einem entsprechendem Dampfdruck von ca. 1 bar durch eine kurze konische Düse geleitet (Abb. \ref{fig:Duse}).
+%%
+%\begin{center}
+%\begin{minipage}{\linewidth}
+%\centering
+%\includegraphics[width=0.8\textwidth]{../duse.pdf}%
+%\captionof{figure}{Abmessungen der von uns benutzten Platin-Blenden von Plano als Düse. Als Düsenöffnung d haben wir 30 µm und 50 µm benutzt. D ist der Durchmeser des Plättchens und H die Höhe. Pfeile normal nachen!}
+% \label{fig:Duse}
+%\end{minipage} 
+%\end{center}
+%
+Eine geringere Anfangstemperatur $T_0$ und ein höherer Stagnationsdruck $p_0$ begünstigen ebenfalls die Bildung größerer Cluster. Da die Anfangsbedingungen im Reservoir extern festgelegt werden, $\delta_t T_0 = \delta_t p_0 = \delta_t V_0 = 0$, bedeutet eine externe Erhöhung von $T_0$ oder Verminderung von $p_0$ aufgrund der idealen Gasgleichung, $pV = nk_bT$, eine Erhöhung der Teilchenzahl n im System. \textbf{Mehr Teilchen im System führen mehr Stöße aus und begünstigen damit die Enstehung von Kondensationskeimen und größeren Clustern.} \\
+%
+%Wenn ein hoher Gasdruck herrscht, sprich eine große Teilchendichte existiert, gibt es mehr Teilchen die durch Stöße mit dem Cluster die überschüssige Energie abtransportieren können und somit die Clusterbildung unterstützen.
+Die Größenverteilung der entstehenden Cluster lässt sich durch eine Boltzmannverteilung beschreiben, deren Breite proportional zur mittleren Clustergröße $\left\langle N \right\rangle$ ist. Um auf die Clustergrößenverteilung in idealen Gasen zu schließen, benutzt man den empirischen Skalenparameter $\Gamma$ von Hagena \cite{hagena1987}:
 %
 \begin{equation} \label{eq:Skalenparameter}
-\Gamma = n_0\ d^q\ T_0^{sq - f/2} \quad (0 < q \leq 1).
+\Gamma = N_0\ d_{eq}^q\ T_0^{sq - f/2} \quad (0 < q \leq 1).
 \end{equation}
 %
-Für axialsymmetrische Flüsse gilt $s = (f-2)/4$ und q ist ein Parameter der experimentell bestimmt werden muss. $n_0, T_0$ and $d$ sind die Quellendichte, die Düsentemperatur und der Düsendurchmesser.
+Für axialsymmetrische Flüsse gilt $s = (f-2)/4$. $q$ ist ein empirischer Parameter, $N_0 = \frac{n_0}{V_0}$ die Teilchendichte im Reservoir, $T_0$ die Anfangstemperatur und $d_{eq}$ der equivalente Düsendurchmesser. \textbf{muss ich hier alle wieder erklären? Die Hälfte kennt man doch schon..}
 
-Um $\Gamma$ unabhängig von den Einheiten zu machen wird der reduzierte Skalenparameter
+Um $\Gamma$ einheitenunabhängig zu machen wird der reduzierte Skalenparameter
 %
 \begin{equation} \label{eq:RedSkalenparameter}
 \Gamma^* = \Gamma / (r_{ch}^{q-3}\ T_{ch}^{\alpha})
 \end{equation}
 %
-eingeführt mit $\alpha= q - 3$. Dabei sind
+eingeführt mit $\alpha= q - 3$. Dabei gilt
 %
 \begin{equation}
-r_{ch} = \frac{m_{atom}}{\rho ^{1/3}}\quad \textmd{und}\quad T_{ch}= \frac{ \Delta h_{atom,0}}{k_B}
+r_{ch} = \frac{m}{\rho ^{1/3}}\quad \textmd{und}\quad T_{ch}= \frac{ \Delta h_0}{k_B}
 \end{equation}
 %
-$r_{ch}$ bringt hierbei die Eigenschaften des Gases in die Gleichung ein, wobei m die Atommasse und $\rho$ die Festkörperdichte ist. $T_{ch}$ ist die charakteristische Temperatur mit der Sublimationsenthalpie $\Delta h_{atom,0}$ bei 0 K  und der Boltzmannkonstante $k_B$. Für Wasser wurden die Werte $r_{ch} = 3,19$ \AA{} und $T_{ch} = 5684$K ermittelt \cite{bobbert2002}. Die mittlere Clustergröße ergibt sich nach Hagena als
+Der charakteristische Radius $r_{ch}$ setzt sich aus der Teilchenmasse $m$ und der Festkörperdichte $\rho$ zusammen. $T_{ch}$ ist die charakteristische Temperatur mit der Sublimationsenthalpie $\Delta h_0$ bei 0 K  und der Boltzmannkonstante $k_B$.  Die mittlere Clustergröße $\left\langle N \right\rangle $ ergibt sich nach Hagena zu
 %
 \begin{equation} \label{eq:HagOriginalFormel}
-\left\langle N \right\rangle  = D \left( \frac{\Gamma^*}{1000}\right)^a \:,
+\left\langle N \right\rangle  = D \left( \frac{\Gamma^*}{1000}\right)^a \:.
 \end{equation}
 %
-wobei $a$ und $D$ experimentell ermittelt werden müssen. Hagena hat sich damals für $D$ = 33 und $a$ = 2,35 entschieden. Im Jahre 1996 haben Buck und Krohne herausgefunden, dass man man die Parameter $a$ und $D$ abhängig von $\Gamma^*$ wählen sollte um ein genaueres Ergebnis für $\left\langle N \right\rangle $ zu erhalten \cite{buck1996}. Für große Werte von $\Gamma^* > 1800$ bestätigen Sie die Originalformel von Hagena. 
-Für einen mittleren Bereich $350 \leq \Gamma^* \leq 1800$ Sie die Formel angepasst zu
-%
-\begin{equation}
-\left\langle N \right\rangle  = 38,4 \left( \frac{\Gamma^*}{1000}\right)^{1,64} \:,
-\end{equation}
-%
-und für $\Gamma^* < 350$ empfehlen Sie ein Polynom dritten Grades zu verwenden,
-%
-\begin{equation}
-\left\langle N \right\rangle  = exp(2,23 + 7 \cdot 10^{-3}\ \Gamma^* + 8,3 \cdot 10^{-5}\ \Gamma* + 2,55 \cdot 10^{-7}\ \Gamma^* ) \:.
-\end{equation}
-%
-\textit{Hier teil mit schnellerer Formel aus ICDBerlin ergänzen!}
-%
-%
+$a$ und $D$ sind empirische Parameter, abhängig vom expandierenden Gas.
 
-Wie schon angedeutet, lässt sich das Prinzip der Skalenparameter auch auf Wasser anwenden, obwohl sich die Thermodynamik von Wasser durch die starken Wasserstoffbrückenbindungen doch sehr von der, der schwach gebundenen idealen Gasen, unterscheidet. In der Publikation von Bobbert $et\ al.$ \cite{bobbert2002} wurden die freien Parameter aus Gleichung (\ref{eq:HagOriginalFormel}) für Wasser zu $a$ = 1,886(64), $D$ = 11,60(1,62) und $q$ = 0,634(68) bestimmt. Um $\Gamma$ unabhängig von der Form der Düse berechnen zu können, wird der effektive Düsendurchmesser
-%
-\begin{equation} \label{eq:deff}
-d_{eff} = G(f)\ d\ /\tan(\beta); \quad \textmd{mit} \; G(f)= 0,5 (f+1)^{-(f+1)/4} A^{f/2} \ ,
+% Die Messungen von Hagena hat sich damals für $D$ = 33 und $a$ = 2,35 (\textbf{bei Helium!}) entschieden. Im Jahre 1996 haben Buck und Krohne herausgefunden, dass man man die Parameter $a$ und $D$ abhängig von $\Gamma^*$ wählen sollte um ein genaueres Ergebnis für $\left\langle N \right\rangle $ zu erhalten \cite{buck1996}. Für große Werte von $\Gamma^* > 1800$ bestätigen Sie die Originalformel von Hagena. 
+%Für einen mittleren Bereich $350 \leq \Gamma^* \leq 1800$ Sie die Formel angepasst zu
+%%
+%\begin{equation}
+%\left\langle N \right\rangle  = 38,4 \left( \frac{\Gamma^*}{1000}\right)^{1,64} \:,
+%\end{equation}
+%%
+%und für $\Gamma^* < 350$ empfehlen Sie ein Polynom dritten Grades zu verwenden,
+%%
+%\begin{equation}
+%\left\langle N \right\rangle  = exp(2,23 + 7 \cdot 10^{-3}\ \Gamma^* + 8,3 \cdot 10^{-5}\ \Gamma* + 2,55 \cdot 10^{-7}\ \Gamma^* ) \:.
+%\end{equation}
+%%
+Fügt man die Formeln \ref{eq:Skalenparameter} bis \ref{eq:HagOriginalFormel} zusammen, erhält man den folgenden Ausdruck für $\left\langle N \right\rangle $.
+
+\begin{equation}
+	\begin{split}
+	\left\langle N \right\rangle & = D \left( \frac{p_0\ d_{eq}^q \ T_0^{q-3}}{1000\ k_B\ T_0\ (r_{ch}T_{ch})^{q-3}}\right)^a \\ \\
+	& \textmd{mit} \qquad N_0\  =\ \frac{n_0}{V_0}\ =\ \frac{p_0}{k_B\ T_0} \: .
+	\end{split}
 \end{equation}
-%
-wobei $\beta$ der halbe Öffnungswinkel der Düse, d der Düsendurchmesser und A eine von Ashkenas und Sherman berechnete Kontante ist, die, bei einem dreidimensional achsensymmetrischen Fluss, den Wert A = 3,83 hat \cite{bobbert2002}. Damit ergibt sich für Wasser mit 6 Freiheitsgraden bei ca. 100°C $G(f=6)=0,933$. 
-Zur Anwendung der Theorie kann man an dieser Stelle eine Beispielrechnung durchführen. Nehmen wir an, es herrscht eine Reservoirtemperatur von 100°C und dementsprechend einen Druck von 1 bar bzw. eine Teilchendichte $n_0 = 1,9 \cdot 10^{25}$ Moleküle/cm$^{3}$. Die Düsen haben den Öffnungsdurchmesser 50 bzw. 30µm und einen halben Öffnungswinkel von 45°. Der effektive Düsendurchmesser ergibt sich gemäß Gleichung (\ref{eq:deff}) zu 46µm respektive 28µm. Mit $s = 1$ und der Verwendung von $d_{eff}$ in Gleichung (\ref{eq:Skalenparameter}) erhält man $\Gamma = 3,3 \cdot 10^{17}\ \textmd{bzw.} \ 2,4 \cdot 10^{17} (\mathrm{cm}\cdot \mathrm{K})^{q-3}$. Mit Gleichung (\ref{eq:RedSkalenparameter}) folgt dann $\Gamma^* = 8535\ \textmd{bzw.}\ 6231$ was schließlich mit (\ref{eq:HagOriginalFormel}) zu $\left\langle N \right\rangle = 662\ \textmd{bzw.} \ 365$ führt.
-Das ist eine zu große mittlere Teilchendichte, wenn wir nur hauptsächlich Dimere erzeugen wollen. Wenn man sich die Formeln ansieht, kann man erkennen, dass eine höhere Düsentemperatur und gleichzeitig niedrigerer Teilchendruck zu kleineren Clustern führen. Das ist kein Widerspruch, denn Reservoir und Spitze werden bei uns seperat geheizt und man kann ein Trägergas, z.B. Helium, hinzufügen, und damit den Partialdruck vom Wasserdampf erniedrigen und gleichzeitig durch die Gesamtdruckerhöhung für einen höheren Fluss sorgen. Ein weiterer nützlicher Effekt des Trägergases ist, dass dieses bei Dreiköperkollisionen mit zwei Wassermolekülen, den Impuls abtransportieren kann. Durch Variation der Masse des Gases lässt sich damit der Clusterprozess optimieren.
+
+Um diese Formel auf Wasser anzuwenden müssen lediglich die materialabhängigen Größen in Erfahrung gebracht werden. Die charakteristischen Größen $r_{ch}$ und $T_{ch}$ haben Werte von 3,19 \AA{} bzw. $5684$ K. Die Werte $q$ = 0,634, $a$ = 1,886 sowie der Vorfaktor $D$ = 11,6 stammen aus einer Kurvenanpassung experimenteller Daten \cite{bobbert2002}. Die verwendeten Lochdüsen haben eine Düsenöffnung von $d_{eq}$ = 30 bzw. 50 µm. Der Stagnationsdruck $p_0$ entspricht dem Wasserdampfdruck im Reservoir bei der Reservoirtemperatur $T_0$. Der Zusammenhang hat einen exponentiellen Verlauf der Form (siehe Abbildung \ref{fig:Wasserdampf})
+
+\begin{equation} \label{eq:Clustergrosse}
+p(T) = 2,445,1\ \textmd{Pa} \cdot \textmd{exp}(-0,0376 \frac{1}{^{\circ} \textmd{C}} \cdot T [^{\circ} \textmd{C}]) - 2847,6\ \textmd{Pa} .
+\end{equation}
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=1\textwidth]{../Wasserdampfkurve.pdf}%
+\captionof{figure}{Dampfdruckkurve von Wasser in Abhängigkeit der Temperatur. \textbf{Kurve selbst machen!}}
+ \label{fig:Wasserdampf}
+\end{minipage} 
+\end{center}
+
+Das Ziel dieser Arbeit ist es Wasserdimere herzustellen, folglich ist eine mittlere Clustergröße von $\left \langle N \right\rangle$ = 2 gesucht. Gemäß Formel \ref{eq:Clustergrosse} erreicht man \\ $\left \langle N(T) \right\rangle = 2,0 \textmd{ für }
+\left\{ %
+   \begin{array}{l}
+   T = 76,0\ ^{\circ} \textmd{C} \textmd{ mit d}= 50 \textmd{ µm} \\ 
+   T = 86,3\ ^{\circ} \textmd{C} \textmd{ mit d}= 30 \textmd{ µm}
+   \end{array}
+   \right. .$\\ \\
+ \textbf{Soll ich schreiben das 30µm besser ist, weil Druck höher ist und der Strahl dann dichter?}
