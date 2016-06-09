@@ -16,7 +16,7 @@
 
 
 
-Wie theoretisch und experimentell vielfach bestätigt, führt die Interaktion von starken Lasern mit Atomen oder Molekülen zu deren Ionisation und der Entstehung von geladenen Fragmenten (\cite{hertel2011}). Um die Kinematik dieser Reaktionen im Detail verstehen zu können, müssen die Impulsvektoren aller beteiligten Fragmente bekannt sein. Reaktionsmikroskope (REMIs) sind hochauflösende Impulsspektrometer, mit denen die dreidimensionalen Impulsverteilungen der Fragmente vermessen werden können und somit ein kinematisch vollständiges Verständnis der Reaktion liefern. \\
+Die Interaktion von starken Lasern mit Atomen oder Molekülen führt zu deren Ionisation und der Entstehung von geladenen Fragmenten (\cite{hertel2011}). Um die Kinematik dieser Reaktionen im Detail verstehen zu können, müssen die Impulsvektoren aller beteiligten Fragmente bekannt sein. Reaktionsmikroskope (REMIs) sind hochauflösende Impulsspektrometer, mit denen die dreidimensionalen Impulsverteilungen der Fragmente vermessen werden können und somit ein kinematisch vollständiges Verständnis der Reaktion liefern. \\
 %Die Interaktion von starken Lasern mit Atomen oder Molekülen oft zu Ionisation und dadurch auch zur Entstehung geladener Fragmente. Um die zugrundeliegenden Prozesse der Entstehung der Fragmente zu beleuchten, eignet es sich die Impulse zu untersuchen. Reaktionsmikroskope (kurz: REMI)sind in der Lage hochauflösende 3D-Impulsverteilungen zu messen und das für Elektronen und Ionen in Koinzidenz. Damit ist diese Art von Spektrometer perfekt geeignet für unsere Zwecke. 
 Das folgende Kapitel wird das Funktionsprinzip und die einzelnen Komponenten des REMIs erklären und sich dabei an den Doktorarbeiten von Schnorr \cite{Schn14} und Fechner \cite{Fech14} orientieren. %Tiefergehende Informationen über das Reaktionsmikroskop können in Ull13 gefunden werden.
 \begin{center}
@@ -57,7 +57,7 @@ Der orts- und zeitauflösende Detektor besteht aus zwei Komponenten, dem(\textbf
 \end{minipage} 
 \end{center} 
 
-\subsubsection{Multi-Channel Plate}
+\subsubsection{Micro-Channel Plate}
  Ein MCP ist eine ca. 1mm dünne Glasplatte, die homogen mit mikroskopisch kleinen Kanälen (Innendurchmesser $\approx$ 25µm) versehen ist. Die Kanäle auf dem MCP sind typischerweise um 8° gegen die Oberflächennormale geneigt, um zu gewährleisten, dass eintretende Teilchen die Innenwand treffen. Zwischen den beiden Oberflächen der MCP wird eine Hochspannung von typischerweise 1200V angelegt.
  Trifft ein geladenes Teilchen auf die Innenwand eines solchen Kanals, werden Sekundärelektronen ausgelöst. Durch die Spannung werden die Elektronen in Richtung Delayline-Anode beschleunigt und treffen dabei weitere Male auf die Innenwand, sodass kaskadenartig ein Elektronenschauer ensteht (siehe Abb. \ref{fig:Detektor}.b ). \textbf{Die Oberflächen des MCP sind mit einem geeigneten Halbleiter beschichtet, der die Austrittsarbeit von Elektronen verringert und damit die Effizienz erhöht. Warum auf Oberfläche?}
  
@@ -78,12 +78,9 @@ wobei x die Position senkrecht zu den Wicklungen beschreibt und $c_{w,x}$ = cons
 \newpage
 \section{Cluster} \label{sec:Cluster}
 
-Da bei typischen Reaktionen liegen die zu messenden Impulse der erzeugten Ionen in der Größenordnung von einer atomaren Einheit, und damit die Energien im meV-Bereich. Um diese Vorgänge mit einem REMI aufzulösen ist ein kalter Targetstrahl essentiell, da die mittlere kinetische Energie von Gasen bei Raumtemperatur bei ca. 40 meV liegt \cite{kurka07}. Ein Überschall-Gasjet kann eine innere Temperatur der Teilchen von unter einem Kelvin erreichen. Der Prozess der Überschallexpansion fördert zudem die Entstehung von Clustern, wie sie für die in Kapitel \ref{sec:Motivation} vorgestellten Experimente erforderlich sind.
+Da bei typischen Reaktionen liegen die zu messenden Impulse der erzeugten Ionen in der Größenordnung von einer atomaren Einheit, und damit die Energien im meV-Bereich. Um diese Vorgänge mit einem REMI aufzulösen ist ein kaltes Target essentiell, da die mittlere kinetische Energie von Gasen bei Raumtemperatur bei ca. 40 meV liegt \cite{kurka07}. Ein Überschall-Gasjet\footnote{Als \enquote{Jet} wird in der Physik ein gerichteter Teilchenstrom bezeichnet.} kann eine innere Temperatur der Teilchen von unter einem Kelvin erreichen. Der Prozess der Überschallexpansion fördert zudem die Entstehung von Clustern, wie sie für die in Kapitel \ref{sec:Motivation} vorgestellten Experimente erforderlich sind.
 
-\textbf{For the purpose of this thesis not simply atoms or molecules have been investigated by means of coincidence photoelectron spectroscopy but atomic and molecular clusters. So what are clusters? And what makes them unique?Clusters are aggregates that consist of a finite number of atoms or molecules.Their limited size makes them bridge the gap between a single atom or molecule
-and the infinite solid or liquid.}
-
-In den folgenden Abschnitten wird näher auf Cluster und deren Entstehung durch Überschallexpansion eingegangen.
+In den folgenden \textbf{Abschnitten/Kapiteln} wird näher auf Cluster und deren Entstehung durch Überschallexpansion eingegangen.
 
 
 \subsection{Definition}
@@ -146,9 +143,7 @@ Die Machzahl
 M(\vec{r})= v(\vec{r})/c(p(\vec{r}))
 \end{equation}
 
-ist bei der Überschallexpansion eine wichtige Größe, die skalar in vielen thermodynamischen Rechnungen eine Rolle spielt und vektoriell betrachtet das Strömungsfeld an jedem Ort $\vec{r}$ charakterisiert. 
-
-Sofern das Verhältnis von Stagnationsdruck zu Hintergrunddruck $p_0/p_b > 2.1$ beträgt breitet sich das Gas nach Austritt aus der Düse mit Überschallgeschwindigkeit aus, was eine Machzahl M $>$ 1 bedeutet \cite{scoles1988}. Das hat zur Folge, das der Gasstrom zunächst unabhängig von jeglichen externen Randbedingungen ist. Dieser Effekt rührt daher, dass sich Information \enquote{nur} mit Schallgeschwindigkeit ausbreitet und der Teilchenstrom schneller als diese ist. Doch obwohl der Gasstrom nichts von Randbedingungen \enquote{weiß}, muss er sich nach ihnen richten. Deswegen bilden sich nach kurzer Zeit Schockwellen aus, die aus Teilchen bestehen, die an begrenzenden Wänden oder ähnlichen \enquote{Randbedingungen} abprallen und auf ihrem Rückweg den Strom regulieren. Bei der Überschallexpansion bilden sich mehrere dieser Schockwellen aus (siehe Abbildung \ref{fig:Machexpansion}). Schockwellen sind nichtisentropische Gebiete und zeichnen sich durch starke Dichte-, Temperatur-, Geschwindigkeits- und Druckgradienten aus. Durch diese Eigenschaften kann man Schockwellen mit diversen Lichtstreutechniken sichtbar machen \cite{Mou09} (siehe Abbildung \ref{fig:Schockwellen}).
+ist bei der Überschallexpansion eine wichtige Größe, die skalar in vielen thermodynamischen Rechnungen eine Rolle spielt und vektoriell betrachtet das Strömungsfeld an jedem Ort $\vec{r}$ charakterisiert. Das Strömungsfeld in der \enquote{zone of silence} ist in erster Näherung gleich dem einer Quellströmung. Das bedeutet die Teilchen breiten sich gleichmäßig in alle Richtungen aus. Die Teilchendichte verhält sich mit zunehmendem Abstand zur Düse wie $x^{-2}$ \cite{hagena1981nucleation}. Sofern das Verhältnis von Stagnationsdruck zu Hintergrunddruck $p_0/p_b > 2,1$ beträgt breitet sich das Gas nach Austritt aus der Düse mit Überschallgeschwindigkeit aus, was eine Machzahl M $>$ 1 bedeutet \cite{scoles1988}. Das hat zur Folge, das der Gasstrom zunächst unabhängig von jeglichen externen Randbedingungen ist. Dieser Effekt rührt daher, dass sich Information \enquote{nur} mit Schallgeschwindigkeit ausbreitet und der Teilchenstrom schneller als diese ist. Doch obwohl der Gasstrom nichts von Randbedingungen \enquote{weiß}, muss er sich nach ihnen richten. Deswegen bilden sich nach kurzer Zeit Schockwellen aus, die aus Teilchen bestehen, die an begrenzenden Wänden oder ähnlichen \enquote{Randbedingungen} abprallen und auf ihrem Rückweg den Strom regulieren. Bei der Überschallexpansion bilden sich mehrere dieser Schockwellen aus (siehe Abbildung \ref{fig:Machexpansion}). Schockwellen sind nichtisentropische Gebiete und zeichnen sich durch starke Dichte-, Temperatur-, Geschwindigkeits- und Druckgradienten aus. Durch diese Eigenschaften kann man Schockwellen mit diversen Lichtstreutechniken sichtbar machen \cite{Mou09} (siehe Abbildung \ref{fig:Schockwellen}).
 %
 \begin{center}
 \begin{minipage}{\linewidth}
@@ -177,6 +172,7 @@ Die Position der Mach-Scheibe lässt sich mittels der empirischen Formel
 \end{equation}
 %
 bestimmen, wobei $x_m$ die besagte Mach-Scheibenposition, ausgehend von der Düse und $d$ die Größe der Düsenöffnung ist.
+
 %Um einen kleinen Vorausgriff zu wagen, habe ich hier schonmal grobe Werte unseres Experimentes eingesetzt. Mit d = 50 µm, $p_0 \approx$ 1000 mbar und $p_b \approx 10^{-3}$  mbar erhält man für\\ $x_m \approx 3,35$ cm. Ein sehr großer Wert, wenn man bedenkt, dass man üblicherweise wenige Millimeter nah an den Skimmer fährt und zudem der Wert in der Realität noch größer ist, weil ich hier für $p_0$ den Dampfdruck im Reservoir bei 100°C gewählt habe (man weiß noch nicht dass verdampft wird!) und nicht den an der Düse, der garantiert größer sein wird.
 
  %Um das Strömungsfeld der Überschallexpansion zu charakterisieren muss man nicht nur die erwähnten Schockwelleneffekte betrachten, sondern sich auch die Form der Düse anschauen. Hier gibt es einen effektiven Düsendurchmesser $d_{eff}$ der z.B. bewirkt, dass konische Düsen bei geringerem Gasfluss, gleiche Gasdichten auf der Strahlachse und gleiche Clustergrößen produziert, wie eine zylindrische Düse mit gleichem $d_{eff}$ \cite{HOb72}. Den effektiven Düsendurchmesser
@@ -184,7 +180,7 @@ bestimmen, wobei $x_m$ die besagte Mach-Scheibenposition, ausgehend von der Düs
 
 %Was ist mit Speedratio für Genauigkeit des Strahls? Ist durch relativbeweg doch eig schon dabei
 
-\subsection{Clusterbildung}
+\subsection{Clusterbildung} \label{sec:Clusterbildung}
 
 
 Wie es bei der Überschallexpansion zur Clusterbildung, wird in diesem Kapitel allgemein an idealem Gas erklärt. Zusätzlich werden die Modelle auf Wasser angewandt um eine Abschätzung der zu erwartenden Jeteigenschaften zu erhalten.
@@ -300,4 +296,3 @@ Das Ziel dieser Arbeit ist es Wasserdimere herzustellen, folglich ist eine mittl
    T = 86,3\ ^{\circ} \textmd{C} \textmd{ mit d}= 30 \textmd{ µm}
    \end{array}
    \right. .$\\ \\
- \textbf{Soll ich schreiben das 30µm besser ist, weil dabei der Druck höher ist und der Strahl damit dichter?}
