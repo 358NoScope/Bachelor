@@ -5,9 +5,9 @@
 
 \section{Messungen an FLASH}
 
-\subsection{Aufbau}
+\subsection{Alte Wasserdüse}
 
-Im Juni 2014 wurden von \textbf{(wem?) der Gruppe Pfeifer am MPIK Heidelberg} bereits Messungen mit Wasserclustern an FLASH in Hamburg durchgeführt. (\textbf{Was war eigentlich das Ziel des Experiments?}) Der Aufbau der benutzten Wasserclusterquelle ist in Abbildung \ref{fig:iodquelle} zu sehen. Diese Quelle ist dafür ausgelegt Festkörper wie Iod im Reservoir 4 zu verdampfen und mit einem Trägergas aus Reservoir 1 in das Reaktionsmikroskop zu führen. Bei den Experimenten mit Wasser wurde ohne Trägergas gearbeitet. Das Wasser wurde im beheizbaren Reservoir 4 auf 100 °C erhitzt und der entstehende Wasserdampf in \textbf{Bauteil} 8 durch eine Düse ins Vakuum expandiert.
+Im Juni 2014 wurden von der Gruppe Moshammer am MPIK Heidelberg bereits Messungen mit Wasserclustern an FLASH in Hamburg durchgeführt. Der Aufbau der benutzten Wasserclusterquelle ist in Abbildung \ref{fig:iodquelle} zu sehen. Diese Quelle ist dafür ausgelegt Flüssigkeiten, als auch Feststoffe wie Iod im Reservoir 4 zu verdampfen und mit einem Trägergas aus Reservoir 1 in das Reaktionsmikroskop zu führen. Bei den Experimenten mit Wasser wurde ohne Trägergas gearbeitet. Das Wasser wurde im beheizbaren Reservoir 4 auf 100 °C erhitzt und der entstehende Wasserdampf in der ersten Jetstufe durch eine Düse ins Vakuum expandiert.
 
 \begin{center}
 \begin{minipage}{\linewidth}
@@ -18,12 +18,12 @@ Im Juni 2014 wurden von \textbf{(wem?) der Gruppe Pfeifer am MPIK Heidelberg} be
 \end{minipage} 
 \end{center} 
 
-Zur Analyse der gemessenen Daten wird ein speziell auf Reaktionsmikroskope angepasster Analysecode in das Programm Go4 (GSI Object Oriented On-line Off-line system) eingebettet. Go4 bietet unter Anderem viele Optionen Messdaten zu selektieren und darzustellen. \textbf{Die Flugzeitspektren und Detektorbilder in diesem Kapitel zeigen die Messdaten vom Juni 2014.}
+Zur Analyse der gemessenen Daten ist ein speziell auf Reaktionsmikroskope angepasster Analysecode in das Programm Go4 (GSI Object Oriented On-line Off-line system) eingebettet. \textbf{Die Flugzeitspektren und Detektorbilder in diesem Kapitel zeigen die Messdaten vom Juni 2014.}
 \textbf{Beschreiben was die nächsten Kapitel beinhalten}
 
 \subsection{Flugzeitspektren}
 
-Flugzeitspektren (TOF-Spektren\footnote{Häufig wird die ans Englische angelehnte Abkürzung \textbf{T}ime-\textbf{O}f-\textbf{F}light-Spektrum benutzt}) stellen die Häufigkeit detektierter Ionen in Anhängigkeit der Flugzeit dar. Die Flugzeit eines geladenen Teilchens mit Masse $m$ und Ladung $Q$ ist abhängig von der Spektrometerlänge $L_S$ und der angelegten Spannung $U$.
+Flugzeitspektren (TOF-Spektren\footnote{Häufig wird die ans Englische angelehnte Abkürzung \textbf{T}ime-\textbf{O}f-\textbf{F}light-Spektrum benutzt}) tregen die Häufigkeit detektierter Ionen gegen ihre Flugezit im Spektrometer auf. Die Flugzeit eines geladenen Teilchens mit Masse $m$ und Ladung $Q$ ist abhängig von der Spektrometerlänge $L_S$ und der angelegten Spannung $U$.
 
 \begin{equation} \label{eq:Beschleunigung}
 L_S = \frac{1}{2}at^2\qquad \rightarrow \qquad t = \sqrt{\frac{2L_S}{a}} \: ,
@@ -41,30 +41,30 @@ Setzt man $a$ in Gleichung \ref{eq:Beschleunigung} ein erhält man für die Flug
 t = L_S \sqrt{\frac{2m}{QU}}\: \sim \: \sqrt{\frac{m}{Q}} \: .
 \end{equation}
 
-Die Flugzeit der Ionen ist proportional zu der Wurzel ihres Masse zu Ladungsverhältnisses. In der Praxis weichen die berechneten Flugzeiten meist von den Messwerten ab, da bei einem Experiment nie solche idealen Bedingungen herrschen, wie sie in der Theorie angenommen werden. Kann ein markanter Peak aus dem Spektrum einem Ion zugeordnet werden, so ist aufgrund der Proportionalität in Gleichung \ref{eq:Flugzeit} die Berechnung der Flugzeiten unbekannter Peaks unter experimentellen Bedingungen möglich. %
+Die Flugzeit der Ionen ist proportional zu der Wurzel aus dem Verhältnis von Masse zu Ladung. Kann ein markanter Peak aus dem Spektrum einem Ion zugeordnet werden, so ist aufgrund der Proportionalität in Gleichung \ref{eq:Flugzeit} die Berechnung der Flugzeiten unbekannter Peaks unter experimentellen Bedingungen möglich. %
 
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=1\textwidth]{../TofiAll.pdf}%
-\captionof{figure}{Häufigkeiten der gemessenen Flugzeiten mit einem \textbf{Wasserjet} in linearer (links) und logarithmischer (rechts) Darstellung. Der dominierende Peak 1 wurde Wasser (H$_2$O$^+$) mit $m$ = 18 u zugeordnet. Peak 2 entspricht OH$^+$. Peak 3 stellt H$^+$ dar. 
-\textbf{wie kriege ich das Bild größer? Einfach untereinander? Macht keinen Sinn peak 2 und 3 zu haben. Und wenn doch sollte ich H$_2$ wohl auch erwähnen. } }
+\includegraphics[width=1\textwidth]{../TofiAllLin.pdf} \\ ~\\
+\includegraphics[width=1\textwidth]{../TofiAllLog.pdf}%
+\captionof{figure}{Häufigkeiten der gemessenen Flugzeiten mit einem Wasserjet in linearer (oben) und logarithmischer (unten) Darstellung. In der logarithmischen Darstellung sind auch schwache Peaks gut zu erkennen. Der dominierende Peak 4 wurde Wasser (H$_2$O$^+$) mit $m$ = 18 u zugeordnet. Daraus folgt: Peak 3: OH$^+$, Peak 2: H$_2^+$, Peak 1: H$^+$.  }
  \label{fig:tofiall}
 \end{minipage} 
 \end{center} 
 %Können aber markante Peaks aus dem Spektrum bestimmten Ionen zugeordnet werden, so ermöglicht die Proportionalität in Gleichung \ref{eq:Flugzeit} eine Umrechnung der Flugzeiten unbekannter Peaks \textbf{in das $m/Q$-Verhältnis unter experimentellen Bedingungen.} 
-Durch Auswertung des Flugzeitspektrums kann man also genau untersuchen, welche Teilchen sich im \textbf{Reaktionsvolumen} befinden. Betrachtet man das Spektrum aller detektierten Ionen, kann man zwischen scharfen Peaks aus dem Gasjet und einem breiten Untergrund von Restgasionen unterscheiden. Ionen die aus dem Gasjet entstehen haben aufgrund der Überschallexpansion eine geringe Temperatur und damit eine geringe Geschwindigkeitsverteilung (siehe Kapitel \ref{sec:uberschallexp}). Ionisiert der FEL\footnote{\textbf{F}reie \textbf{E}lektronen \textbf{L}aser} Restgas in der Spektrometerkammer, weisen die Restgasionen breitere Peaks im Spektrum auf, da diese sich auf Raumtemperatur befinden und somit eine breite Geschwindigkeitsverteilung besitzen. In Abbildung \ref{fig:tofiall} kann mit linearer Darstellung drei deutliche Peaks erkennen. In logarithmischer Darstellung erkennt man neben den drei markanten Peaks noch viele breite und schwach ausgeprägte Peaks im Untergrund. Diese werden \textbf{hauptsächlich} von Restgasatomen verursacht.
+Durch Auswertung des Flugzeitspektrums kann man also genau untersuchen, welche Teilchen sich im \textbf{Reaktionsvolumen} befinden. Betrachtet man das Spektrum aller detektierten Ionen, kann man zwischen scharfen Peaks aus dem Gasjet und einem breiten Untergrund von Restgasionen unterscheiden. Ionen die aus dem Gasjet entstehen haben aufgrund der Überschallexpansion eine geringe Temperatur und damit eine schmale Geschwindigkeitsverteilung (siehe Kapitel \ref{sec:uberschallexp}). Ionisiert der FEL\footnote{\textbf{F}reie \textbf{E}lektronen \textbf{L}aser} Restgas in der Spektrometerkammer, weisen die Restgasionen breitere Peaks im Spektrum auf, da diese sich auf Raumtemperatur befinden und somit eine breite Geschwindigkeitsverteilung besitzen. In Abbildung \ref{fig:tofiall} kann man in linearer Darstellung vier deutliche Peaks erkennen. In logarithmischer Darstellung erkennt man neben den vier markanten Peaks noch viele breite und schwach ausgeprägte Peaks im Untergrund. Diese werden hauptsächlich von Restgasatomen verursacht.
 %, oder weisen in wenigen Fällen auf Vorgänge wie ICD und anschließende Coulombexplosion hin (Verbreiterung nach unten hin bei Peak 3 in Abbildung \ref{fig:tofiall})
-\subsection{Detektorbilder}
+\subsection{Ortsbild}
 
-Trägt man alle Auftrefforte der detektierten Ionen in einem zweidimensionalen Histogramm auf (siehe Abbildung \ref{fig:Detektorbild}), erkennt man deutlich die Spur des FELs. Alle Teilchen aus dem Gasjet haben näherungsweise die gleiche Geschwindigkeit. Werden diese Teilchen am Laserfokuspunkt im Zentrum des Diagramms ionisiert treffen sie aufgrund ihrer gerichteten Anfangsgeschwindigkeit mit einem Offset in Jet-Richtung (hier negative x-Richtung) auf den Detektor. \textbf{Man sieht nur einen Punkt, weil Wasser bei weitem dominiert, aber das ist hier nicht so wichtig, oder?}
+Trägt man alle Auftrefforte der detektierten Ionen in einem zweidimensionalen Histogramm auf (siehe Abbildung \ref{fig:Detektorbild}), erkennt man deutlich die Spur des FELs. Alle Teilchen aus dem Gasjet haben näherungsweise die gleiche Geschwindigkeit. Werden diese Teilchen am Laserfokuspunkt im Zentrum des Diagramms ionisiert treffen sie aufgrund ihrer gerichteten Anfangsgeschwindigkeit mit einem Offset in Jet-Richtung (hier negative x-Richtung) auf den Detektor.
 
 
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{../Detektorbild.pdf}%
-\captionof{figure}{Detektorbild während des H$_2$O-Experiments. Die vertikale Linie in y-Richtung stammt \textbf{von dem vom FEL} ionisierten Restgas. Die hohen Zählraten in dem gepunktet markierten Bereich sind auf Ionen aus dem Düsenstrahl zurückzuführen. Moleküle die durch eine Coulomb Explosion in zwei geladene Ionen dissoziieren erhalten dabei große Impulse in alle Raumrichtungen. Aus diesem Grund sind sie in dem großen gestrichelten Kreis auf dem Detektor verteilt.}
+\captionof{figure}{Detektorbild aus einer Messung mit H$_2$O. Die vertikale Linie in y-Richtung stammt \textbf{von dem vom FEL} ionisierten Restgas. Die hohen Zählraten in dem gepunktet markierten Bereich sind auf Ionen aus dem Düsenstrahl zurückzuführen. Moleküle die durch eine Coulomb Explosion in zwei geladene Ionen dissoziieren erhalten dabei große Impulse in alle Raumrichtungen. Aus diesem Grund sind sie innerhalb des gestrichelten Kreises auf dem Detektor verteilt.}
  \label{fig:Detektorbild}
 \end{minipage} 
 \end{center} 
@@ -73,13 +73,23 @@ Trägt man alle Auftrefforte der detektierten Ionen in einem zweidimensionalen H
 
 \subsection{Auswertung}
 
-Untersucht man das Flugzeitspektrum aus dem Bereich der Jet-Ionen (siehe Abbildung \ref{fig:TOFJet}), kann man nachvollziehen welche Ionen aus dem Teilchenstrahl entstehen.
+Untersucht man das Flugzeitspektrum aus dem Bereich der Jet-Ionen (siehe Abbildung \ref{fig:Conditions}), kann man nachvollziehen welche Ionen aus dem Teilchenstrahl entstehen. \textbf{Um dabei den Untergrund von Messwerten zu trennen setzt man die Ortsbedingung der Analyse auf einen Ort an dem ähnlicher Untergrund herrscht.}
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=0.5\textwidth, height=6.4cm]{../CONJET0.pdf}%
+\includegraphics[width=0.5\textwidth]{../UntergrundJetCon.pdf}%
+\captionof{figure}{Zur Untersuchung der Ionen aus dem Jet wurden nur Zählraten innerhalb der linken Ortsbedingung berücksichtigt. Der Untergrund wurde aus der rechten Ortsbedingung ermittelt.}
+ \label{fig:Conditions}
+\end{minipage} 
+\end{center} 
 
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{../JetmitUntergrund.pdf}%
-\captionof{figure}{Flugzeitspektrum der Ionen aus dem Jet. Die eingetragenen Ionen wurden in Relation zu dem dominanten Wasserpeak bestimmt.}
+\captionof{figure}{Flugzeitspektrum der Ionen aus dem Jet. Die eingetragenen Ionen wurden relativ zum dominierenden Wasserpeak bestimmt.}
  \label{fig:TOFJet}
 \end{minipage} 
 \end{center} 
@@ -111,7 +121,7 @@ Nähert man die Peaks mit einer Gaußkurve und integriert über diese, erhält m
 
 
 \textbf{Kurz auf Tabelle eingehen.. alles wie erwartet. Dominante Ionen sind aus O und H gebaut, kommen also wahrsch von Wasser. Dann Kurve zur neuen Düse kriegen}.
-Wie man an der Zusammenstellung des Spektrums erkennen kann, ist die Wasserdimerausbeute bei diesem Experiment mit 0,21 \% sehr gering. Diese Wasserclusterquelle ist somit ungeeignet für die geplanten Experimente mit Wasser (siehe Kapitel \ref{sec:Motivation})
+Wie man an der Zusammensetzung des Spektrums erkennen kann, ist die Wasserdimerausbeute bei diesem Experiment mit 0,21 \% sehr gering. Diese Wasserclusterquelle ist somit ungeeignet für die geplanten Experimente mit Wasser (siehe Kapitel \ref{sec:Motivation})
 
 \section{Testmessungen der neuen Wasserdüse}
 
