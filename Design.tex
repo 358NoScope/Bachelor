@@ -3,10 +3,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Technische Umsetzung} 
 
-Bestandteil der Vorbereitungen \textbf{auf} die geplanten Experimente an FLASH war die Konstruktion einer Cluster-Quelle für Flüssigkeiten. Um auch Flüssigkeiten wie Wasser in die Gasphase überführen zu können, ist die Implementierung von Heizelementen erforderlich. Weitere Ansprüche waren ein möglichst großes vakuumseitiges Reservoir und die Möglichkeit dieses während des Betriebes zu befüllen. \textit{Das folgende Kapitel behandelt neben der neuen Cluster-Quelle, die Komponenten die in der Praxis notwendig sind, um den kalten Teilchenstrom unter optimalen Bedingungen in die Hauptkammer des Reaktionsmikroskopes zu führen. Brauch ne bessere Überleitung}
-
 \section{Design der Cluster-Quelle} \label{sec:Quelle}
 
+Bestandteil der Vorbereitungen auf die geplanten Experimente an FLASH war die Konstruktion einer Cluster-Quelle für Flüssigkeiten. Um auch Flüssigkeiten wie Wasser in die Gasphase überführen zu können, ist die Implementierung von Heizelementen erforderlich. Weitere Ansprüche waren ein möglichst großes vakuumseitiges Reservoir und die Möglichkeit dieses während des Betriebes zu befüllen. 
 %\begin{figure}[t]
 %\centering
 %\includegraphics[width=1\linewidth]{../dusenackt}
@@ -17,7 +16,7 @@ Bestandteil der Vorbereitungen \textbf{auf} die geplanten Experimente an FLASH w
 \begin{minipage}{1\linewidth}
 \centering
 \includegraphics[width=1.0\textwidth]{../dusenackt.jpg}%
-\captionof{figure}{Foto der Cluster-Quelle für Flüssigkeiten. Die Heizdrahtwicklungen und Temperaturfühler sind nicht angebracht.}
+\captionof{figure}{\small Foto der Cluster-Quelle für Flüssigkeiten. Die Heizdrahtwicklungen und Temperaturfühler sind nicht angebracht.}
  \label{fig:dusenackt}
 \end{minipage} 
 \end{center} 
@@ -26,7 +25,7 @@ Bestandteil der Vorbereitungen \textbf{auf} die geplanten Experimente an FLASH w
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{../Dusekomplett2.png}%
-\captionof{figure}{Querschnitt der Cluster-Quelle ohne Heizdraht und Thermofühler. Maße in mm. Die einzelnen Komponenten sind farbig hervorgehoben: lila: Düsenhalteplatte, blau: Spitze, gelb: Filter aus gesintertem Edelstahl, orange: Filterhalteplatte, schwarz: Viton O-Ring, rot: Reservoirkammer, hellgrün: Heizpatrone, beige: Reservoirrückwand, dunkelgrün: Rohrleitungen, braun: Haltestangen. Die Lochdüse (siehe Kapitel \ref{sec:Clusterbildung}) ist zwischen der Spitze und der Düsenhalteplatte zu erkennen. }
+\captionof{figure}{\small Querschnitt der Cluster-Quelle ohne Heizdraht und Thermofühler. Maße in mm. Die einzelnen Komponenten sind farbig hervorgehoben: lila: Düsenhalteplatte, blau: Spitze, gelb: Filter aus gesintertem Edelstahl, orange: Filterhalteplatte, schwarz: Viton O-Ring, rot: Reservoirkammer, hellgrün: Heizpatrone, beige: Reservoirrückwand, dunkelgrün: Rohrleitungen, braun: Haltestangen. Die Lochdüse (siehe Kapitel \ref{sec:Clusterbildung}) ist zwischen der Spitze und der Düsenhalteplatte zu erkennen. }
  \label{fig:QuerschnittDuse}
 \end{minipage} 
 \end{center} 
@@ -37,8 +36,7 @@ Die Cluster-Quelle ist in Abbildung \ref{fig:QuerschnittDuse} im Querschnitt dar
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{../duseinjetkammer.pdf}%
-\captionof{figure}{
-Maßstabsgetreue Darstellung der Konfiguration von Skimmer und Cluster-Quelle in der ersten Jetkammer bei 210 mm Haltestangenlänge und \textbf{eingefahrenem Manipulatorhub} (Z = 0 mm).  In Anbetracht der in der Realität 30 mm längeren Haltestangen und 50 mm Hub des Manipulators in Z-Richtung, ist der Kontakt mit dem Skimmer theoretisch möglich. Alle Abmessungen in mm.}
+\captionof{figure}{ \small Maßstabsgetreue Darstellung der Konfiguration von Skimmer und Cluster-Quelle in der ersten Jetkammer bei 210 mm Haltestangenlänge und eingefahrenem Manipulatorhub (Z = 0 mm).  In Anbetracht der in der Realität 30 mm längeren Haltestangen und 50 mm Hub des Manipulators in Z-Richtung, ist der Kontakt mit dem Skimmer theoretisch möglich. Alle Abmessungen in mm.}
 \label{fig:duseinjetkammer}
 \end{minipage} 
 \end{center} 
@@ -48,32 +46,27 @@ Maßstabsgetreue Darstellung der Konfiguration von Skimmer und Cluster-Quelle in
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{../duseheiz.pdf}%
-\captionof{figure}{Foto der Cluster-Quelle für Flüssigkeiten mit angebrachten Heizdrahtwicklungen und Temperaturfühlern.}
+\captionof{figure}{\small Foto der Cluster-Quelle für Flüssigkeiten mit angebrachten Heizdrahtwicklungen und Temperaturfühlern.}
 \label{fig:duseheiz}
 \end{minipage} 
 \end{center} 
   
-Von außen wird die ganze Oberfläche der Jetdüse mit Heizdrähten geheizt (siehe Abbildung \ref{fig:duseheiz}). Da die Spitze konisch zuläuft wurde eine Spiralnut eingefräst, um dem Heizdraht darin Halt zu bieten. Die Spitze und das Reservoir können separat auf unterschiedliche Temperaturen geheizt werden. Eine 50 W Heizpatrone (\enquote{Firerod}) im Inneren des Reservoirs (siehe Abbildung \ref{fig:QuerschnittDuse}, \textbf{hellgrün}) dient dazu die Flüssigkeit effizient zu erhitzen. Dadurch ist die Mithilfe des Reservoirheizdrahtes nicht zwingend notwendig, aber dennoch sinnvoll, um die Kondensation des \textbf{verdampften Gases} an den Reservoirwänden zu verhindern. Im Gegensatz dazu ist die Heizdrahtwicklung an der Spitze sehr wichtig für die Stabilität der Quelle. Sollte es im Bereich der Düse zur Kondensation kommen, würde das schubartigen Ausstößen oder sogar die Vereisung der Düse zur Folge haben. Um das zu verhindern wird die Düsentemperatur so hoch gewählt, dass die Kondensation des Dampfes, unter Berücksichtigung des Stagnationsdruckes, nicht stattfindet. Im Normalfall ist das gewährleistet, wenn die Düse 10 - 20 K wärmer ist, als das Reservoir.
+Von außen wird die ganze Oberfläche der Jetdüse mit Heizdrähten geheizt (siehe Abbildung \ref{fig:duseheiz}). Da die Spitze konisch zuläuft wurde eine Spiralnut eingefräst, um dem Heizdraht darin Halt zu bieten. Die Spitze und das Reservoir können separat auf unterschiedliche Temperaturen geheizt werden. Eine 50 W Heizpatrone (\enquote{Firerod}) im Inneren des Reservoirs (siehe Abbildung \ref{fig:QuerschnittDuse}, hellgrün) dient dazu die Flüssigkeit effizient zu erhitzen. Dadurch ist die Mithilfe des Reservoirheizdrahtes nicht zwingend notwendig, aber dennoch sinnvoll, um die Kondensation des verdampften Gases an den Reservoirwänden zu verhindern. Im Gegensatz dazu ist die Heizdrahtwicklung an der Spitze sehr wichtig für die Stabilität der Quelle. Sollte es im Bereich der Düse zur Kondensation kommen, würde das schubartigen Ausstößen oder sogar die Vereisung der Düse zur Folge haben. Um das zu verhindern wird die Düsentemperatur so hoch gewählt, dass die Kondensation des Dampfes, unter Berücksichtigung des Stagnationsdruckes, nicht stattfindet. Im Normalfall ist das gewährleistet, wenn die Düse 10 - 20 K wärmer ist, als das Reservoir.
 Zwischen Reservoir und Spitze befindet sich eine Trennwand mit einem Loch, das höher liegt als der Maximalfüllstand. Durch das Loch gelangt das bei Reservoirtemperatur $T_0$ entstehende Gas mit Stagnationsdruck $p_0$ von dem Reservoir zur Düse. 
 Da Flüssigkeit in das Reservoir gefüllt wird, welches nicht durch das Loch ausfließen darf, ist die Orientierung der Düse beim Einbau zu beachten. Die drei Rohrenden (Durchmesser = 3 mm) in der Reservoirrückwand sind so angeordnet, dass die erste Öffnung über dem Maximalfüllstand liegt, die Zweite auf Höhe des Maximalfüllstands und die Dritte unter dem Maximalfüllstand liegt. liegt. Die zwei unteren Rohre dienen der Wiederbefüllung des Reservoirs. Dabei wird je eine 50 ml- Einwegspritze über einen durchsichtigen PVC-Schlauch an die Ausgänge der Rohre angeschlossen. Entnimmt man bei Betrieb mit der oberen Spritze ein Volumen aus dem Reservoir, wird im Ausgleich dazu dasselbe Volumen aus der unteren Spritze in das Reservoir gefüllt. Sobald kleine Flüssigkeitsmengen in den PVC-Schlauch der oberen Spritze fließen, ist der Befüllvorgang abgeschlossen. Das Reservoir fasst bis zu 36 ml Flüssigkeit. 
-Das höchstgelegene Rohr eröffnet die Möglichkeit Experimente mit koexpandierendem Gas durchzuführen. Dieses Vorgehen beeinflusst die Expansionsbedingungen und kann verwendet werden diese auf bestimmte Clustergrößen zu optimieren. \textbf{Wenn ich gemischte Cluster erwähne muss ich erklärenn was das ist, oder? Und das will ich hier nicht wirklich.}   
-Am vorderen Ende des Reservoires und der Spitze sind von außen jeweils zwei Pt-100-Thermofühler angebracht mit denen die Außentemperatur der Cluster-Quelle gemessen werden kann. 
-Die Parameter Düsen- und Reservoirtemperatur sowie der Expansionskammerdruck sind wichtige Überwachungsgrößen, um die Stabilität einer Expansion einschätzen zu können.
-In Abbildung \ref{fig:Spitze2} sieht man die Spitze der Clusterquelle etwas mehr im Detail.
-Die Spitze wird gegenüber dem Reservoir mit einem O-Ring gedichtet und ringsum verschraubt.
-In der Spitze befindet sich eine konische Aussparung, die das Gas zur Düse führt. Vor dieser Aussparung befindet sich ein bleigedichteter, gesinterter Filterring mit 5 bzw. 10 µm Porenweite. Nachdem das Gas die konische Aussparung durchquert hat, passiert es die Lochdüse und expandiert ins Vakuum (siehe Abbildung \ref{fig:Spitze2} - Detailaufnahme). Als Lochdüse werden Platinblenden mit 3 mm Außen- und 30 bzw. 50 µm Lochdurchmesser verwendet, die mit einem dünnen Bleiring gedichtet und mit einer Halteplatte fest angepresst wird. %
+Das höchstgelegene Rohr eröffnet die Möglichkeit Experimente mit koexpandierendem Gas durchzuführen. Dieses Vorgehen beeinflusst die Expansionsbedingungen und kann verwendet werden diese auf bestimmte Clustergrößen zu optimieren. Am vorderen Ende des Reservoires und der Spitze sind von außen jeweils zwei Pt-100-Thermofühler angebracht mit denen die Außentemperatur der Cluster-Quelle gemessen werden kann. Die Parameter Düsen- und Reservoirtemperatur sowie der Expansionskammerdruck sind wichtige Überwachungsgrößen, um die Stabilität einer Expansion einschätzen zu können. In Abbildung \ref{fig:Spitze2} sieht man die Spitze der Clusterquelle etwas mehr im Detail. Die Spitze wird gegenüber dem Reservoir mit einem O-Ring gedichtet und ringsum verschraubt. In der Spitze befindet sich eine konische Aussparung, die das Gas zur Düse führt. Vor dieser Aussparung befindet sich ein bleigedichteter, gesinterter Filterring mit 5 bzw. 10 µm Porenweite. Nachdem das Gas die konische Aussparung durchquert hat, passiert es die Lochdüse und expandiert ins Vakuum (siehe Abbildung \ref{fig:Spitze2} - Detailaufnahme). Als Lochdüse werden Platinblenden mit 3 mm Außen- und 30 bzw. 50 µm Lochdurchmesser verwendet, die mit einem dünnen Bleiring gedichtet und mit einer Halteplatte fest angepresst wird. %
 
 \begin{center} 
 \begin{minipage}{\linewidth}
 \includegraphics[width=1\textwidth]{../Spitze2.png}%
- \captionof{figure}{Detailansicht der Spitze. \newline lila: Düsenhalteplatte, pink: Düse, blau: Spitze, gelb: Filter, orange: Filterhalteplatte, schwarz: O-Ring} \label{fig:Spitze2}
+ \captionof{figure}{\small Detailansicht der Spitze. lila: Düsenhalteplatte, pink: Düse, \newline blau: Spitze, gelb: Filter, orange: Filterhalteplatte, schwarz: O-Ring} \label{fig:Spitze2}
 \end{minipage} 
 \end{center} 
 
-Die Spitze wird durch den Heizdraht von außen gleichmäßig erhitzt. Dadurch, dass sich in Richtung Düse immer weniger Edelstahl zwischen Heizdraht und Gas befindet, stellt sich ein Wärmegradient ein, der die Kondensation zunehmend \textbf{verhindert (Verhindern kann man nicht steigern, aber mir fällt keine bessere Formulierung ein.)}.
+Die Spitze wird durch den Heizdraht von außen gleichmäßig erhitzt. Dadurch, dass sich in Richtung Düse immer weniger Edelstahl zwischen Heizdraht und Gas befindet, stellt sich ein Wärmegradient ein, der die Kondensation zunehmend verhindert.
 %
-Der Manipulator und die Cluster-Quelle werden als Einheit an die ersten Jetstufe montiert. 
-Technische Konstruktionszeichnungen der Düse sind im Anhang beigefügt.
+Der Manipulator und die Cluster-Quelle werden als Einheit an die ersten Jetstufe montiert. \\
+
 %
 %
 %Wie detailliert wird das? Aber schon alle Gedanken die wichtig waren erwähnen?
@@ -87,23 +80,25 @@ Technische Konstruktionszeichnungen der Düse sind im Anhang beigefügt.
 %\textbf{Alle in diesem Abschnitt beschriebenen Uberlegungen versagen allerdings v ̈ollig im Fall von heterogenen Clustern, die in Koexpansionen erzeugt werden. Aufgrund der bei solchen Experimenten anfallenden hohen Gaslasten werden h ̈aufig differentielle Pumpstufen mit einem konischen Strahlabsch ̈aler verwendet, siehe Abschnitt 3.3. Ist dessen Apertur nicht mechanisch einwandfrei und scharfkantig oder befindet sie sich in der falschen Position, entweder lateral oder entlang des Strahls, so kommt es zu Verwirbelungen und lokalen Druckschwankungen [79, 80]. Diese haben eine Auswirkung auf die Gr ̈oßenverteilung und den Kondensationsgrad, also den Anteil kondensierter an insgesamt expandierter Materie.}
 Der Gasstrom einer Überschallexpansion unterteilt sich in den Bereich der \enquote{zone of silence} und den von Schockwellen und turbulenten Strömungen dominierten Restbereich (siehe Kapitel \ref{sec:uberschallexp}). Für Experimente geeignete Cluster müssen aus der \enquote{zone of silence} extrahiert werden. Ein Skimmer ist eine konische Apertur, die an der Spitze eine kleine Öffnung besitzt. Die Düse wird mit der X- und Y-Einstellung am Manipulator so auf den Skimmer ausgerichtet, dass der mittig liegende Kernstrahl vom restlichen Strom separiert wird. Damit wird die Zerstörung der Stahlintensität und Clusterbeschaffenheit des Kernstrahls durch Schockstrukturen verhindert. 
 
+Der verwendete Kupfer-Skimmer ist baugleich zu dem in Abbildung \ref{fig:Skimmer}. Die Wandstärke des aus Kupfer bestehenden Skimmers beträgt an der Spitze laut Hersteller maximal 10 µm. Der flache Winkel des Skimmers lenkt den abgeschälten Gasstrom sanft ab, damit er nicht in den Kernstrahl zurückreflektiert.\\
+Die optimale XY-Positionierung der Düse spiegelt sich an einem Druckmaximum im Jetdump (siehe Kapitel \ref{sec:Jetstufen}) wieder, weil dieses ein Zeichen dafür ist, dass der Teilchenstrahl die Apparatur unbeeinträchtigt durchquert. Die Entfernung der Düse zum Skimmer richtet sich nach den gewünschten Drücken in den folgenden Druckstufen.
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=0.9\textwidth]{../Skimmer.pdf}%
-\captionof{figure}{Foto eines Skimmers aus Kupfer. Der Skimmer ist auf eine verschraubbare Halterung geklebt mit der er in der ersten Jetkammer befestigt wird. Das ermöglicht es den Skimmer zu wechseln ohne ihn zu beschädigen.}  
+\captionof{figure}{\small Foto eines Skimmers aus Kupfer. Der Skimmer ist auf eine verschraubbare Halterung geklebt mit der er in der ersten Jetkammer befestigt wird. Das ermöglicht es den Skimmer zu wechseln, ohne ihn zu beschädigen.}  
  \label{fig:Skimmer}
 \end{minipage} 
 \end{center} 
-Der verwendete Kupfer-Skimmer ist baugleich zu dem in Abbildung \ref{fig:Skimmer}. Die Wandstärke des aus Kupfer bestehenden Skimmers beträgt an der Spitze laut Hersteller maximal 10 µm. Der flache Winkel des Skimmers lenkt den abgeschälten Gasstrom sanft ab, damit er nicht in den Kernstrahl zurückreflektiert.\\
-Die optimale XY-Positionierung der Düse spiegelt sich an einem Druckmaximum im Jetdump (siehe Kapitel \ref{sec:Jetstufen}) wieder, weil dieses ein Zeichen dafür ist, dass der Teilchenstrahl die Apparatur unbeeinträchtigt durchquert. Die Entfernung der Düse zum Skimmer richtet sich nach den gewünschten Drücken in den folgenden Druckstufen. Da die Strahldichte mit dem Abstand $x$ zur Düse um $x^{-2}$ abnimmt, ist ein kleines $x$ für hohe Strahlintensitäten notwendig  (\cite{hagena1981nucleation}). Befindet sich die Düse allerdings zu nahe an dem Skimmer, werden Teilchen an der Skimmerinnenwand reflektiert (siehe Abb. \ref{fig:Skimmerpos}, links). Die reflektierten Teilchen vergrößern durch Stöße die Geschwindigkeitsverteilung der Strahls und zerstören sensible Strukturen \textbf{wie Cluster}. Die Entfernung an der keine radial austretenden Teilchen mehr an der Skimmerinnenwand streuen können ist die maximale Naheposition (siehe Abb. \ref{fig:Skimmerpos}, mitte). In dieser Position ist die maximale Strahlintensität erreicht. Setzt man die Innenwandunge des Skimmers zu einem Kegel fort, so gibt die Kegelspitze die maximale Naheposition an. Da der Skimmer einen Öffnungswinkel von 25° bei 200µm Öffnungsdurchmesser hat, wäre die optimale Position bei $x$ = 46 µm. Diese Position wird in der Praxis nicht angefahren, weil die Gefahr zu groß ist den Skimmer zu beschädigen. 
+ Da die Strahldichte mit dem Abstand $x$ zur Düse um $x^{-2}$ abnimmt, ist ein kleines $x$ für hohe Strahlintensitäten notwendig  (\cite{hagena1981nucleation}). Befindet sich die Düse allerdings zu nahe an dem Skimmer, werden Teilchen an der Skimmerinnenwand reflektiert (siehe Abb. \ref{fig:Skimmerpos}, links). Die reflektierten Teilchen vergrößern durch Stöße die Geschwindigkeitsverteilung der Strahls und zerstören sensible Strukturen, wie z. B. Cluster. Die Entfernung an der keine radial austretenden Teilchen mehr an der Skimmerinnenwand streuen können ist die maximale Naheposition (siehe Abb. \ref{fig:Skimmerpos}, mitte). In dieser Position ist die maximale Strahlintensität erreicht. Setzt man die Innenwandunge des Skimmers zu einem Kegel fort, so gibt die Kegelspitze die maximale Naheposition an. Da der Skimmer einen Öffnungswinkel von 25° bei 200µm Öffnungsdurchmesser hat, wäre die optimale Position bei $x$ = 46 µm. Diese Position wird in der Praxis nicht angefahren, weil die Gefahr zu groß ist den Skimmer zu beschädigen. 
 Meist sind die Strahlintensitäten in der Hauptkammer auch bei Entfernungen von einigen Millimetern zum Skimmer ausreichend hoch, sodass die Düse in sicherer Entfernung positioniert werden kann.  
+
  
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{../skimmerpos.png}%
-\captionof{figure}{Strahlverlauf bei verschiedenen Entfernungen zum Skimmer. 
+\captionof{figure}{\small Strahlverlauf bei verschiedenen Entfernungen zum Skimmer. 
 links: Reflektionen an der Skimmerinnenwand. mitte: Maximale Naheposition. rechts:  Verringerung der Strahlintensität. \cite{mueller12} }  
  \label{fig:Skimmerpos}
 \end{minipage} 
@@ -113,13 +108,14 @@ links: Reflektionen an der Skimmerinnenwand. mitte: Maximale Naheposition. recht
 
 \section{Jetstufen} \label{sec:Jetstufen}
 
-Bei Betrieb der Jetdüse herrscht in der ersten Jetkammer üblicherweise ein Druck von $p_b \approx 10^{-3}$ mbar. Um den hohen Druckgradienten zwischen Düse und Hauptkammer ($p \approx 10^{-11}$ mbar) halten zu können, wird über sechs Druckstufen differentiell gepumpt.
+Bei Betrieb der Jetdüse herrscht in der ersten Jetkammer üblicherweise ein Druck von $p_b \approx 10^{-3}$ mbar. Um den hohen Druckgradienten zwischen Düse und Hauptkammer ($p \approx 10^{-11}$ mbar) halten zu können, wird über sechs Druckstufen differentiell gepumpt. 
+Die Jetdüse wird direkt in die erste Jetkammer gebaut und auf den Skimmer ausgerichtet. In der zweiten Jetstufe befindet sich ein weiterer Skimmer. Diese Apertur ist mit 400 µm Öffnungsdurchmesser größer als die Erste. Beide Skimmer sind aufeinander ausgerichtet. Der zweite Skimmer schält Teilchen mit zu großem transversalem Impuls ab und sorgt damit für eine bessere Fokussierung. Die folgenden vier Jetstufen sind jeweils über Aperturen mit 2mm Durchmesser voneinander getrennt. Wenn die Düse perfekt mit den Skimmern und Aperturen ausgerichtet ist, beträgt der Durchmesser des Jets in der Reaktionskammer etwa 1,2 mm. Die Jetstufen 4-6 sind zusätzlich mit verstellbaren Schlitzen ausgestattet, welche es erlauben den Strahl weiter in seiner räumlichen Ausdehnung zu beschneiden. Nachdem der Strahl die Reaktionskammer passiert hat wird er nach zwei weiteren differentiellen Pumpstufen im Jetdump abgepumpt. Die letzten zwei Pumpstufen verhindern das Zurückstreuen von Teilchen aus dem Jetdump.
 
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=1.0\textwidth]{../Teststand.pdf}%
-\captionof{figure}{Teststand in Heidelberg. Die Struktur entspricht, bis auf den Quadrupoldetektor in der Hauptkammer, dem Schema in Abbildung \ref{fig:Jetstageaufbau}. }  
+\captionof{figure}{\small Teststand in Heidelberg. Die Struktur entspricht, bis auf den Quadrupoldetektor in der Hauptkammer, dem Schema in Abbildung \ref{fig:Jetstageaufbau}. }  
  \label{fig:Teststand}
 \end{minipage} 
 \end{center} 
@@ -128,10 +124,7 @@ Bei Betrieb der Jetdüse herrscht in der ersten Jetkammer üblicherweise ein Dru
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=1.0\textwidth]{../Jetstageaufbau.png}%
-\captionof{figure}{ Schema einer experimentellen REMI-Ausbaus mit Jetstufen. Die Nummern 1-6 kennzeichnen die Jetstufen. Der Jetstrahl ist als graue gestrichelte Linie gekennzeichnet. Die Skimmer und Schlitze sind in grün bzw. blau angedeutet. In der Hauptkammer des REMI ist der Laserfokuspunkt mit einem roten Punkt gekennzeichnet und die Detektoren in türkis markiert. \cite{Sch11}}  
+\captionof{figure}{\small Schema eines experimentellen REMI-Ausbaus mit 6 Jetstufen. Die Nummern 1-6 kennzeichnen die Jetstufen. Der Jetstrahl ist als graue gestrichelte Linie gekennzeichnet. Die Skimmer und Schlitze sind in grün bzw. blau angedeutet. In der Hauptkammer des REMI ist der Laserfokus mit einem roten Punkt gekennzeichnet und die Detektoren in türkis markiert. \cite{Sch11}}  
  \label{fig:Jetstageaufbau}
 \end{minipage} 
 \end{center} 
-
-
-Wie schon erwähnt, wird die Jetdüse direkt in die erste Jetkammer gebaut und auf den Skimmer ausgerichtet. In der zweiten Jetstufe befindet sich ein weiterer Skimmer. Diese Apertur ist mit 400 µm Öffnungsdurchmesser größer als die Erste. Beide Skimmer sind aufeinander ausgerichtet. Der zweite Skimmer schält Teilchen mit zu großem transversalem Impuls ab und sorgt damit für eine bessere Fokussierung. Die folgenden vier Jetstufen sind jeweils über Aperturen mit 2mm Durchmesser voneinander getrennt. Wenn die Düse perfekt mit den Skimmern und Aperturen ausgerichtet ist, beträgt der Durchmesser des Jets in der Reaktionskammer etwa 1,2 mm. Die Jetstufen 4-6 sind zusätzlich mit verstellbaren Schlitzen ausgestattet, welche es erlauben den Strahl weiter in seiner räumlichen Ausdehnung zu beschneiden. Nachdem der Strahl die Reaktionskammer passiert hat wird er nach zwei weiteren differentiellen Pumpstufen im Jetdump abgepumpt. Die letzten zwei Pumpstufen verhindern das Zurückstreuen von Teilchen aus dem Jetdump.

@@ -5,9 +5,10 @@
 %% e.g. available in Texlive 2009
 \documentclass  [
   paper    = a4,
-  fontsize = 12.5pt
+  fontsize = 12.5pt,
  % headsepline,     %macht Strich und Kapitel-/Unterkapitelname in den Header
 %  headline = 1.5
+BCOR=35mm
 ]  {scrbook}
 %----verhindert eingerueckte Zeile zu Beginn eines Absatzes----
 \setlength{\parindent}{0mm}
@@ -24,6 +25,10 @@
 \usepackage                             			{amssymb}			%Pfeile und weitere Zeichen?
 \usepackage											{booktabs}			%Für stylische Tabellen
 \usepackage											{amsmath}  			%für Split Umgebung
+\usepackage											{float}				%Tabelle an bestimmte Stelle
+%\usepackage{vmargin}
+
+%\setmarginsrb{3cm}{1cm}{3cm}{1cm}{6mm}{7mm}{5mm}{15mm}
 
 \begin{document}
 
@@ -81,7 +86,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% A N H A N G  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \include{Anhang}  
+  
  
  
      
@@ -92,12 +97,12 @@
 %     \citestyle{egu}
      \bibliographystyle{alpha}  %ersten 3 Buchstaben und Jahr
 %     \include{deposition}
-
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%D A N K S A G U N G  %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  \include{Danksagung2}  
+ \include{Anhang} 
   
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
