@@ -24,13 +24,13 @@ Das folgende Kapitel erklärt den Aufbau und das Funktionsprinzip der einzelnen 
 In der Mitte einer Ultrahochvakuumkammer ($p \approx 10^{-12}$ mbar) wird ein stark fokussierter Laser\footnote{Außer Photonen werden auch Elektronen und Ionen als Projektile verwendet. \cite{ullrich2003}} im 90° Winkel mit einem kalten Gasjet gekreuzt. Im Laserfokus werden Targetatome/-moleküle ionisiert und es entstehenden positive Ionen und Elektronen.
 %
 %ein hochfokussierter Laser mit einem kalten Target-Jet gekreuzt. Durch die Interaktion der Targetatome bzw. -moleküle kommt es durch Ionisation oder Dissoziation zur Entstehung von positiv geladenen Ionen und Elektronen. 
-Das Spektrometer besteht aus mehreren koaxial angebrachten und äquidistant angeordneten Metallringen, die über eine Widerstandskaskade leitend verbunden sind. Legt man an den Enden eine Spannung an, entsteht ein sehr homogenes elektrisches Feld im Inneren. Das elektrische Feld beschleunigt die Ionen und Elektronen in entgegengesetzte Richtungen auf einen zeit- und ortsauflösenden Detektor. 
+Das Spektrometer besteht aus mehreren koaxial angebrachten und äquidistant angeordneten Metallringen, die über eine Widerstandskaskade leitend verbunden sind. Legt man an den Enden eine Spannung an, entsteht ein sehr homogenes elektrisches Feld im Inneren. Das elektrische Feld beschleunigt die Ionen und Elektronen in entgegengesetzte Richtungen auf einen zeit- und ortsauflösenden Detektor. Da bei einer Ionisation Elektronen und Ionen aus dem gleichen Target stammen ist können ale Impulse über die Impulserhaltung bestimmt werden. Ionen und Elektronen besitzen eine enorme Massendifferenz und das wirkt sich in sehr verschiedenen Energien und Geschwindigkeiten der Elektronen, verglichen mit den Ionen aus. Um die leichteren und schnelleren Elektronen auf den Detektor zu lenken, ist  ein sehr viel stärkeres elektrisches Feld vonnöten, als dies bei Ionen der Fall ist. Die Ortsauflösung des Detektors wird aber mit zunehmendem elektrischem Feld schlechter, weil dann die Flugzeiten und die Auftrefforte von verschiedenen Ionen zu ähnlich werden.
 %
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=0.7\textwidth]{../REMI.png}%
-\captionof{figure}{\small Schematischer Aufbau eines Reaktionsmikroskopes: 1: Fokussierter Laserstrahl. 2: Kalter Überschallgasjet. (Kap. \ref{sec:uberschallexp}) 3: Spektrometer Ionenseite. 4: Spektrometer Elektronenseite. (Kap. \ref{sec:Spektrometer}) 5: Ionendetektor. 6: Elektronendetektor (Kap. \ref{sec:Detektor}). 7 und 8: Helmholtz-Spulenpaar. \cite{Sch11}}  
+\captionof{figure}{Schematischer Aufbau eines Reaktionsmikroskopes: 1: Fokussierter Laserstrahl. 2: Kalter Überschallgasjet. (Kap. \ref{sec:uberschallexp}) 3: Spektrometer Ionenseite. 4: Spektrometer Elektronenseite. (Kap. \ref{sec:Spektrometer}) 5: Ionendetektor. 6: Elektronendetektor (Kap. \ref{sec:Detektor}). 7 und 8: Helmholtz-Spulenpaar. \cite{Sch11}}
  \label{fig:REMI} 
 \end{minipage} 
 \end{center} 
@@ -38,8 +38,7 @@ Das Spektrometer besteht aus mehreren koaxial angebrachten und äquidistant ange
 %Dabei muss man darauf achten die Feldstärke richtig zu wählen, denn die genaue Zusammensetzung der Fragmente wird über die Abhängigkeit der Flugzeit vom Masse-zu-Ladungsverhältnis bestimmt. Deswegen ist die Problematik, das Feld nicht zu stark einzustellen, weil dann die Flugzeiten und der Auftreffort von verschiedenen Ionen zu ähnlich werden, aber auch nicht zu schwach, weil dann die Raumwinkelabdeckung des Spektrometers schlechter wird, denn schwere, aber leichtgelandene Ionen werden nichtmehr genug abgelenkt, um auf den Detektor zu treffen.
 %
 
-Da bei einer Ionisation Elektronen und Ionen aus dem gleichen Target stammen ist können ale Impulse über die Impulserhaltung bestimmt werden. Ionen und Elektronen besitzen eine enorme Massendifferenz %\footnote{$m_p \approx 1836\ m_e$} 
-und das wirkt sich in sehr verschiedenen Energien und Geschwindigkeiten der Elektronen, verglichen mit den Ionen aus. Um die leichteren und schnelleren Elektronen auf den Detektor zu lenken, ist  ein sehr viel stärkeres elektrisches Feld vonnöten, als dies bei Ionen der Fall ist. Die Ortsauflösung des Detektors wird aber mit zunehmendem elektrischem Feld schlechter, weil dann die Flugzeiten und die Auftrefforte von verschiedenen Ionen zu ähnlich werden.
+
 Um alle Ionen und Elektronen mit hoher Auflösung zu detektieren, wird im REMI, mit einem externen Helmholtzspulenpaar, ein Magnetfeld erzeugt. Dieses zwingt die Elektronen auf Spiralbahnen um die Spektrometerachse, während der Effekt für Ionen klein ist. Trotz der somit komplizierteren Flugbahnen, kann aus dem Auftreffort und der Flugzeit der dreidimensionale Impuls der Fragmente berechnet werden. 
 
 \subsection{Detektor} \label{sec:Detektor} 
@@ -47,28 +46,31 @@ Um alle Ionen und Elektronen mit hoher Auflösung zu detektieren, wird im REMI, 
 Der orts- und zeitauflösende Detektor besteht aus zwei Komponenten, dem Micro-Channel Plate (kurz: MCP) und der Delayline-Anode. Das MCP detektiert den Auftreffzeitpunkt des geladenen Teilchens und verstärkt das Signal für die Delayline-Anode. Die Delayline-Anode detektiert im Anschluss den Auftreffort des Teilchens. In Abbildung (\ref{fig:Detektor}) ist der Detektor schematisch dargestellt.\\
 
 \subsubsection{Micro-Channel Plate}
+
+ \begin{center}
+ 	\begin{minipage}{\linewidth}
+ 		\centering
+ 		\includegraphics[width=0.9\textwidth]{../Detektor.png}%
+ 		\captionof{figure}{\textsl{a) Orts- und Zeitauflösender Detektor eines Reaktionsmikroskopes. \newline b) Zwei gestapelte MCPs. Geladenes Teilchen (roter Pfeil) trifft auf die MCP Innenwand und löst Sekundärelektronen aus. Durch die anliegende Spannung beschleunigt, lösen diese Elektronen bei Kontakt mit der Innenwand weitere Elektronen aus, bis der Elektronenschauer aus dem MCP austritt. \newline c) Prinzip der Positionsbestimmung der Delay-Line-Anode. Elektronenschauer trifft auf den Kupferdraht und sorgt für eine lokal erhöhte Ladungsdichte. Diese breitet sich entlang des Drahtes aus und kann an beiden Drahtenden nachgewiesen werden. Die Zeitdifferenz dieser Signale ist eindeutig mit dem Auftreffort verknüpft. \cite{Fech14}}}  
+ 		\label{fig:Detektor}
+ 	\end{minipage} 
+ \end{center} 
+ \clearpage
  Ein MCP ist eine ca. 1mm dünne Glasplatte, die homogen mit mikroskopisch kleinen Kanälen (Innendurchmesser $\approx$ 25µm) versehen ist. Die Kanäle auf dem MCP sind typischerweise um 8° gegen die Oberflächennormale geneigt, um zu gewährleisten, dass eintretende Teilchen die Innenwand treffen. Zwischen den beiden Oberflächen der MCP wird eine Hochspannung von typischerweise 1200V angelegt.
- Trifft ein geladenes Teilchen auf die Innenwand eines solchen Kanals, werden Sekundärelektronen ausgelöst. Durch die Spannung werden die Elektronen in Richtung Delayline-Anode beschleunigt und treffen dabei weitere Male auf die Innenwand, sodass kaskadenartig ein Elektronenschauer ensteht (siehe Abb. \ref{fig:Detektor}.b ). Die Oberflächen der Kanäle sind mit einem geeigneten Halbleiter beschichtet, der die Austrittsarbeit von Elektronen verringert und damit die Effizienz erhöht. 
+ Trifft ein geladenes Teilchen auf die Innenwand eines solchen Kanals, werden Sekundärelektronen ausgelöst. Durch die Spannung werden die Elektronen in Richtung Delayline-Anode beschleunigt und treffen dabei weitere Male auf die Innenwand, sodass kaskadenartig ein Elektronenschauer ensteht (siehe Abb. \ref{fig:Detektor}.b)). Die Oberflächen der Kanäle sind mit einem geeigneten Halbleiter beschichtet, der die Austrittsarbeit von Elektronen verringert und damit die Effizienz erhöht. 
  In der Regel werden mehrere MCPs gestapelt, um die Verstärkung zu erhöhen. Die Kanäle werden beim Stapeln verschieden orientiert angeordnet, um die Anzahl der Wandkontakte der Elektronen zu maximieren. %Gleichzeitig verhindert diese, als \enquote{chevron} Geometrie bezeichnete Stapelweise, dass die in den Kanälen befindlichen Restgase, die durch den Elektronenschauer ionisiert wurden durch das elektrische Feld beschleunigt wieder ins Spektrometer gelangen können, denn bevor das passiert werden sie an einer Kanalwand auf abgefangen.
  Durch das Auslösen des Elektronenschauers fällt die Spannung über dem MCP schlagartig ab. Dieses Signal wird ausgelesen und stellt, durch die Differenz mit dem externen Triggersignal des Lasers, die Flugzeit des Teilchens dar. 
  
- \begin{center}
- \begin{minipage}{\linewidth}
- \centering
- \includegraphics[width=0.9\textwidth]{../Detektor.png}%
- \captionof{figure}{\small a) Orts- und Zeitauflösender Detektor eines Reaktionsmikroskopes. b) Zwei gestapelte MCPs. Geladenes Teilchen (roter Pfeil) trifft auf die MCP Innenwand und löst Sekundärelektronen aus. Durch die anliegende Spannung beschleunigt, lösen diese Elektronen bei Kontakt mit der Innenwand weitere Elektronen aus, bis der Elektronenschauer aus dem MCP austritt c) Prinzip der Positionsbestimmung der Delay-Line-Anode. Elektronenschauer trifft auf den Kupferdraht und sorgt für eine lokal erhöhte Ladungsdichte. Diese breitet sich entlang des Drahtes aus und kann an beiden Drahtenden nachgewiesen werden. Die Zeitdifferenz dieser Signale ist eindeutig mit dem Auftreffort verknüpft. \cite{Fech14}}  
-  \label{fig:Detektor}
- \end{minipage} 
- \end{center} 
+
 
 \subsubsection{Delayline-Anode}
 
-Der Elektronenschauer aus dem MCP trifft auf die Delayline-Anode \cite{sobottka1988}, während er sich durch die abstoßende Coulombkraft unter den Elektronen aufweitet. Eine solche Delayline-Anode besteht aus einem Kupferdraht, der in gleichmäßigen Abständen um eine isolierende Keramik gewickelt ist. Trifft der Elektronenschauer auf das Kupferkabel der Delayline-Anode, entsteht eine lokal erhöhte Ladungsdichte, welche sich zu beiden Enden des Drahtes ausbreitet und dort detektiert wird. Die Zeitdifferenz $\Delta t$ zwischen den Signalen hängt linear mit der Auftreffposition des Elektronenschauers zusammen (siehe Abb. \ref{fig:Detektor}.c ). Um die Auftreffkoordinate zu bestimmen, nutzt man die Formel
+Der Elektronenschauer aus dem MCP trifft auf die Delayline-Anode \cite{sobottka1988}, während er sich durch die abstoßende Coulombkraft unter den Elektronen aufweitet. Eine solche Delayline-Anode besteht aus einem Kupferdraht, der in gleichmäßigen Abständen um eine isolierende Keramik gewickelt ist. Trifft der Elektronenschauer auf das Kupferkabel der Delayline-Anode, entsteht eine lokal erhöhte Ladungsdichte, welche sich zu beiden Enden des Drahtes ausbreitet und dort detektiert wird. Die Zeitdifferenz $\Delta t$ zwischen den Signalen hängt linear mit der Auftreffposition des Elektronenschauers zusammen (siehe Abb. \ref{fig:Detektor}.c)). Um die Auftreffkoordinate zu bestimmen, nutzt man die Formel
 \begin{equation}
 x = c_{w,x} \Delta t\ ,
 \end{equation}
 wobei $x$ die Position senkrecht zu den Wicklungen beschreibt und $c_{w,x}$ = const die effektive Signalausbreitungsgeschwindigkeit in diese Richtung ist. Um einen zweidimensionalen Auftreffort zu erhalten, wird eine zweite Kupferdrahtwicklung rechtwinkling zu der ersten orientiert angebracht (siehe Abb. \ref{fig:Detektor} a)). Da das Signal die gesamte Drahtlänge durchläuft, ist die Summe der beiden Zeitsignale an den Enden konstant. Mithilfe dieser Zeitsummenbedingung können auch mehrere Teilchen gleichzeitig ortsaufgelöst werden.
-
+\clearpage
 \section{Cluster} \label{sec:Cluster}
 
 Bei typischen Reaktionen liegen die Ionenimpulse in der Größenordnung einer atomaren Einheit, was  Energien im meV-Bereich entspricht. Man verwendet deshalb einen kalten Targetstrahl, um die Auflösung der Reaktionsenergien im REMI zu ermöglichen. \cite{kurka07}. Ein Überschall-Gasjet\footnote{Als \enquote{Jet} wird in der Physik ein gerichteter Teilchenstrom bezeichnet.} kann eine innere Temperatur der Teilchen von unter einem Kelvin erreichen. Der Prozess der Überschallexpansion fördert zudem die Entstehung von Clustern, wie sie für die in Kapitel \ref{sec:Motivation} vorgestellten Experimente erforderlich sind.
@@ -80,12 +82,12 @@ In den folgenden Abschnitten wird näher auf Cluster und deren Entstehung durch 
 
 Als Cluster bezeichnet man Agglomerate aus Atomen oder Molekülen. Diese können bei kleinen Exemplaren zwei bis mehrere Hundert Teilchen enthalten und bei großen Clustern aus bis zu ca. $\mathrm{10^6}$ Teilchen bestehen. Je nach Größe besitzen Cluster verschiedene Eigenschaften und bilden damit eine Brücke zwischen der Molekülphysik und der Festkörperphysik. Cluster können im Allgemeinen auf zwei Wege produziert werden. Einerseits können sie durch Abspaltung von größeren Agglomeraten gewonnen werden (z.B. Abspaltung durch Teilchenbeschuss), andererseits kann man sie aus ihren einzelnen Bestandteilen zusammensetzen (z.B. ultrakalte Stöße, Kondensation aus der Gasphase) \cite{barth2007}. \\
 Bei kleinen Clustern lassen sich alle Eigenschaften anhand der Atom- und Molekülphysik beschreiben. Ähnlich wie bei Atomen besitzen kleine Cluster diskrete Energieniveaus.
-Bis zu einer gewissen Größe strukturieren sich die Cluster beim Hinzukommen eines weiteren Atoms vollständig um und verändern auf diese Weise ihre physikalischen und chemischen Eigenschaften. Sobald das Cluster eine Größe von etwa 100 Atomen oder Molekülen erreicht, kann man allmählich die Anordnung in einer Gitterstruktur wie bei Festkörpern beobachten. Auch die anfangs diskreten Energieniveaus gehen langsam in ein kontinuierliches Energieband über (\cite{benedek1988} \cite{General08}).
+Bis zu einer gewissen Größe strukturieren sich die Cluster beim Hinzukommen eines weiteren Atoms vollständig um und verändern auf diese Weise ihre physikalischen und chemischen Eigenschaften. Sobald das Cluster eine Größe von etwa 100 Atomen oder Molekülen erreicht, kann man allmählich die Anordnung in einer Gitterstruktur wie bei Festkörpern beobachten. Auch die anfangs diskreten Energieniveaus gehen langsam in ein kontinuierliches Energieband über (\cite{benedek1988}, \cite{General08}).
  Mikrokristalle sind Cluster, die aus ca 1000 Atomen oder Molekülen bestehen. Diese besitzen einige Eigenschaften von Festkörpern. Bei Clustern in der Größe von etwa 50000 Konstituenten kann man von Festkörpern sprechen, da sie diesen in allen Eigenschaften ähneln \cite{General08}. Cluster können aus fast jeder Art von Atomen oder Molekülen erzeugt werden. Homogene Aggregate werden nach ihren Bindungstypen und mittleren Bindungsenergien (BE) pro Atom oder Molekül unterschieden \cite{jortner1984cluster}. \\
  Zur Gruppe der schwachgebundenen Cluster zählen die durch van-der-Waals Wechselwirkung stabilisierten Cluster. Van-der-Waals Cluster sind mit einer mittleren Bindungsenergie von BE $\leq$ 0,3 eV, die am schwächsten gebundenen Cluster. Die Dipol-Wechselwirkung erlaubt es Moleküle ohne permanentes Dipolmoment oder Edelgase zu Clustern, wie z.B. $\mathrm{He}_n$ zu formen. Die Größe dieser Cluster bleibt wegen der schwachen Bindung meist bei $n \ <$ 10. \cite{jortner1984cluster}
  
  Die Gruppe der moderat gebundenen Cluster enthält Molekülcluster und wasserstoffbrückengebundene Cluster. Die höhere Energie erlaubt typische Clustergrößen von $n \ \approx$ 100.
- Cluster wie (HF)$_n$ oder (H$_2$O)$_n$ werden durch Wasserstoffbrückenbindungen realisiert. Die Dipol-Dipol-Anziehung hält diese Cluster mit einer mittleren Bindungsenergie von BE $\approx$ 0,3 - 0,5 eV zusammen. \cite{jortner1984cluster}
+ Cluster wie (HF)$_n$ oder (H$_2$O)$_n$ werden durch Wasserstoffbrückenbind-ungen realisiert. Die Dipol-Dipol-Anziehung hält diese Cluster mit einer mittleren Bindungsenergie von BE $\approx$ 0,3 - 0,5 eV zusammen. \cite{jortner1984cluster}
  Polare organische Moleküle bilden durch Van-der-Waals-Wechselwirkung und schwache kovalente Anteile sogenannte Molekülcluster mit einer mittleren Bindungsenergie von BE $\approx$ 0,3 - 1 eV. (I$_2$)$_n$ oder (As$_4$)$_n$ sind Repräsentanten molekularer Cluster. \cite{jortner1984cluster}
  
  Einen Übergang zwischen den moderat und den stark gebundenen Clustern stellen die metallischen Cluster dar. Diese bilden untereinander eine metallische Verbindung mit einem halbvollen Band delokalisierter Bindungselektronen. Die mittlere Bindungsenergie beträgt hierbei BE $\approx$ 0,5 - 3 eV. \cite{jortner1984cluster}
@@ -100,9 +102,9 @@ Die Überschallexpansion ist ein adiabatischer Prozess, bei dem Gas durch eine k
 Solche niedrigen Temperaturen gestatten es schwache van-der-Waals Cluster, wie  $\mathrm{^4}\mathrm{He}_2$ zu erzeugen, obwohl ein solches Heliumdimer mit einer Bindungsenergie von \\ $\mathrm{1,013\cdot10^{-7}}$ eV (BE $\widehat{=}$ 1,176 mK \cite{Lohr2007}), die bisher schwächste bekannte Molekülbindung besitzt \cite{Luo1993}. \\
 %Da bei adiabatischen Prozessen die Entropie erhalten bleibt, muss auch die Zustandsdichte erhalten bleiben. Deswegen muss bei einer Abnahme der räumlichen Dichte, die Dichte im Impulsraum im Gegenzug zunehmen \cite{kurka07}. Eine Erhöhung der Dichte im Impulsraum allerdings bedeutet eine schmalere Geschwindigkeitsverteilung und eine Abnahme der Temperatur.
 Die nachfolgende genauere Betrachtung der Prozesse und Formeln, die bei der Clusterbildung durch Überschallexpansion eine Rolle spielen, folgt den Darstellungen von Miller \cite{scoles1988} und Müller \cite{mul13}.
-
+\clearpage
 %
-Expandiert Gas mit Volumen V aus einem Reservoir mit Temperatur $t_0$ und Druck $p_0$ adiabatisch ($\delta$S = 0), folgt die Druckabnahme der thermodynamischen Gesetzmäßigkeit
+Expandiert Gas mit Volumen V aus einem Reservoir mit Temperatur $t_0$ und Druck $p_0$ adiabatisch ($\delta$S = 0), folgt die Druckabnahme der thermodynamischen Gesetz-mäßigkeit
 \begin{equation}
 pV^{\gamma/(1-\gamma)} = \textmd{const, mit}\ \gamma=c_p/c_v=(f+2)/f .
 \end{equation}
@@ -134,13 +136,13 @@ Die Machzahl
 M(\vec{r})= v(\vec{r})/c(p(\vec{r}))
 \end{equation}
 
-ist bei der Überschallexpansion eine wichtige Größe, die skalar in vielen thermodynamischen Rechnungen eine Rolle spielt und vektoriell betrachtet das Strömungsfeld an jedem Ort $\vec{r}$ charakterisiert. Das Strömungsfeld in der \enquote{zone of silence} ist in erster Näherung gleich dem einer Quellströmung. Das bedeutet die Teilchen breiten sich gleichmäßig in alle Richtungen aus. Die Teilchendichte verhält sich mit zunehmendem Abstand zur Düse wie $x^{-2}$ \cite{hagena1981nucleation}. Sofern das Verhältnis von Stagnationsdruck zu Hintergrunddruck $p_0/p_b > 2,1$ beträgt, breitet sich das Gas nach Austritt aus der Düse mit Überschallgeschwindigkeit aus, was zu einer Machzahl M $>$ 1 führt \cite{scoles1988}. Das hat zur Folge, dass der Gasstrom zunächst unabhängig von jeglichen externen Randbedingungen ist. Dieser Effekt rührt daher, dass sich Information \enquote{nur} mit Schallgeschwindigkeit ausbreitet und der Teilchenstrom schneller als diese ist. Doch obwohl der Gasstrom nichts von Randbedingungen \enquote{weiß}, muss er sich nach ihnen richten. Deswegen bilden sich nach kurzer Zeit Schockwellen aus, die aus Teilchen bestehen, die an begrenzenden Wänden oder ähnlichen \enquote{Randbedingungen} abprallen und auf ihrem Rückweg den Strom regulieren. 
+ist bei der Überschallexpansion eine wichtige Größe, die skalar in vielen thermodynamischen Rechnungen eine Rolle spielt und vektoriell betrachtet das Strömungsfeld an jedem Ort $\vec{r}$ charakterisiert. Das Strömungsfeld in der \enquote{zone of silence} ist in erster Näherung gleich dem einer Quellströmung. Das bedeutet die Teilchen breiten sich gleichmäßig in alle Richtungen aus. Die Teilchendichte verhält sich mit zunehmendem Abstand zur Düse wie $x^{-2}$ \cite{hagena1981nucleation}. Sofern das Verhältnis von Stagnationsdruck zu Hintergrunddruck $p_0/p_b > 2,1$ beträgt, breitet sich das Gas nach Austritt aus der Düse mit Überschallgeschwindigkeit aus, was zu einer Machzahl \newline M $>$ 1 führt \cite{scoles1988}. Das hat zur Folge, dass der Gasstrom zunächst unabhängig von jeglichen externen Randbedingungen ist. Dieser Effekt rührt daher, dass sich Information \enquote{nur} mit Schallgeschwindigkeit ausbreitet und der Teilchenstrom schneller als diese ist. Doch obwohl der Gasstrom nichts von Randbedingungen \enquote{weiß}, muss er sich nach ihnen richten. Deswegen bilden sich nach kurzer Zeit Schockwellen aus, die aus Teilchen bestehen, die an begrenzenden Wänden oder ähnlichen \enquote{Randbedingungen} abprallen und auf ihrem Rückweg den Strom regulieren. 
 %
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=0.7\textwidth]{../expansion.png}%
-\captionof{figure}{\small Übersicht der Überschallexpansion mit Schockwellenstruktur. \citep{scoles1988}}  
+\includegraphics[width=0.8\textwidth]{../expansion.png}%
+\captionof{figure}{Übersicht der Überschallexpansion mit Schockwellenstruktur. \cite{scoles1988}}  
  \label{fig:Machexpansion}
 \end{minipage} 
 \end{center} 
@@ -148,8 +150,8 @@ ist bei der Überschallexpansion eine wichtige Größe, die skalar in vielen the
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=0.7\textwidth]{../shockwaves.png}%
-\captionof{figure}{ \small Druckverteilung bei einem Argon-Jet mit einer 20 µm breiten schlitzförmigen Düsenöffnung. Die gekennzeichnete Schockwelle in der Mitte begrenzt den isentropen Bereich, also die \enquote{zone of ~~~~~~~~~~~~~silence}. \cite{Mou09} }
+\includegraphics[width=0.8\textwidth]{../shockwaves.png}%
+\captionof{figure}{Druckverteilung bei einem Argon-Jet mit einer 20 µm breiten schlitzförmigen Düsenöffnung. Die gekennzeichnete Schockwelle in der Mitte begrenzt den isentropen Bereich, also die \enquote{zone of silence}. \cite{Mou09}}
  \label{fig:Schockwellen}
 \end{minipage} 
 \end{center} 
@@ -186,23 +188,21 @@ Abbildung \ref{fig:Thermo} zeigt ein beispielhaftes $p$-$T$-Phasendiagramm, anha
 \begin{minipage}{\linewidth}
 \centering
 \includegraphics[width=0.6\textwidth]{../Clusterthermo.pdf}%
-\captionof{figure}{\small Schematisches $p$-$T$-Diagramm von idealem Gas bei der Überschallexpansion. $p(T)$ stellt die isentrope Expansionslinie und $p_v(T)$ die flache Dampfdrucklinie eines kondensierenden Gases dar. \cite{hagena1981nucleation} }
+\captionof{figure}{Schematisches $p$-$T$-Diagramm von idealem Gas bei der Überschallexpansion. $p(T)$ stellt die isentrope Expansionslinie und $p_v(T)$ die flache Dampfdrucklinie eines kondensierenden Gases dar. \cite{hagena1981nucleation}}
  \label{fig:Thermo}
 \end{minipage} 
 \end{center}
 
 Mittels der thermodynamischen Beschreibung leitete Hagena $et\ al.$ in den 80er Jahren empirische Gleichungen her, welche die Messergebnisse zu Clustern gut beschreiben. Interessant ist, dass die Düsenform bei der Clusterentstehung eine wichtige Rolle spielt \cite{hagena1972duseform}. Je länger die Düse die Expansion des Gases bei gleichen Anfangsbedingungen ($d,\ p_0, \ T_0$) einschränkt, desto größer sind die entstehenden Cluster. 
-
+Um verschiedene typischen Düsenformen (siehe Abbildung \ref{fig:Formen}) mit denselben Gleichungen behandeln zu können, wurde die \enquote{equivalente Düsenöffnung} $d_{eq}$ eingeführt. Da in dieser Arbeit der Fokus darauf liegt Wasserdimere zu produzieren, wird eine Lochdüse verwendet, weil diese die Expansion des Gases am wenigsten einschränkt. Der equivalente Düsendurchmesser entspricht bei Lochdüsen der Düsenöffnung, $d_{eq} \equiv d$.
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=1\textwidth]{../Dusenformenbild.pdf}%
-\captionof{figure}{\small Typische bei der Überschallexpansion verwendete Düsen mit charakteristischen Größen. \cite{hagena1972duseform}}
+\includegraphics[width=0.9\textwidth]{../Dusenformenbild.pdf}%
+\captionof{figure}{Typische bei der Überschallexpansion verwendete Düsen mit charakteristischen Größen. \cite{hagena1972duseform}}
  \label{fig:Formen}
 \end{minipage} 
 \end{center}
-
-Um verschiedene typischen Düsenformen (siehe Abbildung \ref{fig:Formen}) mit denselben Gleichungen behandeln zu können, wurde die \enquote{equivalente Düsenöffnung} $d_{eq}$ eingeführt. Da in dieser Arbeit der Fokus darauf liegt Wasserdimere zu produzieren, wird eine Lochdüse verwendet, weil diese die Expansion des Gases am wenigsten einschränkt. Der equivalente Düsendurchmesser entspricht bei Lochdüsen der Düsenöffnung, $d_{eq} \equiv d$.
 %Das zur Clusterproduktion verwendete reine Wasser wird bei Temperaturen um 100 °C und einem entsprechendem Dampfdruck von ca. 1 bar durch eine kurze konische Düse geleitet (Abb. \ref{fig:Duse}).
 %%
 %\begin{center}
@@ -214,7 +214,7 @@ Um verschiedene typischen Düsenformen (siehe Abbildung \ref{fig:Formen}) mit de
 %\end{minipage} 
 %\end{center}
 %
-Eine geringere Anfangstemperatur $T_0$ und ein höherer Stagnationsdruck $p_0$ begünstigen ebenfalls die Bildung größerer Cluster. Da die Anfangsbedingungen im Reservoir extern festgelegt werden, $\delta_t T_0 = \delta_t p_0 = \delta_t V_0 = 0$, bedeutet eine externe Erhöhung von $T_0$ oder Verminderung von $p_0$ aufgrund der idealen Gasgleichung, $pV = nk_bT$, eine Erhöhung der Teilchenzahl $n$ im System. Mehr Teilchen im System führen mehr Stöße aus und begünstigen damit die Enstehung von Kondensationskeimen und größeren Clustern. \\
+Eine geringere Anfangstemperatur $T_0$ und ein höherer Stagnationsdruck $p_0$  \linebreak begünstigen ebenfalls die Bildung größerer Cluster. Da die Anfangsbedingungen im Reservoir extern festgelegt werden, $\delta_t T_0 = \delta_t p_0 = \delta_t V_0 = 0$, bedeutet eine externe Erhöhung von $T_0$ oder Verminderung von $p_0$ aufgrund der idealen Gasgleichung, $pV = nk_bT$, eine Erhöhung der Teilchenzahl $n$ im System. Mehr Teilchen im System führen mehr Stöße aus und begünstigen damit die Enstehung von Kondensationskeimen und größeren Clustern. \\
 %
 %Wenn ein hoher Gasdruck herrscht, sprich eine große Teilchendichte existiert, gibt es mehr Teilchen die durch Stöße mit dem Cluster die überschüssige Energie abtransportieren können und somit die Clusterbildung unterstützen.
 Die Größenverteilung der entstehenden Cluster lässt sich durch eine Boltzmannverteilung beschreiben, deren Breite proportional zur mittleren Clustergröße $\left\langle N \right\rangle$ ist. Um auf die Clustergrößenverteilung in idealen Gasen zu schließen, benutzt man den empirischen Skalenparameter $\Gamma$ von Hagena \cite{hagena1987}:
@@ -236,14 +236,13 @@ eingeführt mit $\alpha= q - 3$. Dabei gilt
 r_{ch} = \frac{m}{\rho ^{1/3}}\quad \textmd{und}\quad T_{ch}= \frac{ \Delta h_0}{k_B}
 \end{equation}
 %
-Der charakteristische Radius $r_{ch}$ setzt sich aus der Teilchenmasse $m$ und der Festkörperdichte $\rho$ zusammen. $T_{ch}$ ist die charakteristische Temperatur mit der Sublimationsenthalpie $\Delta h_0$ bei 0 K  und der Boltzmannkonstante $k_B$.  Die mittlere Clustergröße $\left\langle N \right\rangle $ ergibt sich nach Hagena zu
+Der charakteristische Radius $r_{ch}$ setzt sich aus der Teilchenmasse $m$ und der Festkör-perdichte $\rho$ zusammen. $T_{ch}$ ist die charakteristische Temperatur mit der Sublimationsenthalpie $\Delta h_0$ bei 0 K  und der Boltzmannkonstante $k_B$.  Die mittlere Clustergröße $\left\langle N \right\rangle $ ergibt sich nach Hagena zu
 %
 \begin{equation} \label{eq:HagOriginalFormel}
 \left\langle N \right\rangle  = D \left( \frac{\Gamma^*}{1000}\right)^a \:.
 \end{equation}
 %
 $a$ und $D$ sind empirische Parameter, abhängig vom expandierenden Gas.
-
 % Die Messungen von Hagena hat sich damals für $D$ = 33 und $a$ = 2,35 (\textbf{bei Helium!}) entschieden. Im Jahre 1996 haben Buck und Krohne herausgefunden, dass man man die Parameter $a$ und $D$ abhängig von $\Gamma^*$ wählen sollte um ein genaueres Ergebnis für $\left\langle N \right\rangle $ zu erhalten \cite{buck1996}. Für große Werte von $\Gamma^* > 1800$ bestätigen Sie die Originalformel von Hagena. 
 %Für einen mittleren Bereich $350 \leq \Gamma^* \leq 1800$ Sie die Formel angepasst zu
 %%
@@ -258,29 +257,24 @@ $a$ und $D$ sind empirische Parameter, abhängig vom expandierenden Gas.
 %\end{equation}
 %%
 Fügt man die Formeln \ref{eq:Skalenparameter} bis \ref{eq:HagOriginalFormel} zusammen, erhält man den folgenden Ausdruck für $\left\langle N \right\rangle $.
-
 \begin{equation}
 	\begin{split}
 	\left\langle N \right\rangle & = D \left( \frac{p_0\ d_{eq}^q \ T_0^{q-3}}{1000\ k_B\ T_0\ (r_{ch}T_{ch})^{q-3}}\right)^a \\ \\
 	& \textmd{mit} \qquad N_0\  =\ \frac{n_0}{V_0}\ =\ \frac{p_0}{k_B\ T_0} \: .
 	\end{split}
 \end{equation}
-
 Um diese Formel auf Wasser anzuwenden müssen lediglich die materialabhängi-gen Größen in Erfahrung gebracht werden. Die charakteristischen Größen $r_{ch}$ und $T_{ch}$ haben Werte von 3,19 \AA{} bzw. $5684$ K. Die Werte $q$ = 0,634, $a$ = 1,886 sowie der Vorfaktor $D$ = 11,6 stammen aus einer Kurvenanpassung experimenteller Daten \cite{bobbert2002}. Die verwendeten Lochdüsen haben eine Düsenöffnung von $d_{eq}$ = 30 bzw. 50 µm. Der Stagnationsdruck $p_0$ entspricht dem Wasserdampfdruck im Reservoir bei der Reservoirtemperatur $T_0$. Der Zusammenhang $p(T)$ hat einen exponentiellen Verlauf der Form (siehe Abbildung \ref{fig:Wasserdampf})
-
 \begin{equation} \label{eq:Clustergrosse}
 p(T) = 2,445,1\ \textmd{Pa} \cdot \textmd{exp}(-0,0376 \frac{1}{^{\circ} \textmd{C}} \cdot T [^{\circ} \textmd{C}]) - 2847,6\ \textmd{Pa} .
 \end{equation}
-
 \begin{center}
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=1\textwidth]{../Wasserdampfkurve.pdf}%
+\includegraphics[width=0.95\textwidth]{../Wasserdampfkurve.pdf}%
 \captionof{figure}{\small Dampfdruckkurve von Wasser in Abhängigkeit der Temperatur. \cite{Dampfdruckkurve}}
  \label{fig:Wasserdampf}
 \end{minipage} 
 \end{center}
-
 Das Ziel dieser Arbeit ist es Wasserdimere herzustellen, folglich ist eine mittlere Clustergröße von $\left \langle N \right\rangle$ = 2 gesucht. Gemäß Formel \ref{eq:Clustergrosse} erreicht man \\ $\left \langle N(T) \right\rangle = 2 \textmd{ für }
 \left\{ %
    \begin{array}{l}

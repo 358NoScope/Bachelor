@@ -3,13 +3,24 @@
 %%
 %% You need at least KomaScript v3.0.0,
 %% e.g. available in Texlive 2009
+
+%%Arbeitsversion
 \documentclass  [
-  paper    = a4,
-  fontsize = 12.5pt,
- % headsepline,     %macht Strich und Kapitel-/Unterkapitelname in den Header
+paper    = a4,
+twoside,
+DIV=14,
+BCOR=20mm,  %Verrückung fürs Binden
+fontsize = 12pt,
+%fleqn,
+toc      = bibnumbered,
+toc      = listofnumbered,
+numbers  = noendperiod,
+headings = normal,
+listof   = leveldown,
+version  = 3.03,
+headsepline,     %macht Strich und Kapitel-/Unterkapitelname in den Header
 %  headline = 1.5
-BCOR=35mm
-]  {scrbook}
+] {scrbook}
 %----verhindert eingerueckte Zeile zu Beginn eines Absatzes----
 \setlength{\parindent}{0mm}
 
@@ -26,6 +37,12 @@ BCOR=35mm
 \usepackage											{booktabs}			%Für stylische Tabellen
 \usepackage											{amsmath}  			%für Split Umgebung
 \usepackage											{float}				%Tabelle an bestimmte Stelle
+\usepackage	[format=default,font=sl,labelfont=bf,textfont=small]	{caption}			%Bildunterschriften anpassen
+\usepackage [colorlinks=true,linkcolor=black,citecolor=black]{hyperref} 
+%\usepackage                             {booktabs}
+%\usepackage                             {color}
+
+
 %\usepackage{vmargin}
 
 %\setmarginsrb{3cm}{1cm}{3cm}{1cm}{6mm}{7mm}{5mm}{15mm}
@@ -97,7 +114,7 @@ BCOR=35mm
 %     \citestyle{egu}
      \bibliographystyle{alpha}  %ersten 3 Buchstaben und Jahr
 %     \include{deposition}
-\newpage
+\cleardoublepage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%D A N K S A G U N G  %%%%%%%%%%%%%%%%%%%%%%%%%%%
